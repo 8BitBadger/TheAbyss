@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d70e3d9c1726bfb44b74d828f6e3ebfb, type: 3}
+  m_Name: TestRotation
+  m_EditorClassIdentifier: 
+  baseSpeed: 50
+  speed: 50
+  dir: {x: -7.828126, y: 11.234375}
+  target: {x: -7.6093755, y: 11.515625, z: -10}
+  rotate: 1

@@ -1,0 +1,1423 @@
+fileFormatVersion: 2
+guid: f528781e8f620e5489cfba5f78e19c8d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: rpg2_gems_16x16_0
+    21300002: rpg2_gems_16x16_1
+    21300004: rpg2_gems_16x16_2
+    21300006: rpg2_gems_16x16_3
+    21300008: rpg2_gems_16x16_4
+    21300010: rpg2_gems_16x16_5
+    21300012: rpg2_gems_16x16_6
+    21300014: rpg2_gems_16x16_7
+    21300016: rpg2_gems_16x16_8
+    21300018: rpg2_gems_16x16_9
+    21300020: rpg2_gems_16x16_10
+    21300022: rpg2_gems_16x16_11
+    21300024: rpg2_gems_16x16_12
+    21300026: rpg2_gems_16x16_13
+    21300028: rpg2_gems_16x16_14
+    21300030: rpg2_gems_16x16_15
+    21300032: rpg2_gems_16x16_16
+    21300034: rpg2_gems_16x16_17
+    21300036: rpg2_gems_16x16_18
+    21300038: rpg2_gems_16x16_19
+    21300040: rpg2_gems_16x16_20
+    21300042: rpg2_gems_16x16_21
+    21300044: rpg2_gems_16x16_22
+    21300046: rpg2_gems_16x16_23
+    21300048: rpg2_gems_16x16_24
+    21300050: rpg2_gems_16x16_25
+    21300052: rpg2_gems_16x16_26
+    21300054: rpg2_gems_16x16_27
+    21300056: rpg2_gems_16x16_28
+    21300058: rpg2_gems_16x16_29
+    21300060: rpg2_gems_16x16_30
+    21300062: rpg2_gems_16x16_31
+    21300064: rpg2_gems_16x16_32
+    21300066: rpg2_gems_16x16_33
+    21300068: rpg2_gems_16x16_34
+    21300070: rpg2_gems_16x16_35
+    21300072: rpg2_gems_16x16_36
+    21300074: rpg2_gems_16x16_37
+    21300076: rpg2_gems_16x16_38
+    21300078: rpg2_gems_16x16_39
+    21300080: rpg2_gems_16x16_40
+    21300082: rpg2_gems_16x16_41
+    21300084: rpg2_gems_16x16_42
+    21300086: rpg2_gems_16x16_43
+    21300088: rpg2_gems_16x16_44
+    21300090: rpg2_gems_16x16_45
+    21300092: rpg2_gems_16x16_46
+    21300094: rpg2_gems_16x16_47
+    21300096: rpg2_gems_16x16_48
+    21300098: rpg2_gems_16x16_49
+    21300100: rpg2_gems_16x16_50
+    21300102: rpg2_gems_16x16_51
+    21300104: rpg2_gems_16x16_52
+    21300106: rpg2_gems_16x16_53
+    21300108: rpg2_gems_16x16_54
+    21300110: rpg2_gems_16x16_55
+    21300112: rpg2_gems_16x16_56
+    21300114: rpg2_gems_16x16_57
+    21300116: rpg2_gems_16x16_58
+    21300118: rpg2_gems_16x16_59
+    21300120: rpg2_gems_16x16_60
+    21300122: rpg2_gems_16x16_61
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 212
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aabc58ff387411418e5caa6bf35edad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_1
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 212
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2203adb9508c47148a3dc17a1c638e81
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_2
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 212
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26faf2901f2fc24198d66e9be75a88e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_3
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 212
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 646368863723aff43ba79d0ccfe16e90
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_4
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 212
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b566617a1a1df4db923555ab0c789b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_5
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 212
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4591baa432bfdef49adefd7717ade074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_6
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 191
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb5e6176e72e63549a5693588ee17833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_7
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 191
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12a72c4f2e7175441bd31f5cdd3b1b8d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 191
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67f7bf897c518ce478e0097c932150b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_9
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 191
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64304b289a1439c42b3b1a2e454e6f32
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_10
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 191
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00648de55620c1f4e80e6c42fae7dd1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_11
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 191
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edcc7fecf3c988249a2f64e8d3dbcec0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_12
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 170
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d836a3cb32a658b47b813d05c4459106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_13
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 170
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d20560d5fb7c4ee418d1cdaa6b4f6c63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_14
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 170
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d25ffbfed53e184ca363cac38b348c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_15
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 170
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628ddbd5433ba3e45ac14ebed1a565fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_16
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 170
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3807cddc0f8c5414cb025a79df3722ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_17
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 170
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d28d3affa525ab4c8de84a541d5e235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_18
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 149
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9451ddd0a26df6042a732f0fd6f7c76d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_19
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 149
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dc04f6344e2ca4f8e7c025fa2a5810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_20
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 149
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da74beb7c6a5b141a2dbb0585088392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_21
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 149
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d87d1bd7f6b2c439d1d5f065549c92
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_22
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 149
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4a6f4ee46515c4ebe04a6e02b6ebb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 149
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642ba53a7bd4bcf47b5341a5711bdb89
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 128
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6412c46f7d24eee41a4eddf5ba0c0482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_25
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 128
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 777d28264e06b604bb2272ef6a010774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_26
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 128
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf9603aff3e26534981821f1459f3268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_27
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 128
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2395b110c2ed9944b79d87eefa8951b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_28
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 128
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134af5ec13745a548931f50374f2dd07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_29
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 128
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dca6d3fd2e562f4d929ec7af1962367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_30
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 107
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cdf6819752a6a4ca8c57a45a02a570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_31
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 107
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee96f8225e3a2f4c9bb749afc7d13f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_32
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 107
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efb3f6444511f5343a5d7913efcd1817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_33
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 107
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46aeae104b1c9b34f8c9c9881d3498ba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_34
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 107
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d7940fe77535d42bce5165b09500c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_35
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 107
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f868e1ddf37c1f4cbb3c32fa68754f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_36
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15acff3b51e899c4699b26e98ba0fe63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_37
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac336d631dd96f94b99796386a02486f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_38
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf63283965ef75d4e9f72c1328f7a7a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_39
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3e9652e0149b44885d5ab6bc6eebeb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_40
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d738cb66a4cf28b478cf74851b30a14f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_41
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 86
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64d97849889bdb841a2be99c118722e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_42
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b335d5e6a830db48a637005d0691a07
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_43
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1358d6553e2ca145832bd4745150a8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_44
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b535d0a2eda0c9c409642a10773e7483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_45
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc6fb3660279f7478b267e2cf66e332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_46
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b812fab495a91974fb967d5f796703fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_47
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 65
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eda7efcf104ed09489dc5471cf8c15bb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_48
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 44
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a23480093efcbb4bb4a8927b0df53e7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_49
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 44
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9ce38c9d30bce49855378c6176fada
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_50
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 44
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14450b5cb051c8349be3791fcf8935e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_51
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 44
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b988904fba1b8114daed1219d48e5fcf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_52
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 44
+        width: 14
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd14a3a92a8184b458475af6a7d17490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_53
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 23
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68ffdb00028a02b47a524cddffc2dd7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_54
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 23
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a1c4289f35f13429849aa0973190d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_55
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 23
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349f1dc85427ddd43983f07e66a58c34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_56
+      rect:
+        serializedVersion: 2
+        x: 65
+        y: 23
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b26d1b924104f4082018260e72839b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_57
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 23
+        width: 16
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78bde7068951b9644b1f7beb259bcc55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_58
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6286b7325f9c318459eaf74ef7a8c955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_59
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 2
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c28c6fd1f98e85648b091252e2e14058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_60
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 2
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14bd4b1b99a5ce744b11d60a062d2daf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg2_gems_16x16_61
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 2
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3495df33bbc0f41b5099ab382a0f13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e2fcacffa6fe3274593376f6869a836e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,2301 @@
+fileFormatVersion: 2
+guid: 3b414b754885e89458a763fd9bb60d1d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: rpg_dungeon_set_assets_DB16_palette_0
+    21300002: rpg_dungeon_set_assets_DB16_palette_1
+    21300004: rpg_dungeon_set_assets_DB16_palette_2
+    21300006: rpg_dungeon_set_assets_DB16_palette_3
+    21300008: rpg_dungeon_set_assets_DB16_palette_4
+    21300010: rpg_dungeon_set_assets_DB16_palette_5
+    21300012: rpg_dungeon_set_assets_DB16_palette_6
+    21300014: rpg_dungeon_set_assets_DB16_palette_7
+    21300016: rpg_dungeon_set_assets_DB16_palette_8
+    21300018: rpg_dungeon_set_assets_DB16_palette_9
+    21300020: rpg_dungeon_set_assets_DB16_palette_10
+    21300022: rpg_dungeon_set_assets_DB16_palette_11
+    21300024: rpg_dungeon_set_assets_DB16_palette_12
+    21300026: rpg_dungeon_set_assets_DB16_palette_13
+    21300028: rpg_dungeon_set_assets_DB16_palette_14
+    21300030: rpg_dungeon_set_assets_DB16_palette_15
+    21300032: rpg_dungeon_set_assets_DB16_palette_16
+    21300034: rpg_dungeon_set_assets_DB16_palette_17
+    21300036: rpg_dungeon_set_assets_DB16_palette_18
+    21300038: rpg_dungeon_set_assets_DB16_palette_19
+    21300040: rpg_dungeon_set_assets_DB16_palette_20
+    21300042: rpg_dungeon_set_assets_DB16_palette_21
+    21300044: rpg_dungeon_set_assets_DB16_palette_22
+    21300046: rpg_dungeon_set_assets_DB16_palette_23
+    21300048: rpg_dungeon_set_assets_DB16_palette_24
+    21300050: rpg_dungeon_set_assets_DB16_palette_25
+    21300052: rpg_dungeon_set_assets_DB16_palette_26
+    21300054: rpg_dungeon_set_assets_DB16_palette_27
+    21300056: rpg_dungeon_set_assets_DB16_palette_28
+    21300058: rpg_dungeon_set_assets_DB16_palette_29
+    21300060: rpg_dungeon_set_assets_DB16_palette_30
+    21300062: rpg_dungeon_set_assets_DB16_palette_31
+    21300064: rpg_dungeon_set_assets_DB16_palette_32
+    21300066: rpg_dungeon_set_assets_DB16_palette_33
+    21300068: rpg_dungeon_set_assets_DB16_palette_34
+    21300070: rpg_dungeon_set_assets_DB16_palette_35
+    21300072: rpg_dungeon_set_assets_DB16_palette_36
+    21300074: rpg_dungeon_set_assets_DB16_palette_37
+    21300076: rpg_dungeon_set_assets_DB16_palette_38
+    21300078: rpg_dungeon_set_assets_DB16_palette_39
+    21300080: rpg_dungeon_set_assets_DB16_palette_40
+    21300082: rpg_dungeon_set_assets_DB16_palette_41
+    21300084: rpg_dungeon_set_assets_DB16_palette_42
+    21300086: rpg_dungeon_set_assets_DB16_palette_43
+    21300088: rpg_dungeon_set_assets_DB16_palette_44
+    21300090: rpg_dungeon_set_assets_DB16_palette_45
+    21300092: rpg_dungeon_set_assets_DB16_palette_46
+    21300094: rpg_dungeon_set_assets_DB16_palette_47
+    21300096: rpg_dungeon_set_assets_DB16_palette_48
+    21300098: rpg_dungeon_set_assets_DB16_palette_49
+    21300100: rpg_dungeon_set_assets_DB16_palette_50
+    21300102: rpg_dungeon_set_assets_DB16_palette_51
+    21300104: rpg_dungeon_set_assets_DB16_palette_52
+    21300106: rpg_dungeon_set_assets_DB16_palette_53
+    21300108: rpg_dungeon_set_assets_DB16_palette_54
+    21300110: rpg_dungeon_set_assets_DB16_palette_55
+    21300112: rpg_dungeon_set_assets_DB16_palette_56
+    21300114: rpg_dungeon_set_assets_DB16_palette_57
+    21300116: rpg_dungeon_set_assets_DB16_palette_58
+    21300118: rpg_dungeon_set_assets_DB16_palette_59
+    21300120: rpg_dungeon_set_assets_DB16_palette_60
+    21300122: rpg_dungeon_set_assets_DB16_palette_61
+    21300124: rpg_dungeon_set_assets_DB16_palette_62
+    21300126: rpg_dungeon_set_assets_DB16_palette_63
+    21300128: rpg_dungeon_set_assets_DB16_palette_64
+    21300130: rpg_dungeon_set_assets_DB16_palette_65
+    21300132: rpg_dungeon_set_assets_DB16_palette_66
+    21300134: rpg_dungeon_set_assets_DB16_palette_67
+    21300136: rpg_dungeon_set_assets_DB16_palette_68
+    21300138: rpg_dungeon_set_assets_DB16_palette_69
+    21300140: rpg_dungeon_set_assets_DB16_palette_70
+    21300142: rpg_dungeon_set_assets_DB16_palette_71
+    21300144: rpg_dungeon_set_assets_DB16_palette_72
+    21300146: rpg_dungeon_set_assets_DB16_palette_73
+    21300148: rpg_dungeon_set_assets_DB16_palette_74
+    21300150: rpg_dungeon_set_assets_DB16_palette_75
+    21300152: rpg_dungeon_set_assets_DB16_palette_76
+    21300154: rpg_dungeon_set_assets_DB16_palette_77
+    21300156: rpg_dungeon_set_assets_DB16_palette_78
+    21300158: rpg_dungeon_set_assets_DB16_palette_79
+    21300160: rpg_dungeon_set_assets_DB16_palette_80
+    21300162: rpg_dungeon_set_assets_DB16_palette_81
+    21300164: rpg_dungeon_set_assets_DB16_palette_82
+    21300166: rpg_dungeon_set_assets_DB16_palette_83
+    21300168: rpg_dungeon_set_assets_DB16_palette_84
+    21300170: rpg_dungeon_set_assets_DB16_palette_85
+    21300172: rpg_dungeon_set_assets_DB16_palette_86
+    21300174: rpg_dungeon_set_assets_DB16_palette_87
+    21300176: rpg_dungeon_set_assets_DB16_palette_88
+    21300178: rpg_dungeon_set_assets_DB16_palette_89
+    21300180: rpg_dungeon_set_assets_DB16_palette_90
+    21300182: rpg_dungeon_set_assets_DB16_palette_91
+    21300184: rpg_dungeon_set_assets_DB16_palette_92
+    21300186: rpg_dungeon_set_assets_DB16_palette_93
+    21300188: rpg_dungeon_set_assets_DB16_palette_94
+    21300190: rpg_dungeon_set_assets_DB16_palette_95
+    21300192: rpg_dungeon_set_assets_DB16_palette_96
+    21300194: rpg_dungeon_set_assets_DB16_palette_97
+    21300196: rpg_dungeon_set_assets_DB16_palette_98
+    21300198: rpg_dungeon_set_assets_DB16_palette_99
+    21300200: rpg_dungeon_set_assets_DB16_palette_100
+    21300202: rpg_dungeon_set_assets_DB16_palette_101
+    21300204: rpg_dungeon_set_assets_DB16_palette_102
+    21300206: rpg_dungeon_set_assets_DB16_palette_103
+    21300208: rpg_dungeon_set_assets_DB16_palette_104
+    21300210: rpg_dungeon_set_assets_DB16_palette_105
+    21300212: rpg_dungeon_set_assets_DB16_palette_106
+    21300214: rpg_dungeon_set_assets_DB16_palette_107
+    21300216: rpg_dungeon_set_assets_DB16_palette_108
+    21300218: rpg_dungeon_set_assets_DB16_palette_109
+    21300220: rpg_dungeon_set_assets_DB16_palette_110
+    21300222: rpg_dungeon_set_assets_DB16_palette_111
+    21300224: rpg_dungeon_set_assets_DB16_palette_112
+    21300226: rpg_dungeon_set_assets_DB16_palette_113
+    21300228: rpg_dungeon_set_assets_DB16_palette_114
+    21300230: rpg_dungeon_set_assets_DB16_palette_115
+    21300232: rpg_dungeon_set_assets_DB16_palette_116
+    21300234: rpg_dungeon_set_assets_DB16_palette_117
+    21300236: rpg_dungeon_set_assets_DB16_palette_118
+    21300238: rpg_dungeon_set_assets_DB16_palette_119
+    21300240: rpg_dungeon_set_assets_DB16_palette_120
+    21300242: rpg_dungeon_set_assets_DB16_palette_121
+    21300244: rpg_dungeon_set_assets_DB16_palette_122
+    21300246: rpg_dungeon_set_assets_DB16_palette_123
+    21300248: rpg_dungeon_set_assets_DB16_palette_124
+    21300250: rpg_dungeon_set_assets_DB16_palette_125
+    21300252: rpg_dungeon_set_assets_DB16_palette_126
+    21300254: rpg_dungeon_set_assets_DB16_palette_127
+    21300256: rpg_dungeon_set_assets_DB16_palette_128
+    21300258: rpg_dungeon_set_assets_DB16_palette_129
+    21300260: rpg_dungeon_set_assets_DB16_palette_130
+    21300262: rpg_dungeon_set_assets_DB16_palette_131
+    21300264: rpg_dungeon_set_assets_DB16_palette_132
+    21300266: rpg_dungeon_set_assets_DB16_palette_133
+    21300268: rpg_dungeon_set_assets_DB16_palette_134
+    21300270: rpg_dungeon_set_assets_DB16_palette_135
+    21300272: rpg_dungeon_set_assets_DB16_palette_136
+    21300274: rpg_dungeon_set_assets_DB16_palette_137
+    21300276: rpg_dungeon_set_assets_DB16_palette_138
+    21300278: rpg_dungeon_set_assets_DB16_palette_139
+    21300280: rpg_dungeon_set_assets_DB16_palette_140
+    21300282: rpg_dungeon_set_assets_DB16_palette_141
+    21300284: rpg_dungeon_set_assets_DB16_palette_142
+    21300286: rpg_dungeon_set_assets_DB16_palette_143
+    21300288: rpg_dungeon_set_assets_DB16_palette_144
+    21300290: rpg_dungeon_set_assets_DB16_palette_145
+    21300292: rpg_dungeon_set_assets_DB16_palette_146
+    21300294: rpg_dungeon_set_assets_DB16_palette_147
+    21300296: rpg_dungeon_set_assets_DB16_palette_148
+    21300298: rpg_dungeon_set_assets_DB16_palette_149
+    21300300: rpg_dungeon_set_assets_DB16_palette_150
+    21300302: rpg_dungeon_set_assets_DB16_palette_151
+    21300304: rpg_dungeon_set_assets_DB16_palette_152
+    21300306: rpg_dungeon_set_assets_DB16_palette_153
+    21300308: rpg_dungeon_set_assets_DB16_palette_154
+    21300310: rpg_dungeon_set_assets_DB16_palette_155
+    21300312: rpg_dungeon_set_assets_DB16_palette_156
+    21300314: rpg_dungeon_set_assets_DB16_palette_157
+    21300316: rpg_dungeon_set_assets_DB16_palette_158
+    21300318: rpg_dungeon_set_assets_DB16_palette_159
+    21300320: rpg_dungeon_set_assets_DB16_palette_160
+    21300322: rpg_dungeon_set_assets_DB16_palette_161
+    21300324: rpg_dungeon_set_assets_DB16_palette_162
+    21300326: rpg_dungeon_set_assets_DB16_palette_163
+    21300328: rpg_dungeon_set_assets_DB16_palette_164
+    21300330: rpg_dungeon_set_assets_DB16_palette_165
+    21300332: rpg_dungeon_set_assets_DB16_palette_166
+    21300334: rpg_dungeon_set_assets_DB16_palette_167
+    21300336: rpg_dungeon_set_assets_DB16_palette_168
+    21300338: rpg_dungeon_set_assets_DB16_palette_169
+    21300340: rpg_dungeon_set_assets_DB16_palette_170
+    21300342: rpg_dungeon_set_assets_DB16_palette_171
+    21300344: rpg_dungeon_set_assets_DB16_palette_172
+    21300346: rpg_dungeon_set_assets_DB16_palette_173
+    21300348: rpg_dungeon_set_assets_DB16_palette_174
+    21300350: rpg_dungeon_set_assets_DB16_palette_175
+    21300352: rpg_dungeon_set_assets_DB16_palette_176
+    21300354: rpg_dungeon_set_assets_DB16_palette_177
+    21300356: rpg_dungeon_set_assets_DB16_palette_178
+    21300358: rpg_dungeon_set_assets_DB16_palette_179
+    21300360: rpg_dungeon_set_assets_DB16_palette_180
+    21300362: rpg_dungeon_set_assets_DB16_palette_181
+    21300364: rpg_dungeon_set_assets_DB16_palette_182
+    21300366: rpg_dungeon_set_assets_DB16_palette_183
+    21300368: rpg_dungeon_set_assets_DB16_palette_184
+    21300370: rpg_dungeon_set_assets_DB16_palette_185
+    21300372: rpg_dungeon_set_assets_DB16_palette_186
+    21300374: rpg_dungeon_set_assets_DB16_palette_187
+    21300376: rpg_dungeon_set_assets_DB16_palette_188
+    21300378: rpg_dungeon_set_assets_DB16_palette_189
+    21300380: rpg_dungeon_set_assets_DB16_palette_190
+    21300382: rpg_dungeon_set_assets_DB16_palette_191
+    21300384: rpg_dungeon_set_assets_DB16_palette_192
+    21300386: rpg_dungeon_set_assets_DB16_palette_193
+    21300388: rpg_dungeon_set_assets_DB16_palette_194
+    21300390: rpg_dungeon_set_assets_DB16_palette_195
+    21300392: rpg_dungeon_set_assets_DB16_palette_196
+    21300394: rpg_dungeon_set_assets_DB16_palette_197
+    21300396: rpg_dungeon_set_assets_DB16_palette_198
+    21300398: rpg_dungeon_set_assets_DB16_palette_199
+    21300400: rpg_dungeon_set_assets_DB16_palette_200
+    21300402: rpg_dungeon_set_assets_DB16_palette_201
+    21300404: rpg_dungeon_set_assets_DB16_palette_202
+    21300406: rpg_dungeon_set_assets_DB16_palette_203
+    21300408: rpg_dungeon_set_assets_DB16_palette_204
+    21300410: rpg_dungeon_set_assets_DB16_palette_205
+    21300412: rpg_dungeon_set_assets_DB16_palette_206
+    21300414: rpg_dungeon_set_assets_DB16_palette_207
+    21300416: rpg_dungeon_set_assets_DB16_palette_208
+    21300418: rpg_dungeon_set_assets_DB16_palette_209
+    21300420: rpg_dungeon_set_assets_DB16_palette_210
+    21300422: rpg_dungeon_set_assets_DB16_palette_211
+    21300424: rpg_dungeon_set_assets_DB16_palette_212
+    21300426: rpg_dungeon_set_assets_DB16_palette_213
+    21300428: rpg_dungeon_set_assets_DB16_palette_214
+    21300430: rpg_dungeon_set_assets_DB16_palette_215
+    21300432: rpg_dungeon_set_assets_DB16_palette_216
+    21300434: rpg_dungeon_set_assets_DB16_palette_217
+    21300436: rpg_dungeon_set_assets_DB16_palette_218
+    21300438: rpg_dungeon_set_assets_DB16_palette_219
+    21300440: rpg_dungeon_set_assets_DB16_palette_220
+    21300442: rpg_dungeon_set_assets_DB16_palette_221
+    21300444: rpg_dungeon_set_assets_DB16_palette_222
+    21300446: rpg_dungeon_set_assets_DB16_palette_223
+    21300448: rpg_dungeon_set_assets_DB16_palette_224
+    21300450: rpg_dungeon_set_assets_DB16_palette_225
+    21300452: rpg_dungeon_set_assets_DB16_palette_226
+    21300454: rpg_dungeon_set_assets_DB16_palette_227
+    21300456: rpg_dungeon_set_assets_DB16_palette_228
+    21300458: rpg_dungeon_set_assets_DB16_palette_229
+    21300460: rpg_dungeon_set_assets_DB16_palette_230
+    21300462: rpg_dungeon_set_assets_DB16_palette_231
+    21300464: rpg_dungeon_set_assets_DB16_palette_232
+    21300466: rpg_dungeon_set_assets_DB16_palette_233
+    21300468: rpg_dungeon_set_assets_DB16_palette_234
+    21300470: rpg_dungeon_set_assets_DB16_palette_235
+    21300472: rpg_dungeon_set_assets_DB16_palette_236
+    21300474: rpg_dungeon_set_assets_DB16_palette_237
+    21300476: rpg_dungeon_set_assets_DB16_palette_238
+    21300478: rpg_dungeon_set_assets_DB16_palette_239
+    21300480: rpg_dungeon_set_assets_DB16_palette_240
+    21300482: rpg_dungeon_set_assets_DB16_palette_241
+    21300484: rpg_dungeon_set_assets_DB16_palette_242
+    21300486: rpg_dungeon_set_assets_DB16_palette_243
+    21300488: rpg_dungeon_set_assets_DB16_palette_244
+    21300490: rpg_dungeon_set_assets_DB16_palette_245
+    21300492: rpg_dungeon_set_assets_DB16_palette_246
+    21300494: rpg_dungeon_set_assets_DB16_palette_247
+    21300496: rpg_dungeon_set_assets_DB16_palette_248
+    21300498: rpg_dungeon_set_assets_DB16_palette_249
+    21300500: rpg_dungeon_set_assets_DB16_palette_250
+    21300502: rpg_dungeon_set_assets_DB16_palette_251
+    21300504: rpg_dungeon_set_assets_DB16_palette_252
+    21300506: rpg_dungeon_set_assets_DB16_palette_253
+    21300508: rpg_dungeon_set_assets_DB16_palette_254
+    21300510: rpg_dungeon_set_assets_DB16_palette_255
+    21300512: rpg_dungeon_set_assets_DB16_palette_256
+    21300514: rpg_dungeon_set_assets_DB16_palette_257
+    21300516: rpg_dungeon_set_assets_DB16_palette_258
+    21300518: rpg_dungeon_set_assets_DB16_palette_259
+    21300520: rpg_dungeon_set_assets_DB16_palette_260
+    21300522: rpg_dungeon_set_assets_DB16_palette_261
+    21300524: rpg_dungeon_set_assets_DB16_palette_262
+    21300526: rpg_dungeon_set_assets_DB16_palette_263
+    21300528: rpg_dungeon_set_assets_DB16_palette_264
+    21300530: rpg_dungeon_set_assets_DB16_palette_265
+    21300532: rpg_dungeon_set_assets_DB16_palette_266
+    21300534: rpg_dungeon_set_assets_DB16_palette_267
+    21300536: rpg_dungeon_set_assets_DB16_palette_268
+    21300538: rpg_dungeon_set_assets_DB16_palette_269
+    21300540: rpg_dungeon_set_assets_DB16_palette_270
+    21300542: rpg_dungeon_set_assets_DB16_palette_271
+    21300544: rpg_dungeon_set_assets_DB16_palette_272
+    21300546: rpg_dungeon_set_assets_DB16_palette_273
+    21300548: rpg_dungeon_set_assets_DB16_palette_274
+    21300550: rpg_dungeon_set_assets_DB16_palette_275
+    21300552: rpg_dungeon_set_assets_DB16_palette_276
+    21300554: rpg_dungeon_set_assets_DB16_palette_277
+    21300556: rpg_dungeon_set_assets_DB16_palette_278
+    21300558: rpg_dungeon_set_assets_DB16_palette_279
+    21300560: rpg_dungeon_set_assets_DB16_palette_280
+    21300562: rpg_dungeon_set_assets_DB16_palette_281
+    21300564: rpg_dungeon_set_assets_DB16_palette_282
+    21300566: rpg_dungeon_set_assets_DB16_palette_283
+    21300568: rpg_dungeon_set_assets_DB16_palette_284
+    21300570: rpg_dungeon_set_assets_DB16_palette_285
+    21300572: rpg_dungeon_set_assets_DB16_palette_286
+    21300574: rpg_dungeon_set_assets_DB16_palette_287
+    21300576: rpg_dungeon_set_assets_DB16_palette_288
+    21300578: rpg_dungeon_set_assets_DB16_palette_289
+    21300580: rpg_dungeon_set_assets_DB16_palette_290
+    21300582: rpg_dungeon_set_assets_DB16_palette_291
+    21300584: rpg_dungeon_set_assets_DB16_palette_292
+    21300586: rpg_dungeon_set_assets_DB16_palette_293
+    21300588: rpg_dungeon_set_assets_DB16_palette_294
+    21300590: rpg_dungeon_set_assets_DB16_palette_295
+    21300592: rpg_dungeon_set_assets_DB16_palette_296
+    21300594: rpg_dungeon_set_assets_DB16_palette_297
+    21300596: rpg_dungeon_set_assets_DB16_palette_298
+    21300598: rpg_dungeon_set_assets_DB16_palette_299
+    21300600: rpg_dungeon_set_assets_DB16_palette_300
+    21300602: rpg_dungeon_set_assets_DB16_palette_301
+    21300604: rpg_dungeon_set_assets_DB16_palette_302
+    21300606: rpg_dungeon_set_assets_DB16_palette_303
+    21300608: rpg_dungeon_set_assets_DB16_palette_304
+    21300610: rpg_dungeon_set_assets_DB16_palette_305
+    21300612: rpg_dungeon_set_assets_DB16_palette_306
+    21300614: rpg_dungeon_set_assets_DB16_palette_307
+    21300616: rpg_dungeon_set_assets_DB16_palette_308
+    21300618: rpg_dungeon_set_assets_DB16_palette_309
+    21300620: rpg_dungeon_set_assets_DB16_palette_310
+    21300622: rpg_dungeon_set_assets_DB16_palette_311
+    21300624: rpg_dungeon_set_assets_DB16_palette_312
+    21300626: rpg_dungeon_set_assets_DB16_palette_313
+    21300628: rpg_dungeon_set_assets_DB16_palette_314
+    21300630: rpg_dungeon_set_assets_DB16_palette_315
+    21300632: rpg_dungeon_set_assets_DB16_palette_316
+    21300634: rpg_dungeon_set_assets_DB16_palette_317
+    21300636: rpg_dungeon_set_assets_DB16_palette_318
+    21300638: rpg_dungeon_set_assets_DB16_palette_319
+    21300640: rpg_dungeon_set_assets_DB16_palette_320
+    21300642: rpg_dungeon_set_assets_DB16_palette_321
+    21300644: rpg_dungeon_set_assets_DB16_palette_322
+    21300646: rpg_dungeon_set_assets_DB16_palette_323
+    21300648: rpg_dungeon_set_assets_DB16_palette_324
+    21300650: rpg_dungeon_set_assets_DB16_palette_325
+    21300652: rpg_dungeon_set_assets_DB16_palette_326
+    21300654: rpg_dungeon_set_assets_DB16_palette_327
+    21300656: rpg_dungeon_set_assets_DB16_palette_328
+    21300658: rpg_dungeon_set_assets_DB16_palette_329
+    21300660: rpg_dungeon_set_assets_DB16_palette_330
+    21300662: rpg_dungeon_set_assets_DB16_palette_331
+    21300664: rpg_dungeon_set_assets_DB16_palette_332
+    21300666: rpg_dungeon_set_assets_DB16_palette_333
+    21300668: rpg_dungeon_set_assets_DB16_palette_334
+    21300670: rpg_dungeon_set_assets_DB16_palette_335
+    21300672: rpg_dungeon_set_assets_DB16_palette_336
+    21300674: rpg_dungeon_set_assets_DB16_palette_337
+    21300676: rpg_dungeon_set_assets_DB16_palette_338
+    21300678: rpg_dungeon_set_assets_DB16_palette_339
+    21300680: rpg_dungeon_set_assets_DB16_palette_340
+    21300682: rpg_dungeon_set_assets_DB16_palette_341
+    21300684: rpg_dungeon_set_assets_DB16_palette_342
+    21300686: rpg_dungeon_set_assets_DB16_palette_343
+    21300688: rpg_dungeon_set_assets_DB16_palette_344
+    21300690: rpg_dungeon_set_assets_DB16_palette_345
+    21300692: rpg_dungeon_set_assets_DB16_palette_346
+    21300694: rpg_dungeon_set_assets_DB16_palette_347
+    21300696: rpg_dungeon_set_assets_DB16_palette_348
+    21300698: rpg_dungeon_set_assets_DB16_palette_349
+    21300700: rpg_dungeon_set_assets_DB16_palette_350
+    21300702: rpg_dungeon_set_assets_DB16_palette_351
+    21300704: rpg_dungeon_set_assets_DB16_palette_352
+    21300706: rpg_dungeon_set_assets_DB16_palette_353
+    21300708: rpg_dungeon_set_assets_DB16_palette_354
+    21300710: rpg_dungeon_set_assets_DB16_palette_355
+    21300712: rpg_dungeon_set_assets_DB16_palette_356
+    21300714: rpg_dungeon_set_assets_DB16_palette_357
+    21300716: rpg_dungeon_set_assets_DB16_palette_358
+    21300718: rpg_dungeon_set_assets_DB16_palette_359
+    21300720: rpg_dungeon_set_assets_DB16_palette_360
+    21300722: rpg_dungeon_set_assets_DB16_palette_361
+    21300724: rpg_dungeon_set_assets_DB16_palette_362
+    21300726: rpg_dungeon_set_assets_DB16_palette_363
+    21300728: rpg_dungeon_set_assets_DB16_palette_364
+    21300730: rpg_dungeon_set_assets_DB16_palette_365
+    21300732: rpg_dungeon_set_assets_DB16_palette_366
+    21300734: rpg_dungeon_set_assets_DB16_palette_367
+    21300736: rpg_dungeon_set_assets_DB16_palette_368
+    21300738: rpg_dungeon_set_assets_DB16_palette_369
+    21300740: rpg_dungeon_set_assets_DB16_palette_370
+    21300742: rpg_dungeon_set_assets_DB16_palette_371
+    21300744: rpg_dungeon_set_assets_DB16_palette_372
+    21300746: rpg_dungeon_set_assets_DB16_palette_373
+    21300748: rpg_dungeon_set_assets_DB16_palette_374
+    21300750: rpg_dungeon_set_assets_DB16_palette_375
+    21300752: rpg_dungeon_set_assets_DB16_palette_376
+    21300754: rpg_dungeon_set_assets_DB16_palette_377
+    21300756: rpg_dungeon_set_assets_DB16_palette_378
+    21300758: rpg_dungeon_set_assets_DB16_palette_379
+    21300760: rpg_dungeon_set_assets_DB16_palette_380
+    21300762: rpg_dungeon_set_assets_DB16_palette_381
+    21300764: rpg_dungeon_set_assets_DB16_palette_382
+    21300766: rpg_dungeon_set_assets_DB16_palette_383
+    21300768: rpg_dungeon_set_assets_DB16_palette_384
+    21300770: rpg_dungeon_set_assets_DB16_palette_385
+    21300772: rpg_dungeon_set_assets_DB16_palette_386
+    21300774: rpg_dungeon_set_assets_DB16_palette_387
+    21300776: rpg_dungeon_set_assets_DB16_palette_388
+    21300778: rpg_dungeon_set_assets_DB16_palette_389
+    21300780: rpg_dungeon_set_assets_DB16_palette_390
+    21300782: rpg_dungeon_set_assets_DB16_palette_391
+    21300784: rpg_dungeon_set_assets_DB16_palette_392
+    21300786: rpg_dungeon_set_assets_DB16_palette_393
+    21300788: rpg_dungeon_set_assets_DB16_palette_394
+    21300790: rpg_dungeon_set_assets_DB16_palette_395
+    21300792: rpg_dungeon_set_assets_DB16_palette_396
+    21300794: rpg_dungeon_set_assets_DB16_palette_397
+    21300796: rpg_dungeon_set_assets_DB16_palette_398
+    21300798: rpg_dungeon_set_assets_DB16_palette_399
+    21300800: rpg_dungeon_set_assets_DB16_palette_400
+    21300802: rpg_dungeon_set_assets_DB16_palette_401
+    21300804: rpg_dungeon_set_assets_DB16_palette_402
+    21300806: rpg_dungeon_set_assets_DB16_palette_403
+    21300808: rpg_dungeon_set_assets_DB16_palette_404
+    21300810: rpg_dungeon_set_assets_DB16_palette_405
+    21300812: rpg_dungeon_set_assets_DB16_palette_406
+    21300814: rpg_dungeon_set_assets_DB16_palette_407
+    21300816: rpg_dungeon_set_assets_DB16_palette_408
+    21300818: rpg_dungeon_set_assets_DB16_palette_409
+    21300820: rpg_dungeon_set_assets_DB16_palette_410
+    21300822: rpg_dungeon_set_assets_DB16_palette_411
+    21300824: rpg_dungeon_set_assets_DB16_palette_412
+    21300826: rpg_dungeon_set_assets_DB16_palette_413
+    21300828: rpg_dungeon_set_assets_DB16_palette_414
+    21300830: rpg_dungeon_set_assets_DB16_palette_415
+    21300832: rpg_dungeon_set_assets_DB16_palette_416
+    21300834: rpg_dungeon_set_assets_DB16_palette_417
+    21300836: rpg_dungeon_set_assets_DB16_palette_418
+    21300838: rpg_dungeon_set_assets_DB16_palette_419
+    21300840: rpg_dungeon_set_assets_DB16_palette_420
+    21300842: rpg_dungeon_set_assets_DB16_palette_421
+    21300844: rpg_dungeon_set_assets_DB16_palette_422
+    21300846: rpg_dungeon_set_assets_DB16_palette_423
+    21300848: rpg_dungeon_set_assets_DB16_palette_424
+    21300850: rpg_dungeon_set_assets_DB16_palette_425
+    21300852: rpg_dungeon_set_assets_DB16_palette_426
+    21300854: rpg_dungeon_set_assets_DB16_palette_427
+    21300856: rpg_dungeon_set_assets_DB16_palette_428
+    21300858: rpg_dungeon_set_assets_DB16_palette_429
+    21300860: rpg_dungeon_set_assets_DB16_palette_430
+    21300862: rpg_dungeon_set_assets_DB16_palette_431
+    21300864: rpg_dungeon_set_assets_DB16_palette_432
+    21300866: rpg_dungeon_set_assets_DB16_palette_433
+    21300868: rpg_dungeon_set_assets_DB16_palette_434
+    21300870: rpg_dungeon_set_assets_DB16_palette_435
+    21300872: rpg_dungeon_set_assets_DB16_palette_436
+    21300874: rpg_dungeon_set_assets_DB16_palette_437
+    21300876: rpg_dungeon_set_assets_DB16_palette_438
+    21300878: rpg_dungeon_set_assets_DB16_palette_439
+    21300880: rpg_dungeon_set_assets_DB16_palette_440
+    21300882: rpg_dungeon_set_assets_DB16_palette_441
+    21300884: rpg_dungeon_set_assets_DB16_palette_442
+    21300886: rpg_dungeon_set_assets_DB16_palette_443
+    21300888: rpg_dungeon_set_assets_DB16_palette_444
+    21300890: rpg_dungeon_set_assets_DB16_palette_445
+    21300892: rpg_dungeon_set_assets_DB16_palette_446
+    21300894: rpg_dungeon_set_assets_DB16_palette_447
+    21300896: rpg_dungeon_set_assets_DB16_palette_448
+    21300898: rpg_dungeon_set_assets_DB16_palette_449
+    21300900: rpg_dungeon_set_assets_DB16_palette_450
+    21300902: rpg_dungeon_set_assets_DB16_palette_451
+    21300904: rpg_dungeon_set_assets_DB16_palette_452
+    21300906: rpg_dungeon_set_assets_DB16_palette_453
+    21300908: rpg_dungeon_set_assets_DB16_palette_454
+    21300910: rpg_dungeon_set_assets_DB16_palette_455
+    21300912: rpg_dungeon_set_assets_DB16_palette_456
+    21300914: rpg_dungeon_set_assets_DB16_palette_457
+    21300916: rpg_dungeon_set_assets_DB16_palette_458
+    21300918: rpg_dungeon_set_assets_DB16_palette_459
+    21300920: rpg_dungeon_set_assets_DB16_palette_460
+    21300922: rpg_dungeon_set_assets_DB16_palette_461
+    21300924: rpg_dungeon_set_assets_DB16_palette_462
+    21300926: rpg_dungeon_set_assets_DB16_palette_463
+    21300928: rpg_dungeon_set_assets_DB16_palette_464
+    21300930: rpg_dungeon_set_assets_DB16_palette_465
+    21300932: rpg_dungeon_set_assets_DB16_palette_466
+    21300934: rpg_dungeon_set_assets_DB16_palette_467
+    21300936: rpg_dungeon_set_assets_DB16_palette_468
+    21300938: rpg_dungeon_set_assets_DB16_palette_469
+    21300940: rpg_dungeon_set_assets_DB16_palette_470
+    21300942: rpg_dungeon_set_assets_DB16_palette_471
+    21300944: rpg_dungeon_set_assets_DB16_palette_472
+    21300946: rpg_dungeon_set_assets_DB16_palette_473
+    21300948: rpg_dungeon_set_assets_DB16_palette_474
+    21300950: rpg_dungeon_set_assets_DB16_palette_475
+    21300952: rpg_dungeon_set_assets_DB16_palette_476
+    21300954: rpg_dungeon_set_assets_DB16_palette_477
+    21300956: rpg_dungeon_set_assets_DB16_palette_478
+    21300958: rpg_dungeon_set_assets_DB16_palette_479
+    21300960: rpg_dungeon_set_assets_DB16_palette_480
+    21300962: rpg_dungeon_set_assets_DB16_palette_481
+    21300964: rpg_dungeon_set_assets_DB16_palette_482
+    21300966: rpg_dungeon_set_assets_DB16_palette_483
+    21300968: rpg_dungeon_set_assets_DB16_palette_484
+    21300970: rpg_dungeon_set_assets_DB16_palette_485
+    21300972: rpg_dungeon_set_assets_DB16_palette_486
+    21300974: rpg_dungeon_set_assets_DB16_palette_487
+    21300976: rpg_dungeon_set_assets_DB16_palette_488
+    21300978: rpg_dungeon_set_assets_DB16_palette_489
+    21300980: rpg_dungeon_set_assets_DB16_palette_490
+    21300982: rpg_dungeon_set_assets_DB16_palette_491
+    21300984: rpg_dungeon_set_assets_DB16_palette_492
+    21300986: rpg_dungeon_set_assets_DB16_palette_493
+    21300988: rpg_dungeon_set_assets_DB16_palette_494
+    21300990: rpg_dungeon_set_assets_DB16_palette_495
+    21300992: rpg_dungeon_set_assets_DB16_palette_496
+    21300994: rpg_dungeon_set_assets_DB16_palette_497
+    21300996: rpg_dungeon_set_assets_DB16_palette_498
+    21300998: rpg_dungeon_set_assets_DB16_palette_499
+    21301000: rpg_dungeon_set_assets_DB16_palette_500
+    21301002: rpg_dungeon_set_assets_DB16_palette_501
+    21301004: rpg_dungeon_set_assets_DB16_palette_502
+    21301006: rpg_dungeon_set_assets_DB16_palette_503
+    21301008: rpg_dungeon_set_assets_DB16_palette_504
+    21301010: rpg_dungeon_set_assets_DB16_palette_505
+    21301012: rpg_dungeon_set_assets_DB16_palette_506
+    21301014: rpg_dungeon_set_assets_DB16_palette_507
+    21301016: rpg_dungeon_set_assets_DB16_palette_508
+    21301018: rpg_dungeon_set_assets_DB16_palette_509
+    21301020: rpg_dungeon_set_assets_DB16_palette_510
+    21301022: rpg_dungeon_set_assets_DB16_palette_511
+    21301024: rpg_dungeon_set_assets_DB16_palette_512
+    21301026: rpg_dungeon_set_assets_DB16_palette_513
+    21301028: rpg_dungeon_set_assets_DB16_palette_514
+    21301030: rpg_dungeon_set_assets_DB16_palette_515
+    21301032: rpg_dungeon_set_assets_DB16_palette_516
+    21301034: rpg_dungeon_set_assets_DB16_palette_517
+    21301036: rpg_dungeon_set_assets_DB16_palette_518
+    21301038: rpg_dungeon_set_assets_DB16_palette_519
+    21301040: rpg_dungeon_set_assets_DB16_palette_520
+    21301042: rpg_dungeon_set_assets_DB16_palette_521
+    21301044: rpg_dungeon_set_assets_DB16_palette_522
+    21301046: rpg_dungeon_set_assets_DB16_palette_523
+    21301048: rpg_dungeon_set_assets_DB16_palette_524
+    21301050: rpg_dungeon_set_assets_DB16_palette_525
+    21301052: rpg_dungeon_set_assets_DB16_palette_526
+    21301054: rpg_dungeon_set_assets_DB16_palette_527
+    21301056: rpg_dungeon_set_assets_DB16_palette_528
+    21301058: rpg_dungeon_set_assets_DB16_palette_529
+    21301060: rpg_dungeon_set_assets_DB16_palette_530
+    21301062: rpg_dungeon_set_assets_DB16_palette_531
+    21301064: rpg_dungeon_set_assets_DB16_palette_532
+    21301066: rpg_dungeon_set_assets_DB16_palette_533
+    21301068: rpg_dungeon_set_assets_DB16_palette_534
+    21301070: rpg_dungeon_set_assets_DB16_palette_535
+    21301072: rpg_dungeon_set_assets_DB16_palette_536
+    21301074: rpg_dungeon_set_assets_DB16_palette_537
+    21301076: rpg_dungeon_set_assets_DB16_palette_538
+    21301078: rpg_dungeon_set_assets_DB16_palette_539
+    21301080: rpg_dungeon_set_assets_DB16_palette_540
+    21301082: rpg_dungeon_set_assets_DB16_palette_541
+    21301084: rpg_dungeon_set_assets_DB16_palette_542
+    21301086: rpg_dungeon_set_assets_DB16_palette_543
+    21301088: rpg_dungeon_set_assets_DB16_palette_544
+    21301090: rpg_dungeon_set_assets_DB16_palette_545
+    21301092: rpg_dungeon_set_assets_DB16_palette_546
+    21301094: rpg_dungeon_set_assets_DB16_palette_547
+    21301096: rpg_dungeon_set_assets_DB16_palette_548
+    21301098: rpg_dungeon_set_assets_DB16_palette_549
+    21301100: rpg_dungeon_set_assets_DB16_palette_550
+    21301102: rpg_dungeon_set_assets_DB16_palette_551
+    21301104: rpg_dungeon_set_assets_DB16_palette_552
+    21301106: rpg_dungeon_set_assets_DB16_palette_553
+    21301108: rpg_dungeon_set_assets_DB16_palette_554
+    21301110: rpg_dungeon_set_assets_DB16_palette_555
+    21301112: rpg_dungeon_set_assets_DB16_palette_556
+    21301114: rpg_dungeon_set_assets_DB16_palette_557
+    21301116: rpg_dungeon_set_assets_DB16_palette_558
+    21301118: rpg_dungeon_set_assets_DB16_palette_559
+    21301120: rpg_dungeon_set_assets_DB16_palette_560
+    21301122: rpg_dungeon_set_assets_DB16_palette_561
+    21301124: rpg_dungeon_set_assets_DB16_palette_562
+    21301126: rpg_dungeon_set_assets_DB16_palette_563
+    21301128: rpg_dungeon_set_assets_DB16_palette_564
+    21301130: rpg_dungeon_set_assets_DB16_palette_565
+    21301132: rpg_dungeon_set_assets_DB16_palette_566
+    21301134: rpg_dungeon_set_assets_DB16_palette_567
+    21301136: rpg_dungeon_set_assets_DB16_palette_568
+    21301138: rpg_dungeon_set_assets_DB16_palette_569
+    21301140: rpg_dungeon_set_assets_DB16_palette_570
+    21301142: rpg_dungeon_set_assets_DB16_palette_571
+    21301144: rpg_dungeon_set_assets_DB16_palette_572
+    21301146: rpg_dungeon_set_assets_DB16_palette_573
+    21301148: rpg_dungeon_set_assets_DB16_palette_574
+    21301150: rpg_dungeon_set_assets_DB16_palette_575
+    21301152: rpg_dungeon_set_assets_DB16_palette_576
+    21301154: rpg_dungeon_set_assets_DB16_palette_577
+    21301156: rpg_dungeon_set_assets_DB16_palette_578
+    21301158: rpg_dungeon_set_assets_DB16_palette_579
+    21301160: rpg_dungeon_set_assets_DB16_palette_580
+    21301162: rpg_dungeon_set_assets_DB16_palette_581
+    21301164: rpg_dungeon_set_assets_DB16_palette_582
+    21301166: rpg_dungeon_set_assets_DB16_palette_583
+    21301168: rpg_dungeon_set_assets_DB16_palette_584
+    21301170: rpg_dungeon_set_assets_DB16_palette_585
+    21301172: rpg_dungeon_set_assets_DB16_palette_586
+    21301174: rpg_dungeon_set_assets_DB16_palette_587
+    21301176: rpg_dungeon_set_assets_DB16_palette_588
+    21301178: rpg_dungeon_set_assets_DB16_palette_589
+    21301180: rpg_dungeon_set_assets_DB16_palette_590
+    21301182: rpg_dungeon_set_assets_DB16_palette_591
+    21301184: rpg_dungeon_set_assets_DB16_palette_592
+    21301186: rpg_dungeon_set_assets_DB16_palette_593
+    21301188: rpg_dungeon_set_assets_DB16_palette_594
+    21301190: rpg_dungeon_set_assets_DB16_palette_595
+    21301192: rpg_dungeon_set_assets_DB16_palette_596
+    21301194: rpg_dungeon_set_assets_DB16_palette_597
+    21301196: rpg_dungeon_set_assets_DB16_palette_598
+    21301198: rpg_dungeon_set_assets_DB16_palette_599
+    21301200: rpg_dungeon_set_assets_DB16_palette_600
+    21301202: rpg_dungeon_set_assets_DB16_palette_601
+    21301204: rpg_dungeon_set_assets_DB16_palette_602
+    21301206: rpg_dungeon_set_assets_DB16_palette_603
+    21301208: rpg_dungeon_set_assets_DB16_palette_604
+    21301210: rpg_dungeon_set_assets_DB16_palette_605
+    21301212: rpg_dungeon_set_assets_DB16_palette_606
+    21301214: rpg_dungeon_set_assets_DB16_palette_607
+    21301216: rpg_dungeon_set_assets_DB16_palette_608
+    21301218: rpg_dungeon_set_assets_DB16_palette_609
+    21301220: rpg_dungeon_set_assets_DB16_palette_610
+    21301222: rpg_dungeon_set_assets_DB16_palette_611
+    21301224: rpg_dungeon_set_assets_DB16_palette_612
+    21301226: rpg_dungeon_set_assets_DB16_palette_613
+    21301228: rpg_dungeon_set_assets_DB16_palette_614
+    21301230: rpg_dungeon_set_assets_DB16_palette_615
+    21301232: rpg_dungeon_set_assets_DB16_palette_616
+    21301234: rpg_dungeon_set_assets_DB16_palette_617
+    21301236: rpg_dungeon_set_assets_DB16_palette_618
+    21301238: rpg_dungeon_set_assets_DB16_palette_619
+    21301240: rpg_dungeon_set_assets_DB16_palette_620
+    21301242: rpg_dungeon_set_assets_DB16_palette_621
+    21301244: rpg_dungeon_set_assets_DB16_palette_622
+    21301246: rpg_dungeon_set_assets_DB16_palette_623
+    21301248: rpg_dungeon_set_assets_DB16_palette_624
+    21301250: rpg_dungeon_set_assets_DB16_palette_625
+    21301252: rpg_dungeon_set_assets_DB16_palette_626
+    21301254: rpg_dungeon_set_assets_DB16_palette_627
+    21301256: rpg_dungeon_set_assets_DB16_palette_628
+    21301258: rpg_dungeon_set_assets_DB16_palette_629
+    21301260: rpg_dungeon_set_assets_DB16_palette_630
+    21301262: rpg_dungeon_set_assets_DB16_palette_631
+    21301264: rpg_dungeon_set_assets_DB16_palette_632
+    21301266: rpg_dungeon_set_assets_DB16_palette_633
+    21301268: rpg_dungeon_set_assets_DB16_palette_634
+    21301270: rpg_dungeon_set_assets_DB16_palette_635
+    21301272: rpg_dungeon_set_assets_DB16_palette_636
+    21301274: rpg_dungeon_set_assets_DB16_palette_637
+    21301276: rpg_dungeon_set_assets_DB16_palette_638
+    21301278: rpg_dungeon_set_assets_DB16_palette_639
+    21301280: rpg_dungeon_set_assets_DB16_palette_640
+    21301282: rpg_dungeon_set_assets_DB16_palette_641
+    21301284: rpg_dungeon_set_assets_DB16_palette_642
+    21301286: rpg_dungeon_set_assets_DB16_palette_643
+    21301288: rpg_dungeon_set_assets_DB16_palette_644
+    21301290: rpg_dungeon_set_assets_DB16_palette_645
+    21301292: rpg_dungeon_set_assets_DB16_palette_646
+    21301294: rpg_dungeon_set_assets_DB16_palette_647
+    21301296: rpg_dungeon_set_assets_DB16_palette_648
+    21301298: rpg_dungeon_set_assets_DB16_palette_649
+    21301300: rpg_dungeon_set_assets_DB16_palette_650
+    21301302: rpg_dungeon_set_assets_DB16_palette_651
+    21301304: rpg_dungeon_set_assets_DB16_palette_652
+    21301306: rpg_dungeon_set_assets_DB16_palette_653
+    21301308: rpg_dungeon_set_assets_DB16_palette_654
+    21301310: rpg_dungeon_set_assets_DB16_palette_655
+    21301312: rpg_dungeon_set_assets_DB16_palette_656
+    21301314: rpg_dungeon_set_assets_DB16_palette_657
+    21301316: rpg_dungeon_set_assets_DB16_palette_658
+    21301318: rpg_dungeon_set_assets_DB16_palette_659
+    21301320: rpg_dungeon_set_assets_DB16_palette_660
+    21301322: rpg_dungeon_set_assets_DB16_palette_661
+    21301324: rpg_dungeon_set_assets_DB16_palette_662
+    21301326: rpg_dungeon_set_assets_DB16_palette_663
+    21301328: rpg_dungeon_set_assets_DB16_palette_664
+    21301330: rpg_dungeon_set_assets_DB16_palette_665
+    21301332: rpg_dungeon_set_assets_DB16_palette_666
+    21301334: rpg_dungeon_set_assets_DB16_palette_667
+    21301336: rpg_dungeon_set_assets_DB16_palette_668
+    21301338: rpg_dungeon_set_assets_DB16_palette_669
+    21301340: rpg_dungeon_set_assets_DB16_palette_670
+    21301342: rpg_dungeon_set_assets_DB16_palette_671
+    21301344: rpg_dungeon_set_assets_DB16_palette_672
+    21301346: rpg_dungeon_set_assets_DB16_palette_673
+    21301348: rpg_dungeon_set_assets_DB16_palette_674
+    21301350: rpg_dungeon_set_assets_DB16_palette_675
+    21301352: rpg_dungeon_set_assets_DB16_palette_676
+    21301354: rpg_dungeon_set_assets_DB16_palette_677
+    21301356: rpg_dungeon_set_assets_DB16_palette_678
+    21301358: rpg_dungeon_set_assets_DB16_palette_679
+    21301360: rpg_dungeon_set_assets_DB16_palette_680
+    21301362: rpg_dungeon_set_assets_DB16_palette_681
+    21301364: rpg_dungeon_set_assets_DB16_palette_682
+    21301366: rpg_dungeon_set_assets_DB16_palette_683
+    21301368: rpg_dungeon_set_assets_DB16_palette_684
+    21301370: rpg_dungeon_set_assets_DB16_palette_685
+    21301372: rpg_dungeon_set_assets_DB16_palette_686
+    21301374: rpg_dungeon_set_assets_DB16_palette_687
+    21301376: rpg_dungeon_set_assets_DB16_palette_688
+    21301378: rpg_dungeon_set_assets_DB16_palette_689
+    21301380: rpg_dungeon_set_assets_DB16_palette_690
+    21301382: rpg_dungeon_set_assets_DB16_palette_691
+    21301384: rpg_dungeon_set_assets_DB16_palette_692
+    21301386: rpg_dungeon_set_assets_DB16_palette_693
+    21301388: rpg_dungeon_set_assets_DB16_palette_694
+    21301390: rpg_dungeon_set_assets_DB16_palette_695
+    21301392: rpg_dungeon_set_assets_DB16_palette_696
+    21301394: rpg_dungeon_set_assets_DB16_palette_697
+    21301396: rpg_dungeon_set_assets_DB16_palette_698
+    21301398: rpg_dungeon_set_assets_DB16_palette_699
+    21301400: rpg_dungeon_set_assets_DB16_palette_700
+    21301402: rpg_dungeon_set_assets_DB16_palette_701
+    21301404: rpg_dungeon_set_assets_DB16_palette_702
+    21301406: rpg_dungeon_set_assets_DB16_palette_703
+    21301408: rpg_dungeon_set_assets_DB16_palette_704
+    21301410: rpg_dungeon_set_assets_DB16_palette_705
+    21301412: rpg_dungeon_set_assets_DB16_palette_706
+    21301414: rpg_dungeon_set_assets_DB16_palette_707
+    21301416: rpg_dungeon_set_assets_DB16_palette_708
+    21301418: rpg_dungeon_set_assets_DB16_palette_709
+    21301420: rpg_dungeon_set_assets_DB16_palette_710
+    21301422: rpg_dungeon_set_assets_DB16_palette_711
+    21301424: rpg_dungeon_set_assets_DB16_palette_712
+    21301426: rpg_dungeon_set_assets_DB16_palette_713
+    21301428: rpg_dungeon_set_assets_DB16_palette_714
+    21301430: rpg_dungeon_set_assets_DB16_palette_715
+    21301432: rpg_dungeon_set_assets_DB16_palette_716
+    21301434: rpg_dungeon_set_assets_DB16_palette_717
+    21301436: rpg_dungeon_set_assets_DB16_palette_718
+    21301438: rpg_dungeon_set_assets_DB16_palette_719
+    21301440: rpg_dungeon_set_assets_DB16_palette_720
+    21301442: rpg_dungeon_set_assets_DB16_palette_721
+    21301444: rpg_dungeon_set_assets_DB16_palette_722
+    21301446: rpg_dungeon_set_assets_DB16_palette_723
+    21301448: rpg_dungeon_set_assets_DB16_palette_724
+    21301450: rpg_dungeon_set_assets_DB16_palette_725
+    21301452: rpg_dungeon_set_assets_DB16_palette_726
+    21301454: rpg_dungeon_set_assets_DB16_palette_727
+    21301456: rpg_dungeon_set_assets_DB16_palette_728
+    21301458: rpg_dungeon_set_assets_DB16_palette_729
+    21301460: rpg_dungeon_set_assets_DB16_palette_730
+    21301462: rpg_dungeon_set_assets_DB16_palette_731
+    21301464: rpg_dungeon_set_assets_DB16_palette_732
+    21301466: rpg_dungeon_set_assets_DB16_palette_733
+    21301468: rpg_dungeon_set_assets_DB16_palette_734
+    21301470: rpg_dungeon_set_assets_DB16_palette_735
+    21301472: rpg_dungeon_set_assets_DB16_palette_736
+    21301474: rpg_dungeon_set_assets_DB16_palette_737
+    21301476: rpg_dungeon_set_assets_DB16_palette_738
+    21301478: rpg_dungeon_set_assets_DB16_palette_739
+    21301480: rpg_dungeon_set_assets_DB16_palette_740
+    21301482: rpg_dungeon_set_assets_DB16_palette_741
+    21301484: rpg_dungeon_set_assets_DB16_palette_742
+    21301486: rpg_dungeon_set_assets_DB16_palette_743
+    21301488: rpg_dungeon_set_assets_DB16_palette_744
+    21301490: rpg_dungeon_set_assets_DB16_palette_745
+    21301492: rpg_dungeon_set_assets_DB16_palette_746
+    21301494: rpg_dungeon_set_assets_DB16_palette_747
+    21301496: rpg_dungeon_set_assets_DB16_palette_748
+    21301498: rpg_dungeon_set_assets_DB16_palette_749
+    21301500: rpg_dungeon_set_assets_DB16_palette_750
+    21301502: rpg_dungeon_set_assets_DB16_palette_751
+    21301504: rpg_dungeon_set_assets_DB16_palette_752
+    21301506: rpg_dungeon_set_assets_DB16_palette_753
+    21301508: rpg_dungeon_set_assets_DB16_palette_754
+    21301510: rpg_dungeon_set_assets_DB16_palette_755
+    21301512: rpg_dungeon_set_assets_DB16_palette_756
+    21301514: rpg_dungeon_set_assets_DB16_palette_757
+    21301516: rpg_dungeon_set_assets_DB16_palette_758
+    21301518: rpg_dungeon_set_assets_DB16_palette_759
+    21301520: rpg_dungeon_set_assets_DB16_palette_760
+    21301522: rpg_dungeon_set_assets_DB16_palette_761
+    21301524: rpg_dungeon_set_assets_DB16_palette_762
+    21301526: rpg_dungeon_set_assets_DB16_palette_763
+    21301528: rpg_dungeon_set_assets_DB16_palette_764
+    21301530: rpg_dungeon_set_assets_DB16_palette_765
+    21301532: rpg_dungeon_set_assets_DB16_palette_766
+    21301534: rpg_dungeon_set_assets_DB16_palette_767
+    21301536: rpg_dungeon_set_assets_DB16_palette_768
+    21301538: rpg_dungeon_set_assets_DB16_palette_769
+    21301540: rpg_dungeon_set_assets_DB16_palette_770
+    21301542: rpg_dungeon_set_assets_DB16_palette_771
+    21301544: rpg_dungeon_set_assets_DB16_palette_772
+    21301546: rpg_dungeon_set_assets_DB16_palette_773
+    21301548: rpg_dungeon_set_assets_DB16_palette_774
+    21301550: rpg_dungeon_set_assets_DB16_palette_775
+    21301552: rpg_dungeon_set_assets_DB16_palette_776
+    21301554: rpg_dungeon_set_assets_DB16_palette_777
+    21301556: rpg_dungeon_set_assets_DB16_palette_778
+    21301558: rpg_dungeon_set_assets_DB16_palette_779
+    21301560: rpg_dungeon_set_assets_DB16_palette_780
+    21301562: rpg_dungeon_set_assets_DB16_palette_781
+    21301564: rpg_dungeon_set_assets_DB16_palette_782
+    21301566: rpg_dungeon_set_assets_DB16_palette_783
+    21301568: rpg_dungeon_set_assets_DB16_palette_784
+    21301570: rpg_dungeon_set_assets_DB16_palette_785
+    21301572: rpg_dungeon_set_assets_DB16_palette_786
+    21301574: rpg_dungeon_set_assets_DB16_palette_787
+    21301576: rpg_dungeon_set_assets_DB16_palette_788
+    21301578: rpg_dungeon_set_assets_DB16_palette_789
+    21301580: rpg_dungeon_set_assets_DB16_palette_790
+    21301582: rpg_dungeon_set_assets_DB16_palette_791
+    21301584: rpg_dungeon_set_assets_DB16_palette_792
+    21301586: rpg_dungeon_set_assets_DB16_palette_793
+    21301588: rpg_dungeon_set_assets_DB16_palette_794
+    21301590: rpg_dungeon_set_assets_DB16_palette_795
+    21301592: rpg_dungeon_set_assets_DB16_palette_796
+    21301594: rpg_dungeon_set_assets_DB16_palette_797
+    21301596: rpg_dungeon_set_assets_DB16_palette_798
+    21301598: rpg_dungeon_set_assets_DB16_palette_799
+    21301600: rpg_dungeon_set_assets_DB16_palette_800
+    21301602: rpg_dungeon_set_assets_DB16_palette_801
+    21301604: rpg_dungeon_set_assets_DB16_palette_802
+    21301606: rpg_dungeon_set_assets_DB16_palette_803
+    21301608: rpg_dungeon_set_assets_DB16_palette_804
+    21301610: rpg_dungeon_set_assets_DB16_palette_805
+    21301612: rpg_dungeon_set_assets_DB16_palette_806
+    21301614: rpg_dungeon_set_assets_DB16_palette_807
+    21301616: rpg_dungeon_set_assets_DB16_palette_808
+    21301618: rpg_dungeon_set_assets_DB16_palette_809
+    21301620: rpg_dungeon_set_assets_DB16_palette_810
+    21301622: rpg_dungeon_set_assets_DB16_palette_811
+    21301624: rpg_dungeon_set_assets_DB16_palette_812
+    21301626: rpg_dungeon_set_assets_DB16_palette_813
+    21301628: rpg_dungeon_set_assets_DB16_palette_814
+    21301630: rpg_dungeon_set_assets_DB16_palette_815
+    21301632: rpg_dungeon_set_assets_DB16_palette_816
+    21301634: rpg_dungeon_set_assets_DB16_palette_817
+    21301636: rpg_dungeon_set_assets_DB16_palette_818
+    21301638: rpg_dungeon_set_assets_DB16_palette_819
+    21301640: rpg_dungeon_set_assets_DB16_palette_820
+    21301642: rpg_dungeon_set_assets_DB16_palette_821
+    21301644: rpg_dungeon_set_assets_DB16_palette_822
+    21301646: rpg_dungeon_set_assets_DB16_palette_823
+    21301648: rpg_dungeon_set_assets_DB16_palette_824
+    21301650: rpg_dungeon_set_assets_DB16_palette_825
+    21301652: rpg_dungeon_set_assets_DB16_palette_826
+    21301654: rpg_dungeon_set_assets_DB16_palette_827
+    21301656: rpg_dungeon_set_assets_DB16_palette_828
+    21301658: rpg_dungeon_set_assets_DB16_palette_829
+    21301660: rpg_dungeon_set_assets_DB16_palette_830
+    21301662: rpg_dungeon_set_assets_DB16_palette_831
+    21301664: rpg_dungeon_set_assets_DB16_palette_832
+    21301666: rpg_dungeon_set_assets_DB16_palette_833
+    21301668: rpg_dungeon_set_assets_DB16_palette_834
+    21301670: rpg_dungeon_set_assets_DB16_palette_835
+    21301672: rpg_dungeon_set_assets_DB16_palette_836
+    21301674: rpg_dungeon_set_assets_DB16_palette_837
+    21301676: rpg_dungeon_set_assets_DB16_palette_838
+    21301678: rpg_dungeon_set_assets_DB16_palette_839
+    21301680: rpg_dungeon_set_assets_DB16_palette_840
+    21301682: rpg_dungeon_set_assets_DB16_palette_841
+    21301684: rpg_dungeon_set_assets_DB16_palette_842
+    21301686: rpg_dungeon_set_assets_DB16_palette_843
+    21301688: rpg_dungeon_set_assets_DB16_palette_844
+    21301690: rpg_dungeon_set_assets_DB16_palette_845
+    21301692: rpg_dungeon_set_assets_DB16_palette_846
+    21301694: rpg_dungeon_set_assets_DB16_palette_847
+    21301696: rpg_dungeon_set_assets_DB16_palette_848
+    21301698: rpg_dungeon_set_assets_DB16_palette_849
+    21301700: rpg_dungeon_set_assets_DB16_palette_850
+    21301702: rpg_dungeon_set_assets_DB16_palette_851
+    21301704: rpg_dungeon_set_assets_DB16_palette_852
+    21301706: rpg_dungeon_set_assets_DB16_palette_853
+    21301708: rpg_dungeon_set_assets_DB16_palette_854
+    21301710: rpg_dungeon_set_assets_DB16_palette_855
+    21301712: rpg_dungeon_set_assets_DB16_palette_856
+    21301714: rpg_dungeon_set_assets_DB16_palette_857
+    21301716: rpg_dungeon_set_assets_DB16_palette_858
+    21301718: rpg_dungeon_set_assets_DB16_palette_859
+    21301720: rpg_dungeon_set_assets_DB16_palette_860
+    21301722: rpg_dungeon_set_assets_DB16_palette_861
+    21301724: rpg_dungeon_set_assets_DB16_palette_862
+    21301726: rpg_dungeon_set_assets_DB16_palette_863
+    21301728: rpg_dungeon_set_assets_DB16_palette_864
+    21301730: rpg_dungeon_set_assets_DB16_palette_865
+    21301732: rpg_dungeon_set_assets_DB16_palette_866
+    21301734: rpg_dungeon_set_assets_DB16_palette_867
+    21301736: rpg_dungeon_set_assets_DB16_palette_868
+    21301738: rpg_dungeon_set_assets_DB16_palette_869
+    21301740: rpg_dungeon_set_assets_DB16_palette_870
+    21301742: rpg_dungeon_set_assets_DB16_palette_871
+    21301744: rpg_dungeon_set_assets_DB16_palette_872
+    21301746: rpg_dungeon_set_assets_DB16_palette_873
+    21301748: rpg_dungeon_set_assets_DB16_palette_874
+    21301750: rpg_dungeon_set_assets_DB16_palette_875
+    21301752: rpg_dungeon_set_assets_DB16_palette_876
+    21301754: rpg_dungeon_set_assets_DB16_palette_877
+    21301756: rpg_dungeon_set_assets_DB16_palette_878
+    21301758: rpg_dungeon_set_assets_DB16_palette_879
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 0
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_13
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 620
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7697b9eb90c337748b004bc6d92a8ca8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_14
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 621
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc5d4201045eff34db524455a3cc13d4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_15
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 621
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d38527ebc3b9a4e4581b386855cd6a68
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_16
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 621
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44129bca9c7c7d44b1cb218041e030a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_17
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 624
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c9764e6cbf75c42a69f6374d59daee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_18
+      rect:
+        serializedVersion: 2
+        x: 748
+        y: 528
+        width: 129
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbcf321a19323a458b07c653adc460f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_26
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 581
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48aa88343bc65e24faa14b6c5cdae79e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_27
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 582
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f6385627f537a4f9abaf7f23b84877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_28
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 582
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11165321cbb947749a5fc216ca84fcb4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_29
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 582
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0d858784288574493015cc63303cf2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_30
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 583
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8fdc3cced630dd4499468eb6d652d7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_31
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 583
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8c68779c6a8fe4687121e35a6151de
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_32
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 583
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f45aeb3b27310b4ab435758d4e32fef
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_33
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 582
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33bb59f02d6f6364a8f495a4fac9dca0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_34
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 583
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29a03cb522b525940a78ee767a90ad8a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_35
+      rect:
+        serializedVersion: 2
+        x: 691
+        y: 584
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5740e994e10e79408db1efbdc56ddf9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_46
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 558
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0652c45b134e944e9fff2b6b586d383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_47
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 558
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bccf6f2fe95a1a42bee20670090fbb9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_56
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 551
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4480a560fdbe6f64f8885e4703188865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_70
+      rect:
+        serializedVersion: 2
+        x: 531
+        y: 534
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0b21dbdb9577942bd0e6f7b9f692d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_71
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 534
+        width: 32
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15c5cf0564072749a7ea6b97633145e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_72
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 503
+        width: 64
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c673fe00c7bc448b7d50d4de0423f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_73
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 470
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89a8e608dcec8c140829b3990d6f09c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_75
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 459
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4076b5043c72410448a5037176eafd73
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_76
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 459
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8848d7f007bc164b894d7a7635fb6f6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_77
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 459
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fb4813d40ef8b846bd6b0079c82e282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_78
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 460
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4d8dc04f24a934cbcb4be62e9c26c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_79
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 460
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aa97badcb3ef58458bdf3c4f17f89f2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_80
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 460
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd15e65894ba7784e90cb9b16644af78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_81
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 460
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80b8f49d4be43bc48896b85368ec4e7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_82
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 449
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b45ca9434fe624bba0f5c14ae660fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_83
+      rect:
+        serializedVersion: 2
+        x: 465
+        y: 449
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca0d52b9f0bf4245ab58d3a0244a448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_84
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 449
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd60ba569d79fcd4e89e044ed307c001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_85
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 449
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a256c2dd92320744a6a6efffdc6535c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_86
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 449
+        width: 24
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6ffef10286e50b4dade97bd582ae332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_89
+      rect:
+        serializedVersion: 2
+        x: 1145
+        y: 442
+        width: 94
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d0c5e323cec254b991506de4014f1c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_117
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 326
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 527bddcc76d3d94459d8f6451c7ff755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_118
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 329
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c9d912fc0db764db8009e27052f557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_119
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 329
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88de4f8ae014ffc469d28586ab0e4cc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_120
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 300
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135e9d4d981d6a346856ab17d0bad682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_121
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 301
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7060444b336bf349b82b62b7c685019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_123
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 318
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1191c297cdf9e65438c0803f5747286d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_124
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 280
+        width: 28
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45153dd77dc5dbc4dba63b6d72e2cc7f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_125
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 293
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bf72a05f2576d7449d2815c8a0be3c8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_126
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 303
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2abd4f9cf381be54a8382cf2e5de0d88
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_127
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 294
+        width: 26
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 221bda051f1e8e2468120a8697863a13
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_128
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 285
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b74acc4145cfc41b424ad43d3495cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_129
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 285
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6021d98bee4871459ac539bd3510792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_131
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 290
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e176c30c92aa341b65e895bc7539f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_132
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 277
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf7bcfdb32c3904486db18937e15ac8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_133
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 160
+        width: 17
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26d6229b8b387d04eac872e5a60db30c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_134
+      rect:
+        serializedVersion: 2
+        x: 285
+        y: 250
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 829fa9491d461ed4c83b53959186ec5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_135
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 255
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918e94711e1a1f14b8fc5e288801427e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_136
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 239
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95926fc97bdda304783fb1a267be5f33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_137
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 211
+        width: 36
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06a556b09fa7b064baec7598dc56cc0c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_138
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 227
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1902c923fed1f24479b5cb4201d1675d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_139
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 226
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bcb68e616e9d04aa8ab030a48967a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_140
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 226
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6afe205e5b77cff438a3c3a5c7a43779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_141
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 226
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7013b2248760bec43958048047b696bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_152
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 179
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cb430aad2f19b641a87d58d1b879f55
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_153
+      rect:
+        serializedVersion: 2
+        x: 586
+        y: 209
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd6fbad7b010c440b1df2f66124ad60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_154
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 190
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4d993959f95819428223276fc5ea8c0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_155
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 192
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f1f6973152cc78449eb0230791f5e14
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_156
+      rect:
+        serializedVersion: 2
+        x: 478
+        y: 168
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 835b762ace9137649b1f90646c8e0165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: rpg_dungeon_set_assets_DB16_palette_157
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 167
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc0d0cf2f9959d4db79631190702a4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 77ffd9d32db1f564f8e0cbb0fded301e
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
