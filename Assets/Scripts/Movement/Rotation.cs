@@ -2,14 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class Rotation : MonoBehaviour
 {
     //The data asset for this module
     public RotationData data;
-
-    private void OnEnable()
-    {
-    }
 
     public void Rotate(Vector3 _target)
     {

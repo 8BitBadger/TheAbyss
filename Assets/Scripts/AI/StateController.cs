@@ -5,20 +5,16 @@ namespace AiLogic
 {
     public class StateController : MonoBehaviour
     {
+        //Data for the enemies
+        public AIData data;
+        //Hold the current state
         public State currentState;
+        //
         public State remainState;
-
-        //Stats for the enemies, its a scriptable object helping us to create different stats for different enmies,
-        //we can only use the scriptable objecgt here to share health becuase we are not haring of the same enemy types
-        //so we wont have for example two barberians at the same time.
-
-        public AIData data = new AIData();
- 
         //Built in timer for the StateControllerstates to run a certain time
         [HideInInspector] public float stateTimeElapsed;
         //The rigidbody for the enemy AI
         [HideInInspector] public Rigidbody2D rb2d;
-
         //Stores the time of hte last attack. Used for 
         [HideInInspector] public float timeSinceLastAttack;
 
@@ -30,8 +26,8 @@ namespace AiLogic
 
             GetComponent<SpriteRenderer>().color = new Color(0f, 0f, 0f);
 
-            data.targetLayer = LayerMask.NameToLayer("Player");
-            data.obstacleMask = LayerMask.NameToLayer("Obstacles");
+            //data.targetLayer = LayerMask.NameToLayer("Player");
+            //data.obstacleMask = LayerMask.NameToLayer("Obstacles");
         }
 
         void Update()

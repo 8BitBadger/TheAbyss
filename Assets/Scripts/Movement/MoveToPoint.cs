@@ -2,45 +2,44 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Rigidbody2D))]
 public class MoveToPoint : MonoBehaviour
 {
     //The data container for the movement scropt to make in game adjustments easier
-    public MovementData data;
+    private UnitData data;
+    //The rigidbody used for physics and movement
+    private Rigidbody2D rb2d;
+    //The target to move to
+    private Vector3 target;
+    //The distance fro mthe target to stop from
+    private float distance = 0f;
 
     private void OnEnable()
     {
-        data.target = null;
-        //Movement script loks up if we have a rigibody2d already atteched to the gameobject
-        if (GetComponent<Rigidbody2D>())
-        {
-            data.rb2d = GetComponent<Rigidbody2D>();
-        }
-        else //We add the Rigidbody2d to the game object and set the kenematic flag to true
-        {
-            gameObject.AddComponent<Rigidbody2D>();
-        }
+        //Gets the rigibody2D of the object do it can be accessed by the class
+        rb2d = GetComponent<Rigidbody2D>();
         //Set the rigibody2d to kenematic so we have physics emulation
-        data.rb2d.isKinematic = true;
-        //For now I want to freeze the ratation of the gameobject
-        data.rb2d.freezeRotation = true;
+        rb2d.isKinematic = true;
     }
 
     //Move close to a position or object, distance can be set
-    public void Move(Transform _target)
+    public void Move(Vector3 _target, float _distance)
     {
         //The target and distance for the game object
-        data.target = _target;
+        target = _target;
+        //Distance to stop from target
+        distance = _distance;
     }
 
     //Here we could use the fixed update or create a seperat function that will be called 
 
-    public void FixedUpdate()
+    private void FixedUpdate()
     {
-        if (data.target != null)
+        if (target != null)
         {
-            if (Vector2.Distance(transform.position, data.target.position) > data.distance || Vector2.Distance(transform.position, data.target.position) < .4)
+            if (Vector2.Distance(transform.position, target) > distance || Vector2.Distance(transform.position, target) < .4)
             {
-                data.rb2d.velocity = (data.target.position - transform.position).normalized * data.speed * Time.deltaTime;
+                rb2d.velocity = (target - transform.position).normalized * data.speed * Time.deltaTime;
             }
         }
     }

@@ -4,11 +4,8 @@ using UnityEngine;
 
 //Makes sure that the boject we are attaching the script to has a rigidbody2d component to it
 [RequireComponent(typeof(Rigidbody2D))]
-public class Movement : MonoBehaviour
+public class KeyboardMovement : MonoBehaviour
 {
-    //The input interface that gets used for theis class
-    [SerializeField] private UnitInput input;
-    //Get the data for the unit
     [SerializeField] private UnitData data;
 
     private Rigidbody2D rb2d;
@@ -24,7 +21,7 @@ public class Movement : MonoBehaviour
     // Update is called once per frame
     private void FixedUpdate()
     {
-        input.GetInput();
-        rb2d.velocity = input.force * data.speed * Time.deltaTime;
+        //Moves the 
+        rb2d.velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * data.speed * Time.deltaTime;
     }
 }
