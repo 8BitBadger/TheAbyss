@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace AiLogic
-{
-    public class StateController : MonoBehaviour
+    public class StateController : Component
     {
         //Data for the enemies
         public AIData data;
@@ -66,5 +64,5 @@ namespace AiLogic
         {
             //TODO: detirmine the crystel worth according to the monster stats
         }
-    }
+    
 }
