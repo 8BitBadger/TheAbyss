@@ -14,7 +14,7 @@ namespace AiLogic
 
         private void Attack(StateController controller)
         {
-            if ((Time.time - controller.timeSinceLastAttack) > controller.data.attackInterval)
+            if ((Time.time - controller.timeSinceLastAttack) > controller.Data.attackInterval)
             {
                 //controller.data.chaseTarget.gameObject.GetComponent<EventCbSystem.PlayerLogic>().TakeDamage(1);
                 //controller.timeSinceLastAttack = Time.time;

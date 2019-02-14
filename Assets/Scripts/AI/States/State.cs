@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
-namespace AiLogic
-{
+
     [CreateAssetMenu(menuName = "AI/State")]
     public class State : ScriptableObject
     {
@@ -40,4 +39,3 @@ namespace AiLogic
             }
         }
     }
-}
