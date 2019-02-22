@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 
 
-    [CreateAssetMenu(menuName = "AI/State")]
+    [CreateAssetMenu(menuName = "Components/AI/State")]
     public class State : ScriptableObject
     {
-
         public Action[] actions;
         public Transition[] transitions;
 

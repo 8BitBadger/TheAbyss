@@ -17,17 +17,19 @@ public class StateController : Component
     public State remainState;
     //Built in timer for the StateControllerstates to run a certain time
     [HideInInspector] public float stateTimeElapsed;
-    //Stores the time of hte last attack. Used for 
-    [HideInInspector] public float timeSinceLastAttack;
 
+
+    //The target the AI is chasing
+    [HideInInspector] public Transform target;
+    //The position the tartget was last seen at
+    [HideInInspector] Vector2 targetLastPosition; 
 
 
     public override void Init(GameObject _obj)
     {
-        timeSinceLastAttack = Time.time;
-
-        Obj = _obj;
-
+        //Set the components parent object
+        obj = _obj;
+        //Set up the rigidbody for the AI
         rb2d = Obj.GetComponent<Rigidbody2D>();
     }
 

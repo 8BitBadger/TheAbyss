@@ -10,8 +10,6 @@ public class Unit : MonoBehaviour
     //The componenets that the unit has
     public List<Component> components;
 
-
-
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +28,5 @@ public class Unit : MonoBehaviour
         {
             comp.Think();
         }
-
     }
 }
