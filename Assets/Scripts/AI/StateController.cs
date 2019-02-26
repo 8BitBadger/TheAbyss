@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(menuName = "Components/AI/StateController")]
 public class StateController : Component
 {
     //Data for the enemies
@@ -10,6 +11,7 @@ public class StateController : Component
     private GameObject obj;
     public GameObject Obj { get => obj; }
     //The Rigidbody2d for the game object
+    [HideInInspector]
     public Rigidbody2D rb2d;
     //Hold the current state
     public State currentState;
@@ -18,13 +20,29 @@ public class StateController : Component
     //Built in timer for the StateControllerstates to run a certain time
     [HideInInspector] public float stateTimeElapsed;
 
-
     //The target the AI is chasing
     [HideInInspector] public Transform target;
     //The position the tartget was last seen at
-    [HideInInspector] Vector2 targetLastPosition; 
+    [HideInInspector] public Vector2 targetLastPosition; 
 
+    //The view angle for the AI unit, setting the range limiter to 360 max and 0 min
+    [Range(0, 360)]
+    public int viewAngle;
+    //The raduis for the unit
+    [Range(0, 360)]
+    public int viewRadius;
+    //The layer the target is on
+    public LayerMask targetMask;
+    //The layer for the obstacls like walls and other items
+    public LayerMask obstacleMask;
 
+    //How far will the monster wander
+    public float wanderDistance;
+    //The waypoint where the unit will wander to
+    [HideInInspector]
+    public Vector2 wanderPoint;
+
+       
     public override void Init(GameObject _obj)
     {
         //Set the components parent object

@@ -9,11 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d70e3d9c1726bfb44b74d828f6e3ebfb, type: 3}
-  m_Name: TestRotation
+  m_Script: {fileID: 11500000, guid: 6a6daceaadd1af1489afd5d2b4543785, type: 3}
+  m_Name: Keyboard Movement Component
   m_EditorClassIdentifier: 
-  baseSpeed: 50
-  speed: 50
-  dir: {x: -7.828126, y: 11.234375}
-  target: {x: -7.6093755, y: 11.515625, z: -10}
-  rotate: 1

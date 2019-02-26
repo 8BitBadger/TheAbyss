@@ -2,7 +2,7 @@
 
 namespace AiLogic
 {
-    [CreateAssetMenu(menuName = "PluggableAI/Decisions/Reached Point")]
+    [CreateAssetMenu(menuName = "Components/AI/Decisions/Reached Point")]
     public class ReachedPointDecision : Decision
     {
         bool firstLoop = true;

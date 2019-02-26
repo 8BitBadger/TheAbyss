@@ -1663,7 +1663,7 @@ GameObject:
   - component: {fileID: 2013270836}
   - component: {fileID: 2013270840}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1780,6 +1780,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63ebea32d0fbede4b9d13d0446ee12e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 1e8c0490b4f40ee49803f81fe22c3076, type: 2}
+  data: {fileID: 11400000, guid: c6da19f713318554a9908c3c664621d1, type: 2}
   components:
-  - {fileID: 11400000, guid: afb94b6c41fa1324c807f6a30c229f49, type: 2}
+  - {fileID: 11400000, guid: 203b085074bbfd84ab8010b5c862e831, type: 2}

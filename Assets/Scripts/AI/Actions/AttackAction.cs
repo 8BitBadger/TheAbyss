@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿
+using UnityEngine;
 
     [CreateAssetMenu(menuName = "Components/AI/Actions/Attack")]
     public class AttackAction : Action

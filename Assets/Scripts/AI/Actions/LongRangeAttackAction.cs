@@ -2,7 +2,7 @@
 
 namespace AiLogic
 {
-    [CreateAssetMenu(menuName = "PluggableAI/Actions/Long Range Attack")]
+    [CreateAssetMenu(menuName = "Components/AI/Actions/Long Range Attack")]
     public class LongRangeAttackAction : Action
     {
         public GameObject projectile;

@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace AiLogic
 {
-    [CreateAssetMenu(menuName = "PluggableAI/Decisions/Scan")]
+    [CreateAssetMenu(menuName = "Components/AI/Decisions/Scan")]
     public class ScanDecision : Decision
     {
         public override bool Decide(StateController controller)
@@ -16,7 +16,7 @@ namespace AiLogic
         private bool Scan(StateController controller)
         {
             //controller.transform.Rotate(0, controller.stats.searchTurnSpeed * Time.deltaTime, 0);
-            //return controller.CheckIfCountDownElapsed(controller.stats.searchDuration);
+            //return controller.CheckIfCountDownElapsed(controller.Data.searchDuration);
             //just put this in as a place holder
             return false;
         }

@@ -6,4 +6,6 @@ using UnityEngine;
 public class UnitData : ScriptableObject
 {
     public float speed = 50; 
+
+    
 }
