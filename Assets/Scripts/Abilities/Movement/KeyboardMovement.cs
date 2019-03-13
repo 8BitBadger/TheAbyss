@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Keyboard Movement", menuName = "Components/Keyboard Movement Component")]
+[CreateAssetMenu(menuName = "Components/Keyboard Movement Component")]
 //Makes sure that the boject we are attaching the script to has a rigidbody2d component to it
 [RequireComponent(typeof(Rigidbody2D))]
-public class KeyboardMovement : Component
+public class KeyboardMovement : Ability
 {
     //The object the component is connected to
     GameObject obj;

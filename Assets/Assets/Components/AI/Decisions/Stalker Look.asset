@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1657460efcb8f8e4e90299cccbb4c68a, type: 3}
-  m_Name: FollowPlayerCam
+  m_Script: {fileID: 11500000, guid: 51f176b81a8bcec4d8737b1ef6162d01, type: 3}
+  m_Name: Stalker Look
   m_EditorClassIdentifier: 
-  smoothSpeed: 0.1
-  offset: {x: 0, y: 0, z: -10}

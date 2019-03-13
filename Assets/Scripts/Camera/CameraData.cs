@@ -9,7 +9,4 @@ public class CameraData : ScriptableObject
     public float smoothSpeed = .125f;
     //The offset of the camera to the target
     public Vector3 offset = new Vector3(0f, 0f, -10f);
-    [HideInInspector]
-    //The target the camera must follow
-    public Transform target;
 }

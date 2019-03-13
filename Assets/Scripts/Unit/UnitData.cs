@@ -2,10 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Unit Data", menuName = "Data/New Unit Data")]
+[CreateAssetMenu( menuName = "Data/Unit Data")]
 public class UnitData : ScriptableObject
 {
-    public float speed = 50; 
-
-    
+    public float speed = 50;  
 }

@@ -2,10 +2,10 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Components/AI/StateController")]
-public class StateController : Component
+public class StateController : Ability
 {
     //Data for the enemies
-    [SerializeField] private UnitData data;
+    private UnitData data;
     public UnitData Data { get => data; }
     //The game object the component is attached to
     private GameObject obj;
@@ -25,11 +25,11 @@ public class StateController : Component
     //The position the tartget was last seen at
     [HideInInspector] public Vector2 targetLastPosition; 
 
-    //The view angle for the AI unit, setting the range limiter to 360 max and 0 min
+    //The view cone size for the unit inside the viewraduis collider circle, setting the range limiter to 360 max and 0 min
     [Range(0, 360)]
     public int viewAngle;
-    //The raduis for the unit
-    [Range(0, 360)]
+    //The raduis size of the circle collider for the unit
+    [Range(0, 1000)]
     public int viewRadius;
     //The layer the target is on
     public LayerMask targetMask;
@@ -46,9 +46,11 @@ public class StateController : Component
     public override void Init(GameObject _obj)
     {
         //Set the components parent object
-        obj = _obj;
+        this.obj = _obj;
+        //Set the data pointer for the AI to the Data SO in the unit script
+        this.data = _obj.GetComponent<Unit>().Data;
         //Set up the rigidbody for the AI
-        rb2d = Obj.GetComponent<Rigidbody2D>();
+        this.rb2d = _obj.GetComponent<Rigidbody2D>();
     }
 
     public override void Think()
@@ -78,9 +80,10 @@ public class StateController : Component
 
     void Die()
     {
+        //Call onDeathEvent() on event system
         //Play death animation
         //Drop crystal
-        Destroy(Obj);
+        //Destroy(obj);
     }
 
     void DropCrystal()
