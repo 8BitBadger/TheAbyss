@@ -23,8 +23,7 @@ public class WanderAction : Action
             Vector2 newPatrolPoint;
 
             randomDirectionChanse = Random.Range(1, 11);
-            Debug.Log(randomDirectionChanse);
-
+           
             while (!validPath)
             {
                 newPatrolPoint = new Vector2(Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.Obj.transform.position.x), Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.Obj.transform.position.y));

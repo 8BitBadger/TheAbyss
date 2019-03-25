@@ -35,6 +35,8 @@ public class StateController : Ability
     public LayerMask targetMask;
     //The layer for the obstacls like walls and other items
     public LayerMask obstacleMask;
+    //The layer mask for crystals in the game
+    public LayerMask crystalMask;
 
     //How far will the monster wander
     public float wanderDistance;
