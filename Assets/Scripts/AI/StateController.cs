@@ -32,7 +32,9 @@ public class StateController : Ability
     [Range(0, 1000)]
     public int viewRadius;
     //The layer the target is on
-    public LayerMask targetMask;
+    public LayerMask playerMask;
+    //Layer mask for other creatures
+    public LayerMask creatureMask;
     //The layer for the obstacls like walls and other items
     public LayerMask obstacleMask;
     //The layer mask for crystals in the game

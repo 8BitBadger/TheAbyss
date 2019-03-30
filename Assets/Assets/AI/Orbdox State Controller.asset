@@ -10,21 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f83c949e61237d946b04bf00109f1854, type: 3}
-  m_Name: AI State Controller
+  m_Name: Orbdox State Controller
   m_EditorClassIdentifier: 
   rb2d: {fileID: 0}
-  currentState: {fileID: 11400000, guid: ab13a44ae83fe95448cd813496327055, type: 2}
+  currentState: {fileID: 11400000, guid: 723ad4528c09a5349b5adda29d26aae7, type: 2}
   remainState: {fileID: 11400000, guid: 777ca8d2f95b187438fc364f4e45ac37, type: 2}
   stateTimeElapsed: 0
   target: {fileID: 0}
   targetLastPosition: {x: 0, y: 0}
-  viewAngle: 145
-  viewRadius: 100
-  targetMask:
+  viewAngle: 360
+  viewRadius: 200
+  playerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 1024
+  creatureMask:
+    serializedVersion: 2
+    m_Bits: 512
   obstacleMask:
     serializedVersion: 2
-    m_Bits: 0
-  wanderDistance: 12
+    m_Bits: 256
+  crystalMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  wanderDistance: 0
   wanderPoint: {x: 0, y: 0}

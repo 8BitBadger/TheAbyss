@@ -5,7 +5,7 @@ using UnityEngine;
 namespace AiLogic
 {
     [CreateAssetMenu(menuName = "Components/AI/Decisions/Scan")]
-    public class ScanDecision : Decision
+    public class ScanForPlayer : Decision
     {
         float currentAngle = 36;
 
@@ -19,7 +19,7 @@ namespace AiLogic
             //Scan 360 degrees around the unit for the target
 
             //Cast a collision circle only in the raduised area and on the target target mask, this is to check if the target is in the raduis to be able to pick it up
-            Collider2D[] targetInViewRaduis = Physics2D.OverlapCircleAll(controller.rb2d.position, controller.viewRadius, controller.targetMask);
+            Collider2D[] targetInViewRaduis = Physics2D.OverlapCircleAll(controller.rb2d.position, controller.viewRadius, controller.playerMask);
 
             for (int i = 0; i < currentAngle; i++)
             {

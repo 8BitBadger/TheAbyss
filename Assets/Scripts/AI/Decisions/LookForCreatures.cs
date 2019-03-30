@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
-[CreateAssetMenu(menuName = "Components/AI/Decisions/Look Decision")]
-public class LookDecision : Decision
+[CreateAssetMenu(menuName = "Components/AI/Decisions/Look for creatures")]
+public class LookForCreatures : Decision
 {
     public override bool Decide(StateController controller)
     {
@@ -11,7 +11,7 @@ public class LookDecision : Decision
     private bool Look(StateController controller)
     {
         //Cast a collision circle only in the raduised area and on the target target mask, this is to check if the target is in the raduis to be able to pick it up
-        Collider2D[] targetInViewRaduis = Physics2D.OverlapCircleAll(controller.rb2d.position, controller.viewRadius, controller.targetMask);
+        Collider2D[] targetInViewRaduis = Physics2D.OverlapCircleAll(controller.rb2d.position, controller.viewRadius, controller.creatureMask);
 
         //Loop through the targets that are in range of the fow
         for (int i = 0; i < targetInViewRaduis.Length; i++)
