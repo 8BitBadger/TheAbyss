@@ -48,11 +48,11 @@ public class Map
 
         CreateMapBorder();
 
-        CreateMinirals();
+        //CreateMinirals();
 
         //CreateItems();
 
-        SetUpRooms();
+        //SetUpRooms();
     }
 
     void RandomFillMap(int fillPercent, bool useRandomSeed, int RandomSeed)

@@ -6,27 +6,19 @@ namespace EventCallback
 {
     public class DeathListener : MonoBehaviour
     {
-
-        // Use this for initialization
         void Start()
         {
-            UnitDeathEvent.RegisterListener(OnUnitDied);
+            DeathEvent.RegisterListener(OnDied);
         }
 
         void OnDestroy()
         {
-            UnitDeathEvent.UnregisterListener(OnUnitDied);
+            DeathEvent.UnregisterListener(OnDied);
         }
 
-        // Update is called once per frame
-        void Update()
+        void OnDied(DeathEvent death)
         {
-
-        }
-
-        void OnUnitDied(UnitDeathEvent unitDeath)
-        {
-            Debug.Log("Alerted about unit death: " + unitDeath.UnitGO.name);
+            Debug.Log("Alerted about death: " + death.UnitGO.name);
         }
     }
 }

@@ -9,8 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96e17b0609e915142b86a318db2631fe, type: 3}
-  m_Name: Run
+  m_Script: {fileID: 11500000, guid: 51f176b81a8bcec4d8737b1ef6162d01, type: 3}
+  m_Name: Orbdox Look For Player
   m_EditorClassIdentifier: 
-  actions: []
-  transitions: []

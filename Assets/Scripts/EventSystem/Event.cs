@@ -12,20 +12,25 @@ namespace EventCallback
         public delegate void EventListener(T info);
         private static event EventListener Listeners;
         
-        public static void RegisterListener(EventListener listener) {
+        public static void RegisterListener(EventListener listener)
+        {
             Listeners += listener;
         }
 
-        public static void UnregisterListener(EventListener listener) {
+        public static void UnregisterListener(EventListener listener)
+        {
             Listeners -= listener;
         }
 
-        public void FireEvent() {
-            if (hasFired) {
+        public void FireEvent()
+        {
+            if (hasFired)
+            {
                 throw new Exception("This event has already fired, to prevent infinite loops you can't refire an event");
             }
             hasFired = true;
-            if (Listeners != null) {
+            if (Listeners != null)
+            {
                 Listeners(this as T);
             }
         }
@@ -36,12 +41,20 @@ namespace EventCallback
         public int VerbosityLevel;
     }
 
-    public class UnitDeathEvent : Event<UnitDeathEvent>
+    public class DeathEvent : Event<DeathEvent>
     {
         public GameObject UnitGO;
         /*
         Info about cause of death, our killer, etc...
         Could be a struct
         */
+    }
+
+    public class DamageEvent : Event<DamageEvent>
+    {
+        //The gameobject being damaged
+        public GameObject UnitGO;
+        //The game object doing the damage
+        public GameObject DamagerGO;
     }
 }

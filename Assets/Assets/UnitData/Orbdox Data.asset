@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4741a1296d45464d97c5a50e344054c, type: 3}
   m_Name: Orbdox Data
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 2

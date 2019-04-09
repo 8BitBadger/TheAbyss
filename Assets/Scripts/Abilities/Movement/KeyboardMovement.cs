@@ -25,6 +25,6 @@ public class KeyboardMovement : Ability
     public override void Think()
     {
         //Sets the velocity of the objects rigidbody
-        rb2d.velocity = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * obj.GetComponent<Unit>().Data.speed * Time.deltaTime;
+        rb2d.MovePosition(rb2d.position + new Vector2( Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * obj.GetComponent<Unit>().Data.speed * Time.deltaTime);
     }
 }

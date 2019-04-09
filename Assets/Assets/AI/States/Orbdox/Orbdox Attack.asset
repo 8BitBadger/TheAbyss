@@ -10,8 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96e17b0609e915142b86a318db2631fe, type: 3}
-  m_Name: Move To Target
+  m_Name: Orbdox Attack
   m_EditorClassIdentifier: 
-  actions:
-  - {fileID: 11400000, guid: b2a8ebf8059459942ac9d12d94779359, type: 2}
+  actions: []
   transitions: []

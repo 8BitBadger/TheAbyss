@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 96e17b0609e915142b86a318db2631fe, type: 3}
-  m_Name: Look for crystals
+  m_Name: Orbdox Look for crystals
   m_EditorClassIdentifier: 
   actions:
   - {fileID: 11400000, guid: cddb03fa2b2ac5d479404afce1d0be07, type: 2}
@@ -18,6 +18,6 @@ MonoBehaviour:
   - decision: {fileID: 11400000, guid: fc19999dc24793149ba236260723f1d8, type: 2}
     trueState: {fileID: 11400000, guid: 05d1b02d660d9884c8699054d4865f80, type: 2}
     falseState: {fileID: 11400000, guid: 777ca8d2f95b187438fc364f4e45ac37, type: 2}
-  - decision: {fileID: 0}
-    trueState: {fileID: 0}
-    falseState: {fileID: 0}
+  - decision: {fileID: 11400000, guid: 0f6f5e81f87e4df4ca6f0106daa7e434, type: 2}
+    trueState: {fileID: 11400000, guid: af8d8a4e550eb1d48b6c1d7b004527e8, type: 2}
+    falseState: {fileID: 11400000, guid: 777ca8d2f95b187438fc364f4e45ac37, type: 2}

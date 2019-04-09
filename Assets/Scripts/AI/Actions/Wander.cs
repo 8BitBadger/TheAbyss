@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 
 [CreateAssetMenu(menuName = "Components/AI/Actions/Wander")]
-public class WanderAction : Action
+public class Wander : Action
 {
     Vector2 normalizedDir;
     int randomDirectionChanse;
@@ -9,10 +9,10 @@ public class WanderAction : Action
 
     public override void Act(StateController controller)
     {
-        Wander(controller);
+        Wandering(controller);
     }
 
-    private void Wander(StateController controller)
+    private void Wandering(StateController controller)
     {  
         if (Vector2.Distance(controller.rb2d.position, controller.wanderPoint) < 0.4f || controller.wanderPoint == Vector2.zero)
         {
@@ -55,7 +55,7 @@ public class WanderAction : Action
             normalizedDir = (controller.wanderPoint - controller.rb2d.position).normalized;
            
             //Here we calculate the units velocity based on its distance to the target witch slows down the closer it gets to the target and starts movement very fast
-            controller.rb2d.velocity = Vector2.Lerp(controller.rb2d.position, normalizedDir, controller.Data.speed * Time.deltaTime);
+            controller.rb2d.MovePosition(controller.rb2d.position + normalizedDir * controller.Data.speed * Time.deltaTime);
         }
     }
 }

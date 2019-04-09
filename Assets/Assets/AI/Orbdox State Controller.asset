@@ -19,7 +19,7 @@ MonoBehaviour:
   target: {fileID: 0}
   targetLastPosition: {x: 0, y: 0}
   viewAngle: 360
-  viewRadius: 200
+  viewRadius: 4
   playerMask:
     serializedVersion: 2
     m_Bits: 1024
@@ -32,5 +32,5 @@ MonoBehaviour:
   crystalMask:
     serializedVersion: 2
     m_Bits: 2048
-  wanderDistance: 0
+  wanderDistance: 5
   wanderPoint: {x: 0, y: 0}
