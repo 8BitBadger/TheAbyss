@@ -20,7 +20,10 @@ namespace EventCallback
 
        void OnDamaged(DamageEvent damage)
         {
-            Debug.Log(damage.UnitGO.name + "got damaged by " + damage.DamagerGO.name );
+            //Access the health ability of the UnitGO and reduce the life
+            //Access the sound manager and play needed sound for the damage
+            Debug.Log(damage.UnitGO.name + " got damaged by " + damage.DamagerGO.name );
+            //damage.UnitGO.GetComponent<Unit>
         }
     }
 }

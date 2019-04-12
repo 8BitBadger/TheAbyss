@@ -9,9 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96e17b0609e915142b86a318db2631fe, type: 3}
-  m_Name: Orbdox Eat
+  m_Script: {fileID: 11500000, guid: eeb681977da8b9246b56c614812660a6, type: 3}
+  m_Name: Orbdox Consume Crystal
   m_EditorClassIdentifier: 
-  actions:
-  - {fileID: 11400000, guid: 521779cfe78f8004ca4662938cdcb27b, type: 2}
-  transitions: []

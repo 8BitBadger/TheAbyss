@@ -5,7 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Components/Keyboard Movement Component")]
 //Makes sure that the boject we are attaching the script to has a rigidbody2d component to it
 [RequireComponent(typeof(Rigidbody2D))]
-public class KeyboardMovement : Ability
+public class MoveWithKeyboard : ComponentSystem.Component
 {
     //The object the component is connected to
     GameObject obj;

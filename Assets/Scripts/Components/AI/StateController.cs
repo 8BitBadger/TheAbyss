@@ -2,11 +2,11 @@
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "Components/AI/StateController")]
-public class StateController : Ability
+public class StateController : ComponentSystem.Component
 {
     //Data for the enemies
-    private UnitData data;
-    public UnitData Data { get => data; }
+   private ComponentSystem.Component unit;
+   public ComponentSystem.Component UnitData { get => unit; }
     //The game object the component is attached to
     private GameObject obj;
     public GameObject Obj { get => obj; }
@@ -50,11 +50,18 @@ public class StateController : Ability
     public override void Init(GameObject _obj)
     {
         //Set the components parent object
-        this.obj = _obj;
+        obj = _obj;
+        for (int i = 0; i < _obj.GetComponent<ComponentSystem.ComponentManager>().components.Count; i++)
+        {
+            if (_obj.GetComponent<ComponentSystem.ComponentManager>().components[i].componentName == "Unit")
+            {
+unit = _obj.GetComponent<ComponentSystem.ComponentManager>().components[i];
+            }
+        }
         //Set the data pointer for the AI to the Data SO in the unit script
-        this.data = _obj.GetComponent<Unit>().Data;
+        
         //Set up the rigidbody for the AI
-        this.rb2d = _obj.GetComponent<Rigidbody2D>();
+        rb2d = _obj.GetComponent<Rigidbody2D>();
     }
 
     public override void Think()
