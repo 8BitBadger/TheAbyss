@@ -43,7 +43,7 @@ namespace EventCallback
 
     public class DeathEvent : Event<DeathEvent>
     {
-        public GameObject UnitGO;
+        public GameObject baseGO;
         /*
         Info about cause of death, our killer, etc...
         Could be a struct
@@ -53,8 +53,8 @@ namespace EventCallback
     public class DamageEvent : Event<DamageEvent>
     {
         //The gameobject being damaged
-        public GameObject UnitGO;
+        public GameObject baseGO;
         //The game object doing the damage
-        public GameObject DamagerGO;
+        public GameObject targetGO;
     }
 }

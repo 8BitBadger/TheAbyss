@@ -1,6 +1,7 @@
-﻿using UnityEngine;
+﻿using Comps;
+using UnityEngine;
 
-    public abstract class Decision : ScriptableObject
-    {
-        public abstract bool Decide(StateController controller);
-    }
+public abstract class Decision : ScriptableObject
+{
+    public abstract bool Decide(AI controller);
+}

@@ -1,21 +1,23 @@
 ﻿using UnityEngine;
+using Comps;
 
-[CreateAssetMenu(menuName = "Components/AI/Actions/Move to target")]
-public class MoveToTarget : Action
-{
-    Vector2 normalizedDir;
-
-    public override void Act(StateController controller)
+[CreateAssetMenu(menuName = "Comps/AI/Actions/Move to target")]
+    public class MoveToTarget : Action
     {
-        MoveToPoint(controller);
-    }
+        Vector2 normalizedDir;
 
-    private void MoveToPoint(StateController controller)
-    {
-        if (Vector2.Distance(controller.rb2d.position, controller.target.position) > 1.0f)
+        public override void Act(AI controller)
         {
-            normalizedDir = (new Vector2(controller.target.position.x, controller.target.position.y) - controller.rb2d.position).normalized;
-            controller.rb2d.MovePosition(controller.rb2d.position + normalizedDir * controller.Data.speed * Time.deltaTime);
+            MoveToPoint(controller);
+        }
+
+        private void MoveToPoint(AI controller)
+        {
+            if (Vector2.Distance(controller.rb2d.position, controller.target.position) > 1.0f)
+            {
+                normalizedDir = (new Vector2(controller.target.position.x, controller.target.position.y) - controller.rb2d.position).normalized;
+                controller.rb2d.MovePosition(controller.rb2d.position + normalizedDir * controller.speed * Time.deltaTime);
+            }
         }
     }
-}
+

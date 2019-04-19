@@ -12,3 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb681977da8b9246b56c614812660a6, type: 3}
   m_Name: Orbdox Consume Crystal
   m_EditorClassIdentifier: 
+  consumeSpeed: 1

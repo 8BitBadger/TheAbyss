@@ -1,19 +1,18 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Comps;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Components/AI/Actions/Teleport to target")]
+[CreateAssetMenu(menuName = "Comps/AI/Actions/Teleport to target")]
 public class TeleportToTarget : Action
 {
     //The position 
     Vector2 teleportPos;
 
-    public override void Act(StateController controller)
+    public override void Act(AI controller)
     {
         Teleport(controller);
     }
 
-    private void Teleport(StateController controller)
+    private void Teleport(AI controller)
     {
         // Get direction away from player
         Vector2 dirToTeleport = (controller.rb2d.position - new Vector2(controller.target.position.x, controller.target.position.y)).normalized;
@@ -27,6 +26,22 @@ public class TeleportToTarget : Action
             //If the area is clear teleport the creature to the new target
             controller.rb2d.MovePosition(teleportPos);
         }
-    }
 
+        //if (!Physics2D.CircleCast(controller.rb2d.position, .3f, teleportPos, controller.wanderDistance, controller.obstacleMask) && Vector2.Angle(controller.gameObject.transform.right, teleportPos.normalized) < controller.viewAngle / 2)
+        //{
+
+            //If the area is clear teleport the creature to the new target
+            //controller.rb2d.MovePosition(teleportPos);
+        //}
+        //else
+        //{
+            //if (!Physics2D.CircleCast(controller.rb2d.position, .3f, new Vector2(Random.Range(10, 15),Random.Range(10, 15)), controller.wanderDistance, controller.obstacleMask))
+            //{
+                //If the area is clear teleport the creature to the new target
+                //controller.rb2d.MovePosition(teleportPos);
+            //}
+        //}
+    }
 }
+
+

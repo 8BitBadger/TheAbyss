@@ -1,24 +1,24 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using Comps;
 
-[CreateAssetMenu(menuName = "Components/AI/Decisions/In range of target")]
-public class InRangeOfTarget : Decision
-{
-    public float range;
-
-    public override bool Decide(StateController controller)
+[CreateAssetMenu(menuName = "Comps/AI/Decisions/In range of target")]
+    public class InRangeOfTarget : Decision
     {
-        return InRange(controller);
-    }
+        public float range;
 
-    private bool InRange(StateController controller)
-    {
-        if (Vector2.Distance(controller.rb2d.position, controller.target.position) < range)
+        public override bool Decide(AI controller)
         {
-            return true;
+            return InRange(controller);
         }
 
-        return false;
+        private bool InRange(AI controller)
+        {
+            if (Vector2.Distance(controller.rb2d.position, controller.target.position) < range)
+            {
+                return true;
+            }
+
+            return false;
+        }
     }
-}
+

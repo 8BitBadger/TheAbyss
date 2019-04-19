@@ -1,23 +1,34 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using Comps;
 using EventCallback;
+using UnityEngine;
 
-[CreateAssetMenu(menuName ="Components/AI/Actions/Consume Crystal")]
+[CreateAssetMenu(menuName = "Comps/AI/Actions/Consume Crystal")]
 public class ConsumeCrystal : Action
 {
-    public override void Act(StateController controller)
+    //The inteval at which the crystal must be consumed, this will stay the same and wil not be sped up by any stat modification
+    public float consumeSpeed;
+
+    public override void Act(AI controller)
     {
         Consume(controller);
     }
 
-    private void Consume(StateController controller)
+    private void Consume(AI controller)
     {
         //NOTE: Call health class or ability and subtract health from it he crystal
-
-        DamageEvent DamageEventInfo = new DamageEvent();
-        DamageEventInfo.UnitGO = controller.target.gameObject;
-        DamageEventInfo.DamagerGO = controller.Obj;
-        DamageEventInfo.FireEvent();
+        if ((Time.time - controller.ConsumeSpeed) > consumeSpeed)
+        {
+            //Create a new damage event info
+            DamageEvent damageEventInfo = new DamageEvent();
+            //The target object that is being consumed
+            damageEventInfo.targetGO = controller.target.gameObject;
+            //The Object that is consuming the target
+            damageEventInfo.baseGO = controller.gameObject;
+            //We then fire the event
+            damageEventInfo.FireEvent();
+            //Reset the timer
+            controller.ConsumeSpeed = Time.time;
+        }
     }
 }
+

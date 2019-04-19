@@ -1,14 +1,12 @@
 ﻿using UnityEngine;
+using Comps;
 
-namespace AiLogic
-{
-    [CreateAssetMenu(menuName = "Components/AI/Decisions/ActiveState")]
+[CreateAssetMenu(menuName = "Comps/AI/Decisions/ActiveState")]
     public class ActiveStateDecision : Decision
     {
-        public override bool Decide(StateController controller)
+        public override bool Decide(AI controller)
         {
             bool chaseTargetIsActive = controller.target.gameObject.activeSelf;
             return chaseTargetIsActive;
         }
     }
-}

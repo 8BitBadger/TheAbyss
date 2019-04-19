@@ -1,37 +1,39 @@
 ﻿using UnityEngine;
+using Comps;
 
-[CreateAssetMenu(menuName = "Components/AI/Decisions/Look for crystals")]
-public class LookForCrystals : Decision
-{
-    public override bool Decide(StateController controller)
+[CreateAssetMenu(menuName = "Comps/AI/Decisions/Look for crystals")]
+    public class LookForCrystals : Decision
     {
-        return Look(controller);
-    }
-
-    private bool Look(StateController controller)
-    {
-        //Cast a collision circle only in the raduised area and on the target target mask, this is to check if the target is in the raduis to be able to pick it up
-        Collider2D[] targetInViewRaduis = Physics2D.OverlapCircleAll(controller.rb2d.position, controller.viewRadius, controller.crystalMask);
-
-        //Loop through the targets that are in range of the fow
-        for (int i = 0; i < targetInViewRaduis.Length; i++)
+        public override bool Decide(AI controller)
         {
-            Transform rayCastTarget = targetInViewRaduis[i].transform;
-            Vector2 dirToRaycast = (rayCastTarget.position - controller.Obj.transform.position).normalized;
+            return Look(controller);
+        }
 
-            if (Vector2.Angle(controller.Obj.transform.right, dirToRaycast) < controller.viewAngle / 2)
+        private bool Look(AI controller)
+        {
+            //Cast a collision circle only in the raduised area and on the target target mask, this is to check if the target is in the raduis to be able to pick it up
+            Collider2D[] targetInViewRaduis = Physics2D.OverlapCircleAll(controller.rb2d.position, controller.viewRadius, controller.crystalMask);
+
+            //Loop through the targets that are in range of the fow
+            for (int i = 0; i < targetInViewRaduis.Length; i++)
             {
-                float distanceToTarget = Vector2.Distance(controller.Obj.transform.position, rayCastTarget.position);
+                Transform rayCastTarget = targetInViewRaduis[i].transform;
+                Vector2 dirToRaycast = (rayCastTarget.position - controller.gameObject.transform.position).normalized;
 
-                if (!Physics2D.Raycast(controller.rb2d.position, dirToRaycast, distanceToTarget, controller.obstacleMask))
+                if (Vector2.Angle(controller.gameObject.transform.right, dirToRaycast) < controller.viewAngle / 2)
                 {
-                    controller.target = rayCastTarget;
-                    controller.targetLastPosition = controller.target.position;
+                    float distanceToTarget = Vector2.Distance(controller.gameObject.transform.position, rayCastTarget.position);
 
-                    return true;
+                    if (!Physics2D.Raycast(controller.rb2d.position, dirToRaycast, distanceToTarget, controller.obstacleMask))
+                    {
+                        controller.target = rayCastTarget;
+                        controller.targetLastPosition = controller.target.position;
+
+                        return true;
+                    }
                 }
             }
+            return false;
         }
-        return false;
     }
-}
+

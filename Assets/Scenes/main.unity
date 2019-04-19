@@ -54,7 +54,7 @@ LightmapSettings:
     m_EnableBakedLightmaps: 0
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 10
+    serializedVersion: 12
     m_Resolution: 2
     m_BakeResolution: 40
     m_AtlasSize: 1024
@@ -62,6 +62,7 @@ LightmapSettings:
     m_AOMaxDistance: 1
     m_CompAOExponent: 1
     m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
     m_Padding: 2
     m_LightmapParameters: {fileID: 0}
     m_LightmapsBakeMode: 1
@@ -76,10 +77,16 @@ LightmapSettings:
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
     m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
     m_PVRFilterTypeDirect: 0
     m_PVRFilterTypeIndirect: 0
     m_PVRFilterTypeAO: 0
-    m_PVRFilteringMode: 1
+    m_PVREnvironmentMIS: 0
     m_PVRCulling: 1
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
@@ -88,6 +95,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
+    m_ExportTrainingData: 0
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -152,9 +160,10 @@ Camera:
   m_ClearFlags: 1
   m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
+  m_GateFitMode: 2
+  m_FOVAxisMode: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_GateFitMode: 2
   m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -194,7 +203,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &206333895
 MonoBehaviour:
@@ -345,7 +354,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &361789562
 MonoBehaviour:
@@ -354,7 +363,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 361789559}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 69d0e92dbf6b5154793d91a149ed80c1, type: 3}
   m_Name: 
@@ -377,7 +386,7 @@ MonoBehaviour:
   fillMap: 50
   smoothAmount: 1
   useRandomSeed: 0
-  seed: 20
+  seed: 5
 --- !u!1 &465953879
 GameObject:
   m_ObjectHideFlags: 0
@@ -490,6 +499,7 @@ GameObject:
   - component: {fileID: 481947562}
   - component: {fileID: 481947561}
   - component: {fileID: 481947560}
+  - component: {fileID: 481947565}
   m_Layer: 9
   m_Name: Orbdox
   m_TagString: Untagged
@@ -506,12 +516,34 @@ MonoBehaviour:
   m_GameObject: {fileID: 481947559}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63ebea32d0fbede4b9d13d0446ee12e9, type: 3}
+  m_Script: {fileID: 11500000, guid: f83c949e61237d946b04bf00109f1854, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 8aff28d4ee073954699df000fc8c65e5, type: 2}
-  abilities:
-  - {fileID: 11400000, guid: 6c3d96269a3276b46859a5692ae1a06a, type: 2}
+  rb2d: {fileID: 0}
+  currentState: {fileID: 11400000, guid: 723ad4528c09a5349b5adda29d26aae7, type: 2}
+  remainState: {fileID: 11400000, guid: 777ca8d2f95b187438fc364f4e45ac37, type: 2}
+  stateTimeElapsed: 0
+  target: {fileID: 0}
+  targetLastPosition: {x: 0, y: 0}
+  viewAngle: 360
+  viewRadius: 10
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  creatureMask:
+    serializedVersion: 2
+    m_Bits: 512
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 256
+  crystalMask:
+    serializedVersion: 2
+    m_Bits: 2048
+  wanderDistance: 10
+  wanderPoint: {x: 0, y: 0}
+  speed: 3
+  attackSpeed: 0.5
+  ConsumeSpeed: 0
 --- !u!50 &481947561
 Rigidbody2D:
   serializedVersion: 4
@@ -605,12 +637,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481947559}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.75, y: 6.74, z: 0}
+  m_LocalPosition: {x: 2, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &481947565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481947559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e74ec49afdc975a40a1d7b2c0236aa9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHealth: 20
+  health: 20
 --- !u!1 &621113284
 GameObject:
   m_ObjectHideFlags: 0
@@ -777,10 +823,12 @@ GameObject:
   - component: {fileID: 777578325}
   - component: {fileID: 777578324}
   - component: {fileID: 777578323}
-  - component: {fileID: 777578322}
   - component: {fileID: 777578326}
+  - component: {fileID: 777578322}
+  - component: {fileID: 777578327}
+  - component: {fileID: 777578328}
   m_Layer: 10
-  m_Name: Maskedman
+  m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -795,12 +843,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 777578321}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63ebea32d0fbede4b9d13d0446ee12e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a6daceaadd1af1489afd5d2b4543785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  data: {fileID: 11400000, guid: 1e8c0490b4f40ee49803f81fe22c3076, type: 2}
-  abilities:
-  - {fileID: 11400000, guid: afb94b6c41fa1324c807f6a30c229f49, type: 2}
+  speed: 5
 --- !u!50 &777578323
 Rigidbody2D:
   serializedVersion: 4
@@ -882,7 +928,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!70 &777578326
 CapsuleCollider2D:
@@ -900,6 +946,40 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.3, y: 0.68}
   m_Direction: 0
+--- !u!114 &777578327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777578321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e74ec49afdc975a40a1d7b2c0236aa9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHealth: 20
+  health: 20
+--- !u!114 &777578328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777578321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a92df0667fbdc7741b55b7fb20239f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackSpeed: 0.5
+  damage: 5
+  creatures:
+    serializedVersion: 2
+    m_Bits: 512
+  obstacles:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &784805702
 GameObject:
   m_ObjectHideFlags: 0
@@ -911,6 +991,7 @@ GameObject:
   - component: {fileID: 784805704}
   - component: {fileID: 784805703}
   - component: {fileID: 784805705}
+  - component: {fileID: 784805706}
   m_Layer: 11
   m_Name: Crystal
   m_TagString: Untagged
@@ -974,11 +1055,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 784805702}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.25, y: 6.37, z: 0}
+  m_LocalPosition: {x: 24, y: 8.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &784805705
 CircleCollider2D:
@@ -996,6 +1077,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.125
+--- !u!114 &784805706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784805702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e74ec49afdc975a40a1d7b2c0236aa9e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  baseHealth: 20
+  health: 20
 --- !u!1 &1141804685
 GameObject:
   m_ObjectHideFlags: 0
@@ -1083,9 +1178,9 @@ GameObject:
   - component: {fileID: 1318237577}
   - component: {fileID: 1318237576}
   m_Layer: 0
-  m_Name: EventSystem
+  m_Name: GOEventSystem
   m_TagString: Untagged
-  m_Icon: {fileID: 7250588514170254948, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1

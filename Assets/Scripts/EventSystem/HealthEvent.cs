@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 namespace EventCallback
 {
     public class HealthEvent : MonoBehaviour
@@ -26,10 +27,10 @@ namespace EventCallback
         {
             // I am dying for some reason.
 
-            DamageEvent deInfo = new DamageEvent();
+            DamageEvent deathEventInfo = new DamageEvent();
             //dei.Description = "Unit " + gameObject.name + " has died.";
-            deInfo.UnitGO = gameObject;
-            deInfo.FireEvent();
+            deathEventInfo.baseGO = gameObject;
+            deathEventInfo.FireEvent();
 
             Destroy(gameObject);
         }
