@@ -18,7 +18,7 @@ namespace EventCallback
 
         void OnDied(DeathEvent death)
         {
-            Debug.Log("Alerted about death: " + death.UnitGO.name);
+            Debug.Log("Alerted about death: " + death.baseGO.name);
         }
     }
 }

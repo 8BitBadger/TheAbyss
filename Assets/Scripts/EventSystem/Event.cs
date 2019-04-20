@@ -57,4 +57,12 @@ namespace EventCallback
         //The game object doing the damage
         public GameObject targetGO;
     }
+
+    public class AttackEvent : Event<AttackEvent>
+    {
+        //The gameobject being damaged
+        public GameObject baseGO;
+        //The game object doing the damage
+        public GameObject targetGO;
+    }
 }

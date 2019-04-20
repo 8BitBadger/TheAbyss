@@ -2,17 +2,18 @@
 using System.Collections.Generic;
 using UnityEngine;
 using StatSystem;
+using Comps;
 
 public class Item : MonoBehaviour
 {
-    public void Equip(Character character)
+    public void Equip(Stats character)
     {
-        character.Strength.AddModifier(new StatModifier(10, StatModType.Flat, this));
-        character.Strength.AddModifier(new StatModifier(.1f, StatModType.PercentMult, this));
+        character.strength.AddModifier(new StatModifier(10, StatModType.Flat, this));
+        character.strength.AddModifier(new StatModifier(.1f, StatModType.PercentMult, this));
     }
 
-    public void Unequip(Character character)
+    public void Unequip(Stats character)
     {
-        character.Strength.RemoveAllModifiersFromSource(this);
+        character.strength.RemoveAllModifiersFromSource(this);
     }
 }
