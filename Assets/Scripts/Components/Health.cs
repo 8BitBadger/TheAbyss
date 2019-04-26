@@ -10,15 +10,6 @@ namespace Comps
         //The helath after modifiers have been applied
         public float health;
 
-        private void Start()
-        {
-        }
-
-        private void Update()
-        {
-            CheckHealth();
-        }
-
         //Heals the object with this script added to it
         public void Heal(float heal)
         {

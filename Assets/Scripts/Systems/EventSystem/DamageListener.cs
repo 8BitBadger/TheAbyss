@@ -8,9 +8,45 @@ namespace EventCallback
 {
     public class DamageListener : MonoBehaviour
     {
+        //The reference to the game manager game object
+        GameObject gameManager;
+        //Handles the playing of sounds and music for the game
+        SoundManager soundManager;
+        //Handles the particles for the game
+        ParticleManager particleManager;
+        // Start is called before the first frame update
+
         // Start is called before the first frame update
         void Start()
         {
+            if (GameObject.FindGameObjectWithTag("GameManager") != null)
+            {
+                //Seth the refernce to the game manager gmae object
+                gameManager = GameObject.FindGameObjectWithTag("GameManager");
+            }
+            else
+            {
+                Debug.LogError("AttackListener - GameManager object does not exist");
+            }
+            //Find the game manager game object and then check if it has the sound manager component attached and if it does we set it to the local variable
+            if (gameManager.GetComponent<SoundManager>() != null)
+            {
+                soundManager = gameManager.GetComponent<SoundManager>();
+            }
+            else
+            {
+                Debug.LogError("AttackListener - SoundManager script not attached to GameManager game object");
+            }
+            //Find the game manager game object and then check if it has the sound manager component attached and if it does we set it to the local variable
+            if (gameManager.GetComponent<ParticleManager>() != null)
+            {
+                particleManager = gameManager.GetComponent<ParticleManager>();
+            }
+            else
+            {
+                Debug.LogError("AttackListener - ParticleManager script not attached to GameManager game object");
+            }
+
             DamageEvent.RegisterListener(On_Damaged);
         }
 
@@ -25,27 +61,30 @@ namespace EventCallback
             //Check if the target object has the health script attached
             if (damageEvent.targetGO.GetComponent<Health>())
             {
-                if (damageEvent.baseGO.tag == "Player")
+                if (damageEvent.baseGO.GetComponent<Stats>())
                 {
-                    //damage.targetGO.GetComponent<Health>().TakeDamage(damage.baseGO.GetComponent<PlayerAttack>().damage);
+                    //Set the scripts that are about to be used, makes it easier to be used
+                    Health health = damageEvent.targetGO.GetComponent<Health>();
+                    Stats stats = damageEvent.baseGO.GetComponent<Stats>();
+
+                    if (damageEvent.baseGO.tag == "Player")
+                    {
+                        //Play sound
+                        //Run Animation?
+                        //Particle Effect?
+                        health.TakeDamage(stats.GetDamage());
+                    }
+                    else if (damageEvent.baseGO.tag == "Creature")
+                    {
+                        //Play sound
+                        //Run Animation?
+                        //Particle Effect?
+                        health.TakeDamage(stats.GetDamage());
+                    }
                 }
-                else if (damageEvent.baseGO.tag == "Creature")
-                {
-                    //damage.targetGO.GetComponent<Health>().TakeDamage(damage.baseGO.GetComponent<AI>().damage);
-                }
-                //NOTE: Still have to determine the amount of damage base object will give
-                //damageEvent.targetGO.GetComponent<Health>().TakeDamage(1);
+                else { Debug.LogError("DamageListener - The target object does not have a Stats script on it"); }
             }
-            else
-            {
-                Debug.LogError("The targe tobject does not have a Health script on it");
-            }
-
-            //Play sound
-            //Run Animation?
-            //Particle Effect?
-
-
+            else { Debug.LogError("DamageListener - The target object does not have a Health script on it"); }
         }
     }
 }

@@ -22,26 +22,31 @@ namespace Comps
             //Get the mouse input
             if (Input.GetMouseButton(0))
             {
+                //NOTE this will
                 //Calculate the attackSpeed from the units stats
-                attackSpeed = gameObject.GetComponent<Stats>().dexterity.Value * gameObject.GetComponent<Stats>().level;
+                //attackSpeed = gameObject.GetComponent<Stats>().dexterity.Value * gameObject.GetComponent<Stats>().level;
                 //Check the timer if it is time to attack
                 if ((Time.time - timer) > attackSpeed)
                 {
                     //Get the collision on the target in a circle
                     Collider2D hit = Physics2D.OverlapCircle(transform.position, 1, creatures);
+
+                    //Call to the attack event callback system
+                    AttackEvent attackEventInfo = new AttackEvent();
+                    attackEventInfo.baseGO = gameObject;
+                    attackEventInfo.targetGO = hit.gameObject;
+                    attackEventInfo.FireEvent();
+
+                    //If the target was hit we call the damage event
                     if (hit != null)
                     {
-                        //Create a new damage event information for this attack instance
                         DamageEvent damageEventInfo = new DamageEvent();
-                        //Popu;ate the damage information with the target and attacker object
-                        damageEventInfo.targetGO = hit.gameObject;
                         damageEventInfo.baseGO = gameObject;
-                        //Fire of the damage event
+                        damageEventInfo.targetGO = hit.gameObject;
                         damageEventInfo.FireEvent();
-
-                        //Reset the timer for the next attack time check
-                        timer = Time.time;
                     }
+                    //Reset the timer for the next attack time check
+                    timer = Time.time;
                 }
             }
         }

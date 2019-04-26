@@ -5,9 +5,6 @@ namespace EventCallback
 {
     public abstract class Event<T> where T : Event<T>
     {
-
-        //public string Description;
-
         private bool hasFired;
         public delegate void EventListener(T info);
         private static event EventListener Listeners;
@@ -43,7 +40,10 @@ namespace EventCallback
 
     public class DeathEvent : Event<DeathEvent>
     {
+        //The gameobject being damaged
         public GameObject baseGO;
+        //The game object doing the damage
+        public GameObject targetGO;
         /*
         Info about cause of death, our killer, etc...
         Could be a struct
