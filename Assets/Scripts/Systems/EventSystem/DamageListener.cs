@@ -14,7 +14,6 @@ namespace EventCallback
         SoundManager soundManager;
         //Handles the particles for the game
         ParticleManager particleManager;
-        // Start is called before the first frame update
 
         // Start is called before the first frame update
         void Start()
@@ -72,15 +71,16 @@ namespace EventCallback
                         //Play sound
                         //Run Animation?
                         //Particle Effect?
-                        health.TakeDamage(stats.GetDamage());
+                        health.TakeDamage(stats.damage.Value);
                     }
                     else if (damageEvent.baseGO.tag == "Creature")
                     {
                         //Play sound
                         //Run Animation?
                         //Particle Effect?
-                        health.TakeDamage(stats.GetDamage());
+                        health.TakeDamage(stats.damage.Value);
                     }
+                    else { Debug.LogError("DamageListener - The target object does not match any tags registered to take damage"); }
                 }
                 else { Debug.LogError("DamageListener - The target object does not have a Stats script on it"); }
             }

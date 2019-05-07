@@ -16,31 +16,25 @@ namespace Comps
         //The intelligence of the unit
         public CharacterStat intelligence;
 
-        //The movement speed of the unit
-        private float moveSpeed;
+        //THe move speed of the charecter
+        [HideInInspector]
+        public CharacterStat moveSpeed;
         //The attack speed of the unit
-        private float attackSpeed;
-        //The damage of the unit
-        private float damage;
+        [HideInInspector]
+        public CharacterStat attackSpeed;
+        //The damage the unit does
+        [HideInInspector]
+        public CharacterStat damage;
 
-        public float GetMoveSpeed()
+        private void Start()
         {
-            moveSpeed = dexterity.Value * level;
-            return moveSpeed;
-        }
-        public float GetAttackSpeed()
-        {
-            attackSpeed = dexterity.Value * level;
-            return attackSpeed;
-        }
-        public float GetHealth()
-        {
-            return health.Value;
-        }
-        public float GetDamage()
-        {
-            damage = strength.Value * level;
-            return damage;
+            //Set the base value for the move speed
+            moveSpeed.baseValue = dexterity.Value * level;
+            //Set the base value for the attack speed
+            attackSpeed.baseValue = dexterity.Value * level;
+            //Set the base value for the damage
+            damage.baseValue = strength.Value * level;
+
         }
     }
 }

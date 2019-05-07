@@ -5,7 +5,7 @@ using Comps;
 
 namespace EventCallback
 {
-    public class AttackListener : MonoBehaviour
+    public class MoveListener : MonoBehaviour
     {
         //The reference to the game manager game object
         GameObject gameManager;
@@ -57,20 +57,19 @@ namespace EventCallback
             //Play the attack sound
             soundManager.playSound(attackEvent.baseGO);
 
-            if (attackEvent.baseGO.tag == "Player")
-            {
-                //Play sound
-                //Run Animation?
-                //Particle Effect?
-
-            }
-            else if (attackEvent.baseGO.tag == "Creature")
-            {
-                //Play sound
-                //Run Animation?
-                //Particle Effect?
-            }
-            else { Debug.LogError("DamageListener - The target object does not match any tags registered to take damage"); }
+                    if (attackEvent.baseGO.tag == "Player")
+                    {
+                        //Play sound
+                        //Run Animation?
+                        //Particle Effect?
+                    }
+                    else if (attackEvent.baseGO.tag == "Creature")
+                    {
+                        //Play sound
+                        //Run Animation?
+                        //Particle Effect?
+                    }
+                    else { Debug.LogError("DamageListener - The target object does not match any tags registered to take damage"); }
         }
     }
 }

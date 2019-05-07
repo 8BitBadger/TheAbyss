@@ -23,7 +23,6 @@ using EventCallback;
 
             AttackEvent attackEventInfo = new AttackEvent();
             attackEventInfo.baseGO = controller.gameObject;
-            attackEventInfo.targetGO = controller.target.gameObject;
             attackEventInfo.FireEvent();
                 //controller.data.chaseTarget.gameObject.GetComponent<EventCbSystem.PlayerLogic>().TakeDamage(1);
                 //controller.timeSinceLastAttack = Time.time;

@@ -62,7 +62,13 @@ namespace EventCallback
     {
         //The gameobject being damaged
         public GameObject baseGO;
+    }
+
+    public class MoveEvent : Event<MoveEvent>
+    {
+        //The gameobject being damaged
+        public GameObject baseGO;
         //The game object doing the damage
-        public GameObject targetGO;
+        public Transform target;
     }
 }

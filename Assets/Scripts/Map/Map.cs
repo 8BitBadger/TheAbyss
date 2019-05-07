@@ -188,11 +188,6 @@ public class Map
         }
     }
 
-    void CreateItems()
-    {
-        //Note to impliment!!!!!!!!!
-    }
-
     void SetUpRooms()
     {
         //Here we get the list of cordinate lists for the regions that are ground

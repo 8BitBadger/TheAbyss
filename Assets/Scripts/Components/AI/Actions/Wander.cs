@@ -57,7 +57,7 @@ public class Wander : Action
             normalizedDir = (controller.wanderPoint - controller.rb2d.position).normalized;
 
             //Here we calculate the units velocity based on its distance to the target witch slows down the closer it gets to the target and starts movement very fast
-            controller.rb2d.MovePosition(controller.rb2d.position + normalizedDir * controller.speed * Time.deltaTime);
+            controller.rb2d.MovePosition(controller.rb2d.position + normalizedDir * controller.GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
         }
     }
 }

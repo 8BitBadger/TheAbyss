@@ -42,15 +42,8 @@ namespace Comps
         [HideInInspector]
         public Vector2 wanderPoint;
 
-
-        //The speed of the AI unit
-        public float speed;
-
-//The attack speed for now is a value entered into the interface, later they must be calculated
-        public float attackSpeed;
-        //How fast the creature consumes, nothing to do with consume damage
         [HideInInspector]
-        public float ConsumeSpeed = 0;
+        public float timer = 0;
 
         private void Start()
         {
