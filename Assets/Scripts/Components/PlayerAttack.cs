@@ -10,17 +10,12 @@ namespace Comps
     {
         //Used for the interval of the attacks, keeps track of last attack time
         private float timer;
-        //The damage the player does on each attack, will later be calculated by the charecters strenght and level
-        //The layer the players are on
-        public LayerMask creatures;
-        //The layer the obstacles are on
-        public LayerMask obstacles;
         //The weapon hit box for the unit
         private GameObject weaponHitBox;
 
         private void Start()
         {
-            if(transform.GetChild(0).GetComponent<HitDetection>())
+            if (transform.GetChild(0).GetComponent<HitDetection>())
             {
                 //Get the game object that the hitbox is atached to
                 weaponHitBox = transform.GetChild(0).gameObject;
@@ -51,8 +46,13 @@ namespace Comps
                     attackEventInfo.FireEvent();
                     //Reset the timer for the next attack time check
                     timer = Time.time;
-                    weaponHitBox.SetActive(false);
                 }
+            }
+            //Check the timer if it is time to attack
+            if ((Time.time - timer) > gameObject.GetComponent<Stats>().attackSpeed.Value)
+            {
+                //We disable the hitbox when the timer for the attack has run down
+                weaponHitBox.SetActive(false);
             }
         }
     }

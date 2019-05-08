@@ -81,6 +81,12 @@ namespace EventCallback
                         health.TakeDamage(stats.damage.Value);
                     }
                     else { Debug.LogError("DamageListener - The target object does not match any tags registered to take damage"); }
+
+                    if (damageEvent.targetGO.tag == "Creature")
+                    {
+                        //Set the attacker to 
+                        damageEvent.targetGO.GetComponent<AI>().target = damageEvent.baseGO.transform;
+                    }
                 }
                 else { Debug.LogError("DamageListener - The target object does not have a Stats script on it"); }
             }

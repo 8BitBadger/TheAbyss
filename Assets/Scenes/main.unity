@@ -887,6 +887,16 @@ PrefabInstance:
       propertyPath: m_Size.x
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 50842080126825591, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7576278351095965604, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: maskToIngnore.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2571417315383388807, guid: b2d8faf7a43fd24498b3ff0e09906c07, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b2d8faf7a43fd24498b3ff0e09906c07, type: 3}
@@ -1024,6 +1034,11 @@ PrefabInstance:
     - target: {fileID: 3618482977423129906, guid: 37c34bed08c871f409f0320c5b5a1d77,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

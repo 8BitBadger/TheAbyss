@@ -42,8 +42,13 @@ namespace Comps
         [HideInInspector]
         public Vector2 wanderPoint;
 
+
         [HideInInspector]
         public float timer = 0;
+
+        //Used to check if the creature is being attacked
+        [HideInInspector]
+        public GameObject attacker = null;
 
         private void Start()
         {

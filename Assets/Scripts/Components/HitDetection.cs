@@ -7,24 +7,18 @@ namespace Comps
 {
     public class HitDetection : MonoBehaviour
     {
-        //Used to ignore the attacker so it doesn't cal damage event on itself
-        public LayerMask maskToIngnore;
-        private void OnTriggerStay2D(Collider2D other)
+        private void OnCollisionEnter2D(Collision2D coll)
         {
-            Debug.Log(other.name);
-            Debug.Log(other.tag);
-           
-            //Check if the layer colliding with the trigger is not on the ingone layer mask whitch should be the parent object for the script
-            if (other.gameObject.layer != maskToIngnore.value)
+            //NOTE: Really need a better way to check for the collisions
+            if (coll.gameObject.tag == "Creature" || coll.gameObject.tag == "Ground")
             {
                 //Start the call for the damage Event system
                 DamageEvent damageEventInfo = new DamageEvent();
                 //Since the hitbox is a child of the attacker object we need to return the parent object to the event system
                 damageEventInfo.baseGO = transform.parent.gameObject;
-                damageEventInfo.targetGO = other.gameObject;
+                damageEventInfo.targetGO = coll.gameObject;
                 damageEventInfo.FireEvent();
             }
-
         }
     }
 }

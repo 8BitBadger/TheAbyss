@@ -13,7 +13,6 @@ public class ConsumeCrystal : Action
 
     private void Consume(AI controller)
     {
-        //NOTE: Call health class or ability and subtract health from it he crystal
         if ((Time.time - controller.timer) > controller.GetComponent<Stats>().attackSpeed.Value)
         {
             //Create a new damage event info

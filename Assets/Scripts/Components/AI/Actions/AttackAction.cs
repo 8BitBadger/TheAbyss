@@ -5,9 +5,7 @@ using EventCallback;
 [CreateAssetMenu(menuName = "Comps/AI/Actions/Attack")]
     public class AttackAction : Action
     {
-        float timeSinceLastAttack;
-        //TODO: Need to set this to the value in the units data
-        float attackInterval = 5;
+        float attackTimer;
 
         public override void Act(AI controller)
         {
@@ -18,14 +16,16 @@ using EventCallback;
 
         private void Attack(AI controller)
         {
-            if ((Time.time - timeSinceLastAttack) > attackInterval)
+            if ((Time.time - attackTimer) > controller.GetComponent<Stats>().attackSpeed.Value)
             {
 
             AttackEvent attackEventInfo = new AttackEvent();
             attackEventInfo.baseGO = controller.gameObject;
+
             attackEventInfo.FireEvent();
-                //controller.data.chaseTarget.gameObject.GetComponent<EventCbSystem.PlayerLogic>().TakeDamage(1);
-                //controller.timeSinceLastAttack = Time.time;
+            //controller.data.chaseTarget.gameObject.GetComponent<EventCbSystem.PlayerLogic>().TakeDamage(1);
+            //controller.timeSinceLastAttack = Time.time;
+            attackTimer = Time.time;
             }
         }
    }

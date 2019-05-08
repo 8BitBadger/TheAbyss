@@ -5,12 +5,11 @@ using UnityEngine;
 namespace Comps
 {
     [RequireComponent(typeof(Rigidbody2D))]
+    [RequireComponent(typeof(Stats))]
     public class MovePlayer : MonoBehaviour
     {
         //THe rigidbody for the object the asset is attached to
         private Rigidbody2D rb2d;
-        //THe speed the keyboard is moved at
-        public float speed;
 
         private void Start()
         {
@@ -30,7 +29,7 @@ namespace Comps
         private void FixedUpdate()
         {
             //Sets the velocity of the objects rigidbody
-            rb2d.MovePosition(rb2d.position + new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * speed * Time.deltaTime);
+            rb2d.MovePosition(rb2d.position + new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
         }
     }
 }

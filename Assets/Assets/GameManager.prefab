@@ -77,6 +77,18 @@ MonoBehaviour:
   smoothAmount: 1
   useRandomSeed: 0
   seed: 5
+  noneLayerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  floorLayerMask:
+    serializedVersion: 2
+    m_Bits: 16384
+  groundLayerMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  rockLayerMask:
+    serializedVersion: 2
+    m_Bits: 8192
 --- !u!114 &3618482977423129911
 MonoBehaviour:
   m_ObjectHideFlags: 0

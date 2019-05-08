@@ -49,6 +49,8 @@ public class MapManager : MonoBehaviour
     //The random seed to use if the userandomseed is false
     public int seed;
 
+    public LayerMask noneLayerMask, floorLayerMask, groundLayerMask, rockLayerMask;
+
     // Use this for initialization
     void Start()
     {
@@ -91,10 +93,10 @@ public class MapManager : MonoBehaviour
                 //TODO: Make it so that fog of war can be toggled from the inspector
                 //tile_sr.color = new Color(0f, 0f, 0f);
 
-                BoxCollider2D tile_Boxcol = tile_go.AddComponent<BoxCollider2D>();
-                tile_Boxcol.size = Vector2.one;
+                BoxCollider2D tile_BoxCol = tile_go.AddComponent<BoxCollider2D>();
+                tile_BoxCol.size = Vector2.one;
                 //Set the tile leayer to the obstacle layer to work with the FOW
-                tile_go.layer = 8;
+                tile_go.layer = noneLayerMask;
 
                 //tile_go.AddComponent<EventCbSystem.TileLogic>();
 
@@ -127,21 +129,21 @@ public class MapManager : MonoBehaviour
         {
             tile_go.GetComponent<SpriteRenderer>().sprite = floorSprites[UnityEngine.Random.Range(0, floorSprites.Length)];
             tile_go.GetComponent<BoxCollider2D>().isTrigger = true;
-            tile_go.layer = 13;
+            tile_go.layer = floorLayerMask;
 
         }
         else if (tile_data.Type == TileType.Ground)
         {
             tile_go.GetComponent<SpriteRenderer>().sprite = groundSprites[UnityEngine.Random.Range(0, groundSprites.Length)];
             tile_go.GetComponent<BoxCollider2D>().isTrigger = false;
-            tile_go.layer = 8;
+            tile_go.layer = groundLayerMask;
         }
        
         else if (tile_data.Type == TileType.Rock)
         {
             tile_go.GetComponent<SpriteRenderer>().sprite = rockSprites[UnityEngine.Random.Range(0, rockSprites.Length)];
             tile_go.GetComponent<BoxCollider2D>().isTrigger = false;
-            tile_go.layer = 8;
+            tile_go.layer = rockLayerMask;
         }
         /*else if (tile_data.Type == TileType.MiniralGround)
         {
