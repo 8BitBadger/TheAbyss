@@ -45,15 +45,32 @@ namespace Comps
 
         [HideInInspector]
         public float timer = 0;
+        [HideInInspector]
+        public float attackTimer = 0;
 
         //Used to check if the creature is being attacked
         [HideInInspector]
         public GameObject attacker = null;
 
+        //The hitbox used for attacks
+        [HideInInspector]
+        public GameObject weaponHitBox;
+
         private void Start()
         {
             //Set up the rigidbody for the AI
             rb2d = GetComponent<Rigidbody2D>();
+
+            if (transform.GetChild(0).GetComponent<HitDetection>())
+            {
+                //Get the game object that the hitbox is atached to
+                weaponHitBox = transform.GetChild(0).gameObject;
+                weaponHitBox.SetActive(false);
+            }
+            else
+            {
+                Debug.LogError("AttackAction - No weapon hitbox child object detected. Make sure child object is present");
+            }
         }
 
         private void FixedUpdate()

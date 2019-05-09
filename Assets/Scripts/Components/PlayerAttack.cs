@@ -37,7 +37,7 @@ namespace Comps
                 {
                     //We enable the hitbox to check for collisions for the weapon
                     weaponHitBox.SetActive(true);
-
+                    weaponHitBox.transform.Translate(0, 0, 0);
                     //NOTE: play attack animation from here
 
                     //Call to the attack event callback system

@@ -57,6 +57,7 @@ namespace EventCallback
 
         private void On_Damaged(DamageEvent damageEvent)
         {
+            Debug.Log("DamageListener - Damage Listener called");
             //Check if the target object has the health script attached
             if (damageEvent.targetGO.GetComponent<Health>())
             {
@@ -79,6 +80,12 @@ namespace EventCallback
                         //Run Animation?
                         //Particle Effect?
                         health.TakeDamage(stats.damage.Value);
+
+                        //NOTE veru inaficiant, fix later
+                        if(damageEvent.targetGO.tag == "Crystal")
+                        {
+                            //gain health? level up?
+                        }
                     }
                     else { Debug.LogError("DamageListener - The target object does not match any tags registered to take damage"); }
 

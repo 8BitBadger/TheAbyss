@@ -3,30 +3,39 @@ using Comps;
 using EventCallback;
 
 [CreateAssetMenu(menuName = "Comps/AI/Actions/Attack")]
-    public class AttackAction : Action
+public class AttackAction : Action
+{
+
+    public override void Act(AI controller)
     {
-        float attackTimer;
+        //TODO: Make it so sprite is showing in the general direction of the player
 
-        public override void Act(AI controller)
+        Attack(controller);
+    }
+
+    private void Attack(AI controller)
+    {
+        if ((Time.time - controller.attackTimer) > controller.GetComponent<Stats>().attackSpeed.Value)
         {
-            //TODO: Make it so sprite is showing in the general direction of the player
 
-            Attack(controller);
-        }
+            //We enable the hitbox to check for collisions for the weapon
+            controller.weaponHitBox.SetActive(true);
 
-        private void Attack(AI controller)
-        {
-            if ((Time.time - attackTimer) > controller.GetComponent<Stats>().attackSpeed.Value)
-            {
+            //NOTE: play attack animation from here
 
+            //Call to the attack event callback system
             AttackEvent attackEventInfo = new AttackEvent();
             attackEventInfo.baseGO = controller.gameObject;
-
             attackEventInfo.FireEvent();
-            //controller.data.chaseTarget.gameObject.GetComponent<EventCbSystem.PlayerLogic>().TakeDamage(1);
-            //controller.timeSinceLastAttack = Time.time;
-            attackTimer = Time.time;
-            }
+            //Reset the timer for the next attack time check
+            controller.attackTimer = Time.time;
         }
-   }
+        //Check the timer if it is time to attack
+        if ((Time.time - controller.attackTimer) > controller.gameObject.GetComponent<Stats>().attackSpeed.Value)
+        {
+            //We disable the hitbox when the timer for the attack has run down
+            controller.weaponHitBox.SetActive(false);
+        }
+    }
+}
 
