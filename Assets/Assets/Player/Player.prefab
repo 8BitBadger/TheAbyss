@@ -135,7 +135,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a6daceaadd1af1489afd5d2b4543785, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
 --- !u!114 &2571417315028549448
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,12 +161,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a92df0667fbdc7741b55b7fb20239f08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  creatures:
-    serializedVersion: 2
-    m_Bits: 512
-  obstacles:
-    serializedVersion: 2
-    m_Bits: 256
 --- !u!114 &2571417315028549446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -267,7 +260,8 @@ PrefabInstance:
       propertyPath: maskToIngnore.m_Bits
       value: 1024
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -7673334069431733848, guid: ea387208754906949b312dc1437b5df0, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: ea387208754906949b312dc1437b5df0, type: 3}
 --- !u!4 &6619709385024683969 stripped
 Transform:

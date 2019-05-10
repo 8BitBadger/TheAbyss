@@ -738,6 +738,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: WeaponHitBox
       objectReference: {fileID: 0}
+    - target: {fileID: 925765246735487314, guid: ea387208754906949b312dc1437b5df0,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2741571081091882380, guid: ea387208754906949b312dc1437b5df0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -802,6 +807,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1510310919359333865, guid: ea387208754906949b312dc1437b5df0,
+        type: 3}
+      propertyPath: HitBoxMasks.m_Bits
+      value: 3072
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea387208754906949b312dc1437b5df0, type: 3}
@@ -976,8 +986,12 @@ PrefabInstance:
       propertyPath: maskToIngnore.m_Bits
       value: 512
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2571417315383388807, guid: b2d8faf7a43fd24498b3ff0e09906c07, type: 3}
+    - target: {fileID: 7576278351095965604, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: HitBoxMasks.m_Bits
+      value: 4608
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2d8faf7a43fd24498b3ff0e09906c07, type: 3}
 --- !u!1001 &3339415641756957219
 PrefabInstance:

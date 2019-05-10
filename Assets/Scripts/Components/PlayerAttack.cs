@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 using EventCallback;
-using UnityEditor;
 
 namespace Comps
 {
@@ -19,7 +18,7 @@ namespace Comps
             {
                 //Get the game object that the hitbox is atached to
                 weaponHitBox = transform.GetChild(0).gameObject;
-                weaponHitBox.SetActive(false);
+                //weaponHitBox.SetActive(false);
             }
             else
             {
@@ -36,8 +35,10 @@ namespace Comps
                 if ((Time.time - timer) > gameObject.GetComponent<Stats>().attackSpeed.Value)
                 {
                     //We enable the hitbox to check for collisions for the weapon
-                    weaponHitBox.SetActive(true);
-                    weaponHitBox.transform.Translate(0, 0, 0);
+                    //weaponHitBox.SetActive(true);
+                    //Move the hit box a miniscule amount to get a reaction from the hit box while the animation has not yet been inplimented
+                    //NOTE: Take out this movement when the animation has been implimented
+                    weaponHitBox.GetComponent<HitDetection>().CheckForHit();
                     //NOTE: play attack animation from here
 
                     //Call to the attack event callback system
@@ -52,7 +53,7 @@ namespace Comps
             if ((Time.time - timer) > gameObject.GetComponent<Stats>().attackSpeed.Value)
             {
                 //We disable the hitbox when the timer for the attack has run down
-                weaponHitBox.SetActive(false);
+                //weaponHitBox.SetActive(false);
             }
         }
     }
