@@ -733,6 +733,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 7447790909170234408}
     m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: HitBoxMasks.m_Bits
+      value: 3072
+      objectReference: {fileID: 0}
     - target: {fileID: 925765246735487314, guid: ea387208754906949b312dc1437b5df0,
         type: 3}
       propertyPath: m_Name
@@ -741,7 +745,7 @@ PrefabInstance:
     - target: {fileID: 925765246735487314, guid: ea387208754906949b312dc1437b5df0,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2741571081091882380, guid: ea387208754906949b312dc1437b5df0,
         type: 3}
@@ -807,11 +811,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510310919359333865, guid: ea387208754906949b312dc1437b5df0,
-        type: 3}
-      propertyPath: HitBoxMasks.m_Bits
-      value: 3072
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea387208754906949b312dc1437b5df0, type: 3}
@@ -959,12 +958,12 @@ PrefabInstance:
     - target: {fileID: 6619709385024683969, guid: b2d8faf7a43fd24498b3ff0e09906c07,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6619709385024683969, guid: b2d8faf7a43fd24498b3ff0e09906c07,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6619709385024683969, guid: b2d8faf7a43fd24498b3ff0e09906c07,
         type: 3}
@@ -990,6 +989,41 @@ PrefabInstance:
         type: 3}
       propertyPath: HitBoxMasks.m_Bits
       value: 4608
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241054205398224384, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: useSphere
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241054205398224384, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: HitBoxMasks.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241054205398224384, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: radius
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241054205398224384, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: hitboxSize.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241054205398224384, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: hitboxSize.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7241054205398224384, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: hitboxSize.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8145059361577906975, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2d8faf7a43fd24498b3ff0e09906c07, type: 3}

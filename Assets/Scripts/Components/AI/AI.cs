@@ -61,11 +61,10 @@ namespace Comps
             //Set up the rigidbody for the AI
             rb2d = GetComponent<Rigidbody2D>();
 
-            if (transform.GetChild(0).GetComponent<HitDetection>())
+            if (transform.GetChild(0).GetComponent<HitBox>())
             {
                 //Get the game object that the hitbox is atached to
                 weaponHitBox = transform.GetChild(0).gameObject;
-                weaponHitBox.SetActive(false);
             }
             else
             {

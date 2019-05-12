@@ -14,7 +14,7 @@ namespace Comps
 
         private void Start()
         {
-            if (transform.GetChild(0).GetComponent<HitDetection>())
+            if (transform.GetChild(0).GetComponent<HitBox>())
             {
                 //Get the game object that the hitbox is atached to
                 weaponHitBox = transform.GetChild(0).gameObject;
@@ -38,7 +38,7 @@ namespace Comps
                     //weaponHitBox.SetActive(true);
                     //Move the hit box a miniscule amount to get a reaction from the hit box while the animation has not yet been inplimented
                     //NOTE: Take out this movement when the animation has been implimented
-                    weaponHitBox.GetComponent<HitDetection>().CheckForHit();
+                    weaponHitBox.GetComponent<HitBox>().startCheckingCollision();
                     //NOTE: play attack animation from here
 
                     //Call to the attack event callback system
@@ -47,13 +47,14 @@ namespace Comps
                     attackEventInfo.FireEvent();
                     //Reset the timer for the next attack time check
                     timer = Time.time;
+                    
                 }
             }
             //Check the timer if it is time to attack
             if ((Time.time - timer) > gameObject.GetComponent<Stats>().attackSpeed.Value)
             {
                 //We disable the hitbox when the timer for the attack has run down
-                //weaponHitBox.SetActive(false);
+                ;weaponHitBox.GetComponent<HitBox>().stopCheckingCollision();
             }
         }
     }

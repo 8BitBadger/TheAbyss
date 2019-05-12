@@ -18,87 +18,93 @@ namespace Comps
 
         public LayerMask HitBoxMasks;
 
-         public Vector3 hitboxSize = Vector3.one;
+        public Vector3 hitboxSize = Vector3.one;
 
-         public float radius = 0.5f;
+        public float radius = 0.5f;
 
-    public Color inactiveColor,  collisionOpenColor, collidingColor;
+        public Color inactiveColor, collisionOpenColor, collidingColor;
 
-    private ColliderState _state;
+        private ColliderState state;
 
-    private void Update()
-    {
-        if (_state == ColliderState.Closed) { return; }
+        private void Start()
+        {
+            //Init the collider to inactive when object is spawned
+            state = ColliderState.Closed;
+        }
 
-            if(useSphere)
+        private void Update()
+        {
+            if (state == ColliderState.Closed) { return; }
+
+            Collider2D[] coll;
+
+            if (useSphere)
             {
-                Collider2D[] coll = Physics2D.OverlapCircleAll(transform.position, radius, 0, HitBoxMasks);
+                coll = Physics2D.OverlapCircleAll(transform.position, radius, HitBoxMasks);
             }
             else
             {
-                Collider2D[] coll = Physics2D.OverlapBoxAll(transform.position, hitboxSize, 0, HitBoxMasks);
+                coll = Physics2D.OverlapBoxAll(transform.position, hitboxSize, 0, HitBoxMasks);
             }
 
-        if (coll.Length > 0)
-        {
-            _state =  ColliderState.Colliding;
-            // We should do something with the colliders
-            Debug.Log("There was a hit");
-            
-        //    //Start the call for the damage Event system
-        //    DamageEvent damageEventInfo = new DamageEvent();
-        //    //Since the hitbox is a child of the attacker object we need to return the parent object to the event system
-        //    damageEventInfo.baseGO = transform.parent.gameObject;
-        //    damageEventInfo.targetGO = coll.gameObject;
-        //    damageEventInfo.FireEvent();
+            if (coll.Length > 0)
+            {
+                state = ColliderState.Colliding;
+                // We should do something with the colliders
+                Debug.Log("There was a hit");
+
+                //    //Start the call for the damage Event system
+                //    DamageEvent damageEventInfo = new DamageEvent();
+                //    //Since the hitbox is a child of the attacker object we need to return the parent object to the event system
+                //    damageEventInfo.baseGO = transform.parent.gameObject;
+                //    damageEventInfo.targetGO = coll.gameObject;
+                //    damageEventInfo.FireEvent();
+            }
+            else
+            {
+                state = ColliderState.Open;
+            }
         }
-        else
-        {
-            _state =  ColliderState.Open;
-        }
-    }
 
 
         public void startCheckingCollision()
         {
-            _state = ColliderState.Open;
+            state = ColliderState.Open;
         }
 
         public void stopCheckingCollision()
         {
-            _state = ColliderState.Closed;
+            state = ColliderState.Closed;
         }
 
-        private void OnDrawGizmos()
+        private void OnDrawGizmosSelected()
         {
-            checkGizmoColor()
-            if(useSphere)
+            Gizmos.color = Color.red;
+            Gizmos.DrawWireSphere(transform.position, radius);
+
+            switch (state)
             {
-                Gizmos.DrawWireSphere(transform.position, 2);
+                case ColliderState.Closed:
+                    Gizmos.color = inactiveColor;
+                    break;
+
+                case ColliderState.Open:
+                    Gizmos.color = collisionOpenColor;
+                    break;
+
+                case ColliderState.Colliding:
+                    Gizmos.color = collidingColor;
+                    break;
+            }
+
+            if (useSphere)
+            {
+                Gizmos.DrawWireSphere(transform.position, radius);
             }
             else
             {
-                Gizmos.DrawWireSphere(transform.position, 2);
+                Gizmos.DrawWireCube(transform.position, hitboxSize);
             }
-            
         }
-
-        private void checkGizmoColor()
-        {
-    switch(_state)
-    {
-        case ColliderState.Closed:
-            Gizmos.color = inactiveColor;
-        break;
-
-        case ColliderState.Open:
-            Gizmos.color = collisionOpenColor;
-        break;
-
-        case ColliderState.Colliding:
-            Gizmos.color = collidingColor;
-        break;
-    }
-}
     }
 }
