@@ -29,7 +29,7 @@ public class Wander : Action
                 newPatrolPoint = new Vector2(Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.gameObject.transform.position.x), Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.gameObject.transform.position.y));
 
                 Vector2 dirToRaycast = (new Vector3(newPatrolPoint.x, newPatrolPoint.y, 0) - controller.gameObject.transform.position).normalized;
-                //Check if the new patrol point is not collidiing with a wall or other colliders and if it is in the dirrection of its view angle.
+                //Check if the new patrol point is not colliding with a wall or other colliders and if it is in the dirrection of its view angle.
                 //If the randomDirectionChance is 1 then it will take that path even if it is not in its view path
                 if (randomDirectionChanse != 1)
                 {

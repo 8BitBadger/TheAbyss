@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96e17b0609e915142b86a318db2631fe, type: 3}
   m_Name: Orbdox Move to attack target
   m_EditorClassIdentifier: 
-  actions: []
-  transitions: []
+  actions:
+  - {fileID: 11400000, guid: b2a8ebf8059459942ac9d12d94779359, type: 2}
+  transitions:
+  - decision: {fileID: 11400000, guid: ae56119f1dc5ee84f84ec095f0090606, type: 2}
+    trueState: {fileID: 11400000, guid: a7456138cf69fed4b8629e80d4626088, type: 2}
+    falseState: {fileID: 11400000}

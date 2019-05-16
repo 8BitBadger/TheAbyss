@@ -57,7 +57,7 @@ namespace EventCallback
 
         private void On_Damaged(DamageEvent damageEvent)
         {
-            Debug.Log("DamageListener - Damage Listener called");
+            Debug.Log("DamageListener - Damage Listener called by " + damageEvent.baseGO.name + " Tag(" + damageEvent.baseGO.tag + ")");
             //Check if the target object has the health script attached
             if (damageEvent.targetGO.GetComponent<Health>())
             {
@@ -93,6 +93,7 @@ namespace EventCallback
                     {
                         //Set the attacker to 
                         damageEvent.targetGO.GetComponent<AI>().target = damageEvent.baseGO.transform;
+                        damageEvent.targetGO.GetComponent<AI>().attacker = damageEvent.baseGO;
                     }
                 }
                 else { Debug.LogError("DamageListener - The target object does not have a Stats script on it"); }

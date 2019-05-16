@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: be8c85839fa2d6147a211d28b6638842, type: 3}
-  m_Name: Orbdox Look For Crystals
+  m_Script: {fileID: 11500000, guid: 06eb5af72d9ab4248af4a520e4974e6f, type: 3}
+  m_Name: Orbdox being attacked
   m_EditorClassIdentifier: 

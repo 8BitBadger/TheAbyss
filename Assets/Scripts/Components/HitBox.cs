@@ -26,6 +26,8 @@ namespace Comps
 
         private ColliderState state;
 
+
+
         private void Start()
         {
             //Init the collider to inactive when object is spawned
@@ -49,16 +51,24 @@ namespace Comps
 
             if (coll.Length > 0)
             {
+                //Change the state of the collider when collisions where detected
                 state = ColliderState.Colliding;
-                // We should do something with the colliders
-                Debug.Log("There was a hit");
 
-                //    //Start the call for the damage Event system
-                //    DamageEvent damageEventInfo = new DamageEvent();
-                //    //Since the hitbox is a child of the attacker object we need to return the parent object to the event system
-                //    damageEventInfo.baseGO = transform.parent.gameObject;
-                //    damageEventInfo.targetGO = coll.gameObject;
-                //    damageEventInfo.FireEvent();
+                //Work bacwards through the list to remove the collider
+                //Working backward through the list ensures us that we do not delete an entry infront and crash the loop while trying to access an entry that does not exist anymore.
+                for (int i = coll.Length -1; i >= 0; i--)
+                {
+                    //Start the call for the damage Event system
+                    DamageEvent damageEventInfo = new DamageEvent();
+                    //Since the hitbox is a child of the attacker object we need to return the parent object to the event system
+                    damageEventInfo.baseGO = transform.parent.gameObject;
+                    damageEventInfo.targetGO = coll[i].gameObject;
+                    damageEventInfo.FireEvent();
+                }
+
+                //We stop checking the colision so we dont register the hit anymore
+                stopCheckingCollision();
+
             }
             else
             {

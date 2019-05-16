@@ -35,10 +35,11 @@ public class ParallaxPanel : MonoBehaviour
         //Difference between the mouse pos and the panel's position
         Vector2 diff = (Vector2)transform.position - (Vector2)Input.mousePosition;
 
+        //NOTE: Re enable this code to do paralax effect if the mouse is over the picture only
         //If the mouse is inside the rect/panel [...]
-        if (Mathf.Abs(diff.x) <= (rect.sizeDelta.x / 2f) &&
-            Mathf.Abs(diff.y) <= (rect.sizeDelta.y / 2f))
-        {
+        //if (Mathf.Abs(diff.x) <= (rect.sizeDelta.x / 2f) &&
+        //    Mathf.Abs(diff.y) <= (rect.sizeDelta.y / 2f))
+        //{
             targetEulerAngles = new Vector3(
                 //Rotates along the X axis, based on the Y distance from the centre
                 x_maxRot * -Mathf.Clamp(diff.y / (rect.sizeDelta.y / 2f), -1, 1),
@@ -46,11 +47,11 @@ public class ParallaxPanel : MonoBehaviour
                 y_maxRot * Mathf.Clamp(diff.x / (rect.sizeDelta.x / 2f), -1, 1),
                 //No rotation along the Z axis
                 0);
-        }
-        else  //Mouse is outside the rect, target euler is zero
-        {
-            targetEulerAngles = Vector3.zero;
-        }
+        //}
+        //else  //Mouse is outside the rect, target euler is zero
+        //{
+        //    targetEulerAngles = Vector3.zero;
+        //}
 
         //Lerps the rotation
         rectToRotate.eulerAngles = AngleLerp(rectToRotate.eulerAngles, targetEulerAngles, speed * Time.deltaTime);
