@@ -6,6 +6,10 @@ public class TeleportToTarget : Action
 {
     //The position 
     Vector2 teleportPos;
+    //If the position has not been found after 20 tries
+    int tries;
+    //Exit the loop
+    bool exitLoop = false;
 
     public override void Act(AI controller)
     {
@@ -14,32 +18,41 @@ public class TeleportToTarget : Action
 
     private void Teleport(AI controller)
     {
+        //Set the fist teleport location
         teleportPos = GetRandomLocation();
 
-        while(Physics2D.Linecast(controller.rb2d.position, teleportPos, controller.obstacleMask))
+        //Run through a loop to check if the teleport location is valid, if not we call the getrandom location again
+        while (Physics2D.Linecast(teleportPos, teleportPos, controller.obstacleMask) || !exitLoop)
         {
+            //Gets a random teleport location
             teleportPos = GetRandomLocation();
+            //Incriment the amount of tries
+            tries++;
+
+            if (tries > 20) exitLoop = true;
+
         }
-        //Check if the area is clear
-        //if (!Physics2D.Linecast(controller.rb2d.position, teleportPos, controller.obstacleMask))
-        //{
-            //If the area is clear teleport the creature to the new target
-            controller.rb2d.MovePosition(teleportPos);
+
+        controller.rb2d.MovePosition(teleportPos);
+        //Resets the tries for locating a valid teleport location;
+        tries = 0;
+        exitLoop = false;
+
         //}
 
         //if (!Physics2D.CircleCast(controller.rb2d.position, .3f, teleportPos, controller.wanderDistance, controller.obstacleMask) && Vector2.Angle(controller.gameObject.transform.right, teleportPos.normalized) < controller.viewAngle / 2)
         //{
 
-            //If the area is clear teleport the creature to the new target
-            //controller.rb2d.MovePosition(teleportPos);
+        //If the area is clear teleport the creature to the new target
+        //controller.rb2d.MovePosition(teleportPos);
         //}
         //else
         //{
-            //if (!Physics2D.CircleCast(controller.rb2d.position, .3f, new Vector2(Random.Range(10, 15),Random.Range(10, 15)), controller.wanderDistance, controller.obstacleMask))
-            //{
-                //If the area is clear teleport the creature to the new target
-                //controller.rb2d.MovePosition(teleportPos);
-            //}
+        //if (!Physics2D.CircleCast(controller.rb2d.position, .3f, new Vector2(Random.Range(10, 15),Random.Range(10, 15)), controller.wanderDistance, controller.obstacleMask))
+        //{
+        //If the area is clear teleport the creature to the new target
+        //controller.rb2d.MovePosition(teleportPos);
+        //}
         //}
     }
 

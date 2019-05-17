@@ -129,21 +129,20 @@ public class MapManager : MonoBehaviour
         {
             tile_go.GetComponent<SpriteRenderer>().sprite = floorSprites[UnityEngine.Random.Range(0, floorSprites.Length)];
             tile_go.GetComponent<BoxCollider2D>().isTrigger = true;
-            tile_go.layer = floorLayerMask;
-
+            //tile_go.layer = floorLayerMask;
+            tile_go.layer = LayerMask.NameToLayer("Floor");
         }
         else if (tile_data.Type == TileType.Ground)
         {
             tile_go.GetComponent<SpriteRenderer>().sprite = groundSprites[UnityEngine.Random.Range(0, groundSprites.Length)];
             tile_go.GetComponent<BoxCollider2D>().isTrigger = false;
-            tile_go.layer = groundLayerMask;
+            tile_go.layer = LayerMask.NameToLayer("Ground");
         }
-       
         else if (tile_data.Type == TileType.Rock)
         {
             tile_go.GetComponent<SpriteRenderer>().sprite = rockSprites[UnityEngine.Random.Range(0, rockSprites.Length)];
             tile_go.GetComponent<BoxCollider2D>().isTrigger = false;
-            tile_go.layer = rockLayerMask;
+            tile_go.layer = LayerMask.NameToLayer("Rock");
         }
         /*else if (tile_data.Type == TileType.MiniralGround)
         {
