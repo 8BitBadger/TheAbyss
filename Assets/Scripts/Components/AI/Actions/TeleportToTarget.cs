@@ -10,6 +10,10 @@ public class TeleportToTarget : Action
     int tries;
     //Exit the loop
     bool exitLoop = false;
+    //The game manager object
+    GameObject gm;
+    //The bool to check that the teleport position is in the bound of the map;
+    bool inMapBounds;
 
     public override void Act(AI controller)
     {
@@ -18,18 +22,43 @@ public class TeleportToTarget : Action
 
     private void Teleport(AI controller)
     {
-        //Set the fist teleport location
+
+        //Check if the gmaemanager object exists and that it has the map manager script
+        if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<MapManager>())
+        {
+            gm = GameObject.FindGameObjectWithTag("GameManager");
+        }
+        else
+        {
+            Debug.LogError("TeleportToTarget - Could not find GameManager object");
+        }
+
+        //Gets a random teleport location
         teleportPos = GetRandomLocation();
 
         //Run through a loop to check if the teleport location is valid, if not we call the getrandom location again
-        while (Physics2D.Linecast(teleportPos, teleportPos, controller.obstacleMask) || !exitLoop)
+        while (true)
         {
-            //Gets a random teleport location
-            teleportPos = GetRandomLocation();
+
+
+            //If the teleport position is ok then we force an exit out of the loop
+            if (CheckPosition(controller))
+            {
+                Debug.Log("Breaking out of loop due to correct position");
+                break;
+            }
+
             //Incriment the amount of tries
             tries++;
 
-            if (tries > 20) exitLoop = true;
+            if (tries > 20)
+            {
+                Debug.Log("Breaking out of loop due to to many tries");
+                break;
+            }
+            
+            //Gets a random teleport location
+            teleportPos = GetRandomLocation();
 
         }
 
@@ -65,6 +94,13 @@ public class TeleportToTarget : Action
         float teleportDistance = Random.Range(10, 20);
         //Set the teleport position
         return dirToTeleport * teleportDistance;
+    }
+
+    private bool CheckPosition(AI controller)
+    { //Check if the teleport position is inside of the maps bounds
+        inMapBounds = gm.GetComponent<MapManager>().IsInMapBounds(teleportPos);
+        if (!Physics2D.Linecast(teleportPos, teleportPos, controller.obstacleMask) && inMapBounds) return true;
+        else return false;
     }
 }
 

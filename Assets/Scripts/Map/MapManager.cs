@@ -193,4 +193,16 @@ public class MapManager : MonoBehaviour
         int y = Mathf.FloorToInt(coord.y);
         return map.GetTileAt(x, y);
     }
+
+    public bool IsInMapBounds(Vector3 coord)
+    {
+        if (coord.x >= 2 && coord.y >= 2 && coord.x <= width - 2 && coord.y <= height - 2)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 }
