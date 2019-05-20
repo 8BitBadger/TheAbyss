@@ -38,6 +38,9 @@ namespace Comps
 
         //How far will the monster wander
         public float wanderDistance;
+        [HideInInspector]
+        //Check if the ai got a new wander point
+        public bool gotNewDirection;
         //The waypoint where the unit will wander to
         [HideInInspector]
         public Vector2 wanderPoint;

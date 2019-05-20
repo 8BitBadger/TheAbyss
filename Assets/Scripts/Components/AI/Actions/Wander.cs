@@ -41,7 +41,7 @@ public class Wander : Action
                     }
                 }
                 else
-                {   
+                {
                     //if(!Physics2D.CircleCast(controller.rb2d.position, .3f, newPatrolPoint, controller.wanderDistance, controller.obstacleMask))
                     if (!Physics2D.Linecast(controller.rb2d.position, newPatrolPoint, controller.obstacleMask))
                     {
@@ -59,6 +59,7 @@ public class Wander : Action
             //Here we calculate the units velocity based on its distance to the target witch slows down the closer it gets to the target and starts movement very fast
             controller.rb2d.MovePosition(controller.rb2d.position + normalizedDir * controller.GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
         }
+        Debug.Log("Wander point is = " + controller.wanderPoint);
     }
 }
 
