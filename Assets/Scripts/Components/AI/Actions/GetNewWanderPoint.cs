@@ -11,26 +11,22 @@ public class GetNewWanderPoint : Action
 
     private void NewWanderPoint(AI controller)
     {
-        if (controller.gotNewDirection == false)
-        {
-            bool validPath = false;
-
+        if (controller.gotNewDirection == true) return;
+   
             Vector2 newPatrolPoint;
 
-            while (!validPath)
+            while (true)
             {
-                newPatrolPoint = new Vector2(Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.gameObject.transform.position.x), Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.gameObject.transform.position.y));
+                newPatrolPoint = new Vector3(Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.gameObject.transform.position.x), Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.gameObject.transform.position.y),0f);
 
-                Vector2 dirToRaycast = (new Vector3(newPatrolPoint.x, newPatrolPoint.y, 0) - controller.gameObject.transform.position).normalized;
+                Vector2 dirToRaycast = (newPatrolPoint - new Vector2(controller.gameObject.transform.position.x, controller.gameObject.transform.position.x)).normalized;
 
                 if (!Physics2D.Linecast(controller.rb2d.position, newPatrolPoint, controller.obstacleMask) && Vector2.Angle(controller.gameObject.transform.right, dirToRaycast) < controller.viewAngle / 2)
                 {
                     controller.gotNewDirection = true;
-                    validPath = true;
                     controller.wanderPoint = newPatrolPoint;
+                    break;
                 }
             }
-        }
     }
 }
-
