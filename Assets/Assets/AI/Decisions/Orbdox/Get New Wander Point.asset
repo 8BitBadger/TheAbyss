@@ -9,6 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 36d85b3620df66a44869abd00550ffa9, type: 3}
-  m_Name: Stalker Wander
+  m_Script: {fileID: 11500000, guid: 39776fffe357bf54cac084a8d4661283, type: 3}
+  m_Name: Get New Wander Point
   m_EditorClassIdentifier: 

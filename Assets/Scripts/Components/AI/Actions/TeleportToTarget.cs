@@ -4,17 +4,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Comps/AI/Actions/Teleport to target")]
 public class TeleportToTarget : Action
 {
-    //The position 
-    Vector2 teleportPos;
-    //If the position has not been found after 20 tries
-    int tries;
-    //Exit the loop
-    bool exitLoop = false;
-    //The game manager object
-    GameObject gm;
-    //The bool to check that the teleport position is in the bound of the map;
-    bool inMapBounds;
-
     public override void Act(AI controller)
     {
         Teleport(controller);
@@ -22,85 +11,30 @@ public class TeleportToTarget : Action
 
     private void Teleport(AI controller)
     {
-
-        //Check if the gmaemanager object exists and that it has the map manager script
-        if (GameObject.FindGameObjectWithTag("GameManager").GetComponent<MapManager>())
-        {
-            gm = GameObject.FindGameObjectWithTag("GameManager");
-        }
-        else
-        {
-            Debug.LogError("TeleportToTarget - Could not find GameManager object");
-        }
-
-        //Gets a random teleport location
-        teleportPos = GetRandomLocation();
-
-        //Run through a loop to check if the teleport location is valid, if not we call the getrandom location again
-        while (true)
-        {
+        //Seeds the random number generator to not give the same random result every time
+        Random.InitState(Mathf.RoundToInt(Time.time));
+        //Choose one of the random directions
+        int direction = Random.Range(0, 7);
+        //Set the angle for the chose direction
+        float angle = direction * 45f;
+        Vector2 target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
+        RaycastHit2D[] hits = Physics2D.LinecastAll(controller.rb2d.position, target, controller.floorMask);
+        controller.rb2d.position = hits[hits.Length - 1].transform.position;
+        //Get al the floor tiles in the unit vecinity
 
 
-            //If the teleport position is ok then we force an exit out of the loop
-            if (CheckPosition(controller))
-            {
-                Debug.Log("Breaking out of loop due to correct position");
-                break;
-            }
+        //NOTE: Later theis must be modified to teleport in the direction it was looking in
+        //Collider2D[] floorColls =  Physics2D.OverlapCircleAll(controller.transform.position, 20, controller.floorMask);
 
-            //Incriment the amount of tries
-            tries++;
 
-            if (tries > 20)
-            {
-                Debug.Log("Breaking out of loop due to to many tries");
-                break;
-            }
-            
-            //Gets a random teleport location
-            teleportPos = GetRandomLocation();
-
-        }
-
-        controller.rb2d.MovePosition(teleportPos);
-        //Resets the tries for locating a valid teleport location;
-        tries = 0;
-        exitLoop = false;
-
-        //}
-
-        //if (!Physics2D.CircleCast(controller.rb2d.position, .3f, teleportPos, controller.wanderDistance, controller.obstacleMask) && Vector2.Angle(controller.gameObject.transform.right, teleportPos.normalized) < controller.viewAngle / 2)
+        //Go through the tile until we get one that is more than 15 units away and then set the units position to that floor tiles position
+        //for (int i = floorColls.Length - 1; i > 0 ; i--)
         //{
-
-        //If the area is clear teleport the creature to the new target
-        //controller.rb2d.MovePosition(teleportPos);
+        //    if (Vector2.Distance(controller.transform.position, floorColls[i].transform.position) > 15)
+        //    {
+        //        controller.rb2d.position = floorColls[i].transform.position;
+        //    }
         //}
-        //else
-        //{
-        //if (!Physics2D.CircleCast(controller.rb2d.position, .3f, new Vector2(Random.Range(10, 15),Random.Range(10, 15)), controller.wanderDistance, controller.obstacleMask))
-        //{
-        //If the area is clear teleport the creature to the new target
-        //controller.rb2d.MovePosition(teleportPos);
-        //}
-        //}
-    }
-
-    private Vector2 GetRandomLocation()
-    {
-        // Get direction away from player
-        //Vector2 dirToTeleport = (controller.rb2d.position - new Vector2(controller.target.position.x, controller.target.position.y)).normalized;
-        Vector2 dirToTeleport = new Vector2(Random.Range(-1, 2), Random.Range(-1, 2));
-        //Get the teleport distance
-        float teleportDistance = Random.Range(10, 20);
-        //Set the teleport position
-        return dirToTeleport * teleportDistance;
-    }
-
-    private bool CheckPosition(AI controller)
-    { //Check if the teleport position is inside of the maps bounds
-        inMapBounds = gm.GetComponent<MapManager>().IsInMapBounds(teleportPos);
-        if (!Physics2D.Linecast(teleportPos, teleportPos, controller.obstacleMask) && inMapBounds) return true;
-        else return false;
     }
 }
 

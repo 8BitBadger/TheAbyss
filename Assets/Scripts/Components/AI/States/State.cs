@@ -4,7 +4,6 @@ using Comps;
 [CreateAssetMenu(menuName = "Comps/AI/State")]
     public class State : ScriptableObject
     {
-        //TODO Need to make an error message that if there are no transitions or actions but the element is still set to 1 in the inspector the game throws error must disallow or check for elements before starting
         public Action[] actions;
         public Transition[] transitions;
 

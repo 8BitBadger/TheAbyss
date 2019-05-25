@@ -35,6 +35,8 @@ namespace Comps
         public LayerMask obstacleMask;
         //The layer mask for crystals in the game
         public LayerMask crystalMask;
+        //Floor mask used for teleportation 
+        public LayerMask floorMask;
 
         //How far will the monster wander
         public float wanderDistance;

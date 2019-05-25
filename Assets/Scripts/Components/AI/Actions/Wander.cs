@@ -21,7 +21,7 @@ public class Wander : Action
             normalizedDir = Vector2.zero;
 
             Vector2 newPatrolPoint;
-
+            Random.InitState(Mathf.RoundToInt(Time.time));
             randomDirectionChanse = Random.Range(controller.wanderDistance - (controller.wanderDistance * 10) / 100, controller.wanderDistance);
 
             while (!validPath)
@@ -59,7 +59,7 @@ public class Wander : Action
             //Here we calculate the units velocity based on its distance to the target witch slows down the closer it gets to the target and starts movement very fast
             controller.rb2d.MovePosition(controller.rb2d.position + normalizedDir * controller.GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
         }
-        Debug.Log("Wander point is = " + controller.wanderPoint);
+        //Debug.Log("Wander point is = " + controller.wanderPoint);
     }
 }
 

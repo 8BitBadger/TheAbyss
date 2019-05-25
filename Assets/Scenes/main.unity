@@ -262,7 +262,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1881027194}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -270,7 +270,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_SortingLayerID: 0
+  m_SortingLayerID: 702623681
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &465953883
@@ -819,6 +819,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea387208754906949b312dc1437b5df0, type: 3}
+--- !u!20 &1881027194 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 1464927303644950382, guid: f2062beda2ff6df4784939e5c88530f4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1464927303850739883}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1464927303850739883
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1276,6 +1282,16 @@ PrefabInstance:
         type: 3}
       propertyPath: viewRadius
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447790909241973647, guid: 3a2932884003e9441a62edf7c79ca2b0,
+        type: 3}
+      propertyPath: obstacleMask.m_Bits
+      value: 12288
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447790909241973647, guid: 3a2932884003e9441a62edf7c79ca2b0,
+        type: 3}
+      propertyPath: floorMask.m_Bits
+      value: 16384
       objectReference: {fileID: 0}
     - target: {fileID: 7447790909241973644, guid: 3a2932884003e9441a62edf7c79ca2b0,
         type: 3}
