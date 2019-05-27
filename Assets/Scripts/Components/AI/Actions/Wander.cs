@@ -4,9 +4,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "Comps/AI/Actions/Wander")]
 public class Wander : Action
 {
-    Vector2 normalizedDir;
-    float randomDirectionChanse;
-
     public override void Act(AI controller)
     {
         Wandering(controller);
@@ -16,50 +13,52 @@ public class Wander : Action
     {
         if (Vector2.Distance(controller.rb2d.position, controller.wanderPoint) < 0.4f || controller.wanderPoint == Vector2.zero)
         {
-            bool validPath = false;
-
-            normalizedDir = Vector2.zero;
-
-            Vector2 newPatrolPoint;
+            //TODO: Get a random direction to travel in in the 8 direction range
+            //Choose one of the random directions
             Random.InitState(Mathf.RoundToInt(Time.time));
-            randomDirectionChanse = Random.Range(controller.wanderDistance - (controller.wanderDistance * 10) / 100, controller.wanderDistance);
+            int direction = Random.Range(0, 7);
+            //Set the angle for the chose direction
+            float angle = direction * 45f;
+            float maxDistance = 0;
+            Vector2 target;
+            RaycastHit2D[] hits;
 
-            while (!validPath)
+            target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
+            //We get where the obstacle is in the chosen direction
+            RaycastHit2D obstacleHit = Physics2D.CircleCast(controller.rb2d.position, .5f, target.normalized, 20, controller.obstacleMask);
+            Debug.Log("Hit obstacleHit name = " + obstacleHit.transform.name);
+            Debug.Log("Hit obstacleHit distance = " + Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position).ToString("F4"));
+            //We get all the floor pieces that have been collided with up the the point of obstacleHits collision if there was any
+            if (obstacleHit && Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position) >= 1f)
             {
-                newPatrolPoint = new Vector2(Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.gameObject.transform.position.x), Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.gameObject.transform.position.y));
+                hits = Physics2D.CircleCastAll(controller.rb2d.position, .5f, obstacleHit.transform.position.normalized, 20, controller.floorMask);
+            }
+            else
+            {
+                direction = Random.Range(0, 7);
+                target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
+                hits = Physics2D.CircleCastAll(controller.rb2d.position, .5f, target.normalized, 20, controller.floorMask);
+            }
+            //Have to reset
+            maxDistance = 0;
 
-                Vector2 dirToRaycast = (new Vector3(newPatrolPoint.x, newPatrolPoint.y, 0) - controller.gameObject.transform.position).normalized;
-                //Check if the new patrol point is not colliding with a wall or other colliders and if it is in the dirrection of its view angle.
-                //If the randomDirectionChance is 1 then it will take that path even if it is not in its view path
-                if (randomDirectionChanse != 1)
+            //We loop through the hit list looking for the farthest of the collided tiles
+            for (int i = hits.Length - 1; i > 1; i--)
+            {
+                Debug.Log("Hit targets name = " + hits[i].transform.name);
+                float distance = Vector2.Distance(controller.rb2d.position, hits[i].transform.position);
+                Debug.Log("Hit targets distance = " + distance);
+
+                if (maxDistance < distance)
                 {
-                    //if (!Physics2D.CircleCast(controller.rb2d.position, .3f, newPatrolPoint, controller.wanderDistance, controller.obstacleMask) && Vector2.Angle(controller.gameObject.transform.right, dirToRaycast) < controller.viewAngle / 2)
-                    if (!Physics2D.Linecast(controller.rb2d.position, newPatrolPoint, controller.obstacleMask) && Vector2.Angle(controller.gameObject.transform.right, dirToRaycast) < controller.viewAngle / 2)
-                    {
-                        validPath = true;
-                        controller.wanderPoint = newPatrolPoint;
-                    }
+                    maxDistance = distance;
                 }
                 else
                 {
-                    //if(!Physics2D.CircleCast(controller.rb2d.position, .3f, newPatrolPoint, controller.wanderDistance, controller.obstacleMask))
-                    if (!Physics2D.Linecast(controller.rb2d.position, newPatrolPoint, controller.obstacleMask))
-                    {
-                        validPath = true;
-                        controller.wanderPoint = newPatrolPoint;
-                    }
+                    controller.wanderPoint = hits[i].transform.position;
                 }
             }
         }
-        else
-        {
-            //Get the normalized vector for the direction of travel
-            normalizedDir = (controller.wanderPoint - controller.rb2d.position).normalized;
-
-            //Here we calculate the units velocity based on its distance to the target witch slows down the closer it gets to the target and starts movement very fast
-            controller.rb2d.MovePosition(controller.rb2d.position + normalizedDir * controller.GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
-        }
-        //Debug.Log("Wander point is = " + controller.wanderPoint);
     }
 }
 

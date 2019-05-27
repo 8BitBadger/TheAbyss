@@ -21,20 +21,6 @@ public class TeleportToTarget : Action
         RaycastHit2D[] hits = Physics2D.LinecastAll(controller.rb2d.position, target, controller.floorMask);
         controller.rb2d.position = hits[hits.Length - 1].transform.position;
         //Get al the floor tiles in the unit vecinity
-
-
-        //NOTE: Later theis must be modified to teleport in the direction it was looking in
-        //Collider2D[] floorColls =  Physics2D.OverlapCircleAll(controller.transform.position, 20, controller.floorMask);
-
-
-        //Go through the tile until we get one that is more than 15 units away and then set the units position to that floor tiles position
-        //for (int i = floorColls.Length - 1; i > 0 ; i--)
-        //{
-        //    if (Vector2.Distance(controller.transform.position, floorColls[i].transform.position) > 15)
-        //    {
-        //        controller.rb2d.position = floorColls[i].transform.position;
-        //    }
-        //}
     }
 }
 
