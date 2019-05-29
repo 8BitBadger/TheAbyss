@@ -23,7 +23,7 @@ public class GetNewWanderPoint : Decision
 
         target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
         //We get where the obstacle is in the chosen direction
-        RaycastHit2D obstacleHit = Physics2D.CircleCast(controller.rb2d.position, .5f, target.normalized, 20, controller.obstacleMask);
+        RaycastHit2D obstacleHit = Physics2D.CircleCast(controller.rb2d.position, .5f, target.normalized, 10, controller.obstacleMask);
         Debug.Log("Hit obstacleHit name = " + obstacleHit.transform.name);
         Debug.Log("Hit obstacleHit distance = " + Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position).ToString("F4"));
         //We get all the floor pieces that have been collided with up the the point of obstacleHits collision if there was any
@@ -58,21 +58,5 @@ public class GetNewWanderPoint : Decision
             }
         }
         return false;
-
-        //Vector3 newPatrolPoint;
-
-        //while (true)
-        //{
-        //    newPatrolPoint = new Vector3(Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.gameObject.transform.position.x), Mathf.RoundToInt(Random.Range(-(controller.wanderDistance + 1), controller.wanderDistance) + controller.gameObject.transform.position.y), 0f);
-
-        //    Vector2 dirToRaycast = (newPatrolPoint - controller.gameObject.transform.position).normalized;
-
-        //    if (!Physics2D.Linecast(controller.rb2d.position, newPatrolPoint, controller.obstacleMask) && Vector2.Angle(controller.gameObject.transform.right, dirToRaycast) < controller.viewAngle / 2)
-        //    {
-        //        controller.gotNewDirection = true;
-        //        controller.wanderPoint = newPatrolPoint;
-        //        return true;
-        //    }
-        //}
     }
 }

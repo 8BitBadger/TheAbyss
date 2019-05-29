@@ -25,13 +25,13 @@ public class Wander : Action
 
             target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
             //We get where the obstacle is in the chosen direction
-            RaycastHit2D obstacleHit = Physics2D.CircleCast(controller.rb2d.position, .5f, target.normalized, 20, controller.obstacleMask);
+            RaycastHit2D obstacleHit = Physics2D.CircleCast(controller.rb2d.position, .5f, target.normalized, 10, controller.obstacleMask);
             Debug.Log("Hit obstacleHit name = " + obstacleHit.transform.name);
             Debug.Log("Hit obstacleHit distance = " + Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position).ToString("F4"));
             //We get all the floor pieces that have been collided with up the the point of obstacleHits collision if there was any
             if (obstacleHit && Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position) >= 1f)
             {
-                hits = Physics2D.CircleCastAll(controller.rb2d.position, .5f, obstacleHit.transform.position.normalized, 20, controller.floorMask);
+                hits = Physics2D.CircleCastAll(controller.rb2d.position, .5f, obstacleHit.transform.position.normalized, 10, controller.floorMask);
             }
             else
             {
@@ -48,6 +48,8 @@ public class Wander : Action
                 Debug.Log("Hit targets name = " + hits[i].transform.name);
                 float distance = Vector2.Distance(controller.rb2d.position, hits[i].transform.position);
                 Debug.Log("Hit targets distance = " + distance);
+                Debug.Log("Hit targets maxDistance = " + maxDistance);
+
 
                 if (maxDistance < distance)
                 {
@@ -56,9 +58,12 @@ public class Wander : Action
                 else
                 {
                     controller.wanderPoint = hits[i].transform.position;
+                    break;
                 }
             }
         }
+         Vector2 normalizedDir = (controller.wanderPoint - controller.rb2d.position).normalized;
+        controller.rb2d.MovePosition(controller.rb2d.position + normalizedDir * controller.GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
     }
 }
 
