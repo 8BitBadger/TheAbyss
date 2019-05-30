@@ -25,7 +25,8 @@ public class Wander : Action
 
             target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
             //We get where the obstacle is in the chosen direction
-            RaycastHit2D obstacleHit = Physics2D.CircleCast(controller.rb2d.position, .5f, target.normalized, 10, controller.obstacleMask);
+            //RaycastHit2D obstacleHit = Physics2D.CircleCast(controller.rb2d.position, .5f, target.normalized, 10, controller.obstacleMask);
+            RaycastHit2D obstacleHit = Physics2D.Linecast(controller.rb2d.position, target, 10, controller.obstacleMask);
             Debug.Log("Hit obstacleHit name = " + obstacleHit.transform.name);
             Debug.Log("Hit obstacleHit distance = " + Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position).ToString("F4"));
             //We get all the floor pieces that have been collided with up the the point of obstacleHits collision if there was any
