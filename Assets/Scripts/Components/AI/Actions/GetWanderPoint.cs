@@ -1,41 +1,46 @@
 ﻿using Comps;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Comps/AI/Decisions/New Wander Point")]
-public class GetNewWanderPoint : Decision
+public static class GetWanderPoint
 {
-    public override bool Decide(AI controller)
-    {
-        return NewWanderPoint(controller);
-    }
-
-    private bool NewWanderPoint(AI controller)
+    public static Vector2 NewPoint(AI controller)
     {
         //TODO: Get a random direction to travel in in the 8 direction range
         //Choose one of the random directions
-        Random.InitState(Mathf.RoundToInt(Time.time));
-        int direction = Random.Range(0, 7);
+        int direction = CustomRnd.GetRnd(0, 7);
         //Set the angle for the chose direction
         float angle = direction * 45f;
+        //The maximum distance of the hit for the walk collider
         float maxDistance = 0;
+        //The new target to travel to
         Vector2 target;
+        //The hit array for the circle casts 
         RaycastHit2D[] hits;
 
+        //We convert the angle from degrees to a vector we can use for casting
         target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
         //We get where the obstacle is in the chosen direction
-        RaycastHit2D obstacleHit = Physics2D.CircleCast(controller.rb2d.position, .5f, target.normalized, 10, controller.obstacleMask);
+        RaycastHit2D obstacleHit = Physics2D.CircleCast(controller.rb2d.position, .5f, target, 10, controller.obstacleMask);
         Debug.Log("Hit obstacleHit name = " + obstacleHit.transform.name);
         Debug.Log("Hit obstacleHit distance = " + Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position).ToString("F4"));
-        //We get all the floor pieces that have been collided with up the the point of obstacleHits collision if there was any
-        if (obstacleHit && Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position) >= 1f)
+        //If the distance from the collider is greater than one
+        if(Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position) >= 1f)
         {
-            hits = Physics2D.CircleCastAll(controller.rb2d.position, .5f, obstacleHit.transform.position.normalized, 20, controller.floorMask);
+            //We get all the floor pieces that have been collided with up the the point of obstacleHits collision if there was any
+            if (obstacleHit)
+            {
+                hits = Physics2D.CircleCastAll(controller.rb2d.position, .5f, obstacleHit.transform.position.normalized, 20, controller.floorMask);
+            }
+            else
+            {
+                direction = CustomRnd.GetRnd(0, 7);
+                target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
+                hits = Physics2D.CircleCastAll(controller.rb2d.position, .5f, target.normalized, 20, controller.floorMask);
+            }
         }
         else
         {
-            direction = Random.Range(0, 7);
-            target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
-            hits = Physics2D.CircleCastAll(controller.rb2d.position, .5f, target.normalized, 20, controller.floorMask);
+            
         }
         //Have to reset
         maxDistance = 0;

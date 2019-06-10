@@ -15,8 +15,7 @@ public class Wander : Action
         {
             //TODO: Get a random direction to travel in in the 8 direction range
             //Choose one of the random directions
-            Random.InitState(Mathf.RoundToInt(Time.time));
-            int direction = Random.Range(0, 7);
+            int direction = CustomRnd.GetRnd(0, 7);
             //Set the angle for the chose direction
             float angle = direction * 45f;
             float maxDistance = 0;
@@ -36,7 +35,7 @@ public class Wander : Action
             }
             else
             {
-                direction = Random.Range(0, 7);
+                direction = CustomRnd.GetRnd(0, 7);
                 target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
                 hits = Physics2D.CircleCastAll(controller.rb2d.position, .5f, target.normalized, 20, controller.floorMask);
             }

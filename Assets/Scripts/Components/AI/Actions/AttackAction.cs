@@ -15,9 +15,9 @@ public class AttackAction : Action
 
     private void Attack(AI controller)
     {
+        //If the attack attack speed value is higher than the attack timer then we run the attack code
         if ((Time.time - controller.attackTimer) > controller.GetComponent<Stats>().attackSpeed.Value)
         {
-
             //We enable the hitbox to check for collisions for the weapon
             controller.weaponHitBox.SetActive(true);
 
@@ -30,7 +30,7 @@ public class AttackAction : Action
             //Reset the timer for the next attack time check
             controller.attackTimer = Time.time;
         }
-        //Check the timer if it is time to attack
+        //If the attack time has elapsed we disable the hitbox object
         if ((Time.time - controller.attackTimer) > controller.gameObject.GetComponent<Stats>().attackSpeed.Value)
         {
             //We disable the hitbox when the timer for the attack has run down

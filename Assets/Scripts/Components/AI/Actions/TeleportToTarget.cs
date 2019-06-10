@@ -11,10 +11,7 @@ public class TeleportToTarget : Action
 
     private void Teleport(AI controller)
     {
-        //Seeds the random number generator to not give the same random result every time
-        Random.InitState(Mathf.RoundToInt(Time.time));
-        //Choose one of the random directions
-        int direction = Random.Range(0, 7);
+        int direction = CustomRnd.GetRnd(0, 7);
         //Set the angle for the chose direction
         float angle = direction * 45f;
         Vector2 target = new Vector2(Mathf.Sin(Mathf.Deg2Rad * angle), Mathf.Cos(Mathf.Deg2Rad * angle)).normalized * controller.wanderDistance;
