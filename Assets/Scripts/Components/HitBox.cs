@@ -75,46 +75,13 @@ namespace Comps
                 state = ColliderState.Open;
             }
         }
-
-
         public void startCheckingCollision()
         {
             state = ColliderState.Open;
         }
-
         public void stopCheckingCollision()
         {
             state = ColliderState.Closed;
-        }
-
-        private void OnDrawGizmosSelected()
-        {
-            Gizmos.color = Color.red;
-            Gizmos.DrawWireSphere(transform.position, radius);
-
-            switch (state)
-            {
-                case ColliderState.Closed:
-                    Gizmos.color = inactiveColor;
-                    break;
-
-                case ColliderState.Open:
-                    Gizmos.color = collisionOpenColor;
-                    break;
-
-                case ColliderState.Colliding:
-                    Gizmos.color = collidingColor;
-                    break;
-            }
-
-            if (useSphere)
-            {
-                Gizmos.DrawWireSphere(transform.position, radius);
-            }
-            else
-            {
-                Gizmos.DrawWireCube(transform.position, hitboxSize);
-            }
         }
     }
 }

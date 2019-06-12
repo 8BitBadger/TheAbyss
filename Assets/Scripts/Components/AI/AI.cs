@@ -25,7 +25,7 @@ namespace Comps
         [Range(0, 360)]
         public int viewAngle;
         //The raduis size of the circle collider for the unit
-        [Range(0, 1000)]
+        [Range(0, 30)]
         public int viewRadius;
         //The layer the target is on
         public LayerMask playerMask;
@@ -63,6 +63,9 @@ namespace Comps
 
         private void Start()
         {
+            //Sets the wander point to the units current position
+            wanderPoint = transform.position;
+            
             //Set up the rigidbody for the AI
             rb2d = GetComponent<Rigidbody2D>();
 
