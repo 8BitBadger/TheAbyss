@@ -21,7 +21,6 @@ public static class GetWanderPoint
         {
             //Get a direction for travel
             direction = CustomRnd.GetRnd(0, 7);
-
             //Set the angle for the chose direction
             angle = direction * 45f;
             Debug.Log("Angle = " + angle);
@@ -32,17 +31,21 @@ public static class GetWanderPoint
             //obstacleHit = Physics2D.CircleCast(controller.rb2d.position, .2f, target, controller.wanderDistance , controller.obstacleMask);
             obstacleHit = Physics2D.Linecast(controller.rb2d.position, target * controller.wanderDistance, controller.obstacleMask);
             //If the distance from the collider is greater than one we have a valid hit so we can exit out of the loop
-            if(obstacleHit)
-            { 
-                if(Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position) >= 1f)
-                //We know we hit ab obstacle so we raycast from the obstacle back to the player and get the first valid tile
-                hit = Physics2D.CircleCast(obstacleHit.transform.position, .2f, controller.rb2d.position.normalized, controller.wanderDistance, controller.floorMask);
+            if (obstacleHit)
+            {
+                if (Vector2.Distance(controller.rb2d.position, obstacleHit.transform.position) >= 1f)
+                {
+                    //We know we hit ab obstacle so we raycast from the obstacle back to the player and get the first valid tile
+                    //hit = Physics2D.CircleCast(obstacleHit.transform.position, .2f, controller.rb2d.position.normalized, controller.wanderDistance, controller.floorMask);
+                    hit = Physics2D.Linecast(obstacleHit.transform.position, controller.rb2d.position, controller.floorMask);
+                }
                 break;
             }
             else
             {
                 //If we didn't hit an obstacle we go in the direction of te target at the max wander distance for the unit
-                hit = Physics2D.CircleCast(target * controller.wanderDistance, .2f, controller.rb2d.position.normalized, controller.wanderDistance, controller.floorMask);
+                //hit = Physics2D.CircleCast(target * controller.wanderDistance, .2f, controller.rb2d.position.normalized, controller.wanderDistance, controller.floorMask);
+                hit = Physics2D.Linecast(target * controller.wanderDistance, controller.rb2d.position, controller.floorMask);
                 break;
             }
         }
