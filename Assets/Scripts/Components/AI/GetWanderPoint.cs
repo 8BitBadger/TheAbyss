@@ -49,6 +49,7 @@ public static class GetWanderPoint
                 break;
             }
         }
-        return hit.transform.position;
+        //return hit.transform.position;
+        return Vector2.zero;
     }
 }
