@@ -10,3 +10,5 @@ public class CameraData : ScriptableObject
     //The offset of the camera to the target
     public Vector3 offset = new Vector3(0f, 0f, -10f);
 }
+
+//testing
