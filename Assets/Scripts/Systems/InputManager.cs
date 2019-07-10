@@ -14,7 +14,6 @@ public class InputManager : MonoBehaviour
     Camera cam;
 
 
-
     private void Awake()
     {
         cam = Camera.main;
@@ -72,7 +71,9 @@ public class InputManager : MonoBehaviour
 
         if (Input.GetKey("escape"))
         {
-
+                InputEvent inputEventInfo = new DeathEvent();
+                inputEventInfo.baseGO = gameObject;
+                inputEventInfo.FireEvent();
         }
         if (Input.GetKeyDown("space"))
         {

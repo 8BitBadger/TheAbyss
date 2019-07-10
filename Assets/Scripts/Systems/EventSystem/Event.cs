@@ -71,4 +71,12 @@ namespace EventCallback
         //The game object doing the damage
         public Transform target;
     }
+        public class InputEvent : Event<InputEvent>
+    {
+        
+        //The gameobject being damaged
+        public GameObject baseGO;
+        //The game object doing the damage
+        public Transform target;
+    }
 }
