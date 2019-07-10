@@ -1,8 +1,8 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 using EventCallback;
 
-[CreateAssetMenu(menuName = "Comps/AI/Actions/Attack")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Actions/Attack")]
 public class AttackAction : Action
 {
 

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 
-[CreateAssetMenu(menuName = "Comps/AI/Actions/Move to target")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Actions/Move to target")]
     public class MoveToTarget : Action
     {
         Vector2 normalizedDir;

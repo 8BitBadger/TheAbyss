@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using StatSystem;
-using Comps;
+using GameComponents;
 
 public class Item : MonoBehaviour
 {

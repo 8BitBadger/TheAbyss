@@ -460,7 +460,7 @@ GameObject:
   - component: {fileID: 784805703}
   - component: {fileID: 784805705}
   - component: {fileID: 784805706}
-  m_Layer: 11
+  m_Layer: 10
   m_Name: Crystal
   m_TagString: Crystal
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 1659183751
+  m_SortingLayerID: -1382007529
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 7abea4464167dcc4782f777529aae0f3, type: 3}
@@ -747,6 +747,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 925765246735487314, guid: ea387208754906949b312dc1437b5df0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 2741571081091882380, guid: ea387208754906949b312dc1437b5df0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -892,15 +897,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1464927303644950380, guid: f2062beda2ff6df4784939e5c88530f4,
-        type: 3}
-      propertyPath: m_PixelSnapping
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1464927303644950371, guid: f2062beda2ff6df4784939e5c88530f4,
         type: 3}
-      propertyPath: smoothCamera
-      value: 0
+      propertyPath: smoothSpeed
+      value: 0.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2062beda2ff6df4784939e5c88530f4, type: 3}
@@ -915,6 +915,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 2571417315028549454, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2571417315028549450, guid: b2d8faf7a43fd24498b3ff0e09906c07,
         type: 3}
@@ -1051,6 +1056,16 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+    - target: {fileID: 2571417315028549451, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1839288415
+      objectReference: {fileID: 0}
+    - target: {fileID: 2571417315028549451, guid: b2d8faf7a43fd24498b3ff0e09906c07,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b2d8faf7a43fd24498b3ff0e09906c07, type: 3}
 --- !u!1 &2571417315334182944 stripped
@@ -1323,6 +1338,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447790909241973644, guid: 3a2932884003e9441a62edf7c79ca2b0,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1839288415
+      objectReference: {fileID: 0}
+    - target: {fileID: 7447790909241973644, guid: 3a2932884003e9441a62edf7c79ca2b0,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7447790909241973645, guid: 3a2932884003e9441a62edf7c79ca2b0,
         type: 3}

@@ -1,7 +1,7 @@
-﻿using Comps;
+﻿using GameComponents;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Comps/AI/Decisions/Reached Point")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Decisions/Reached Point")]
 public class ReachedPointDecision : Decision
 {
     bool firstLoop = true;

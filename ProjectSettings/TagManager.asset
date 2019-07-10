@@ -6,9 +6,9 @@ TagManager:
   tags:
   - Crystal
   - Creature
+  - Weapon
   - GOEventSystem
   - GameManager
-  - Weapon
   layers:
   - Default
   - TransparentFX
@@ -18,14 +18,14 @@ TagManager:
   - UI
   - 
   - 
-  - Hitbox
-  - Creatures
   - Player
-  - Crystals
+  - Creatures
+  - Items
+  - Floor
   - Ground
   - Rock
-  - Floor
-  - Item
+  - Wall
+  - 
   - 
   - 
   - 
@@ -46,21 +46,18 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Tiles
-    uniqueID: 631058767
+  - name: Background
+    uniqueID: 777415557
     locked: 0
-  - name: TileItems
-    uniqueID: 1223562999
+  - name: Tiles
+    uniqueID: 3599020483
     locked: 0
   - name: Items
-    uniqueID: 1659183751
+    uniqueID: 2912959767
     locked: 0
   - name: Units
-    uniqueID: 472599693
+    uniqueID: 1839288415
     locked: 0
-  - name: FX
-    uniqueID: 1968012831
-    locked: 0
-  - name: UI
-    uniqueID: 702623681
+  - name: Effects
+    uniqueID: 2416524881
     locked: 0

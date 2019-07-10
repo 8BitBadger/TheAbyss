@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 
-[CreateAssetMenu(menuName = "Comps/AI/Actions/Long Range Attack")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Actions/Long Range Attack")]
         public class LongRangeAttackAction : Action
         {
             public GameObject projectile;

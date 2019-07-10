@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 
-[CreateAssetMenu(menuName = "Comps/AI/Decisions/ActiveState")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Decisions/ActiveState")]
     public class ActiveStateDecision : Decision
     {
         public override bool Decide(AI controller)

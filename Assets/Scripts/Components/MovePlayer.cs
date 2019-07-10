@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Comps
+namespace GameComponents
 {
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Stats))]

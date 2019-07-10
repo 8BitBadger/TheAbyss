@@ -1,9 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Comps;
+using GameComponents;
 
-    [CreateAssetMenu(menuName = "Comps/AI/Decisions/Scan")]
+    [CreateAssetMenu(menuName = "GameComponents/AI/Decisions/Scan")]
     public class ScanForPlayer : Decision
     {
         float currentAngle = 36;

@@ -1,7 +1,7 @@
-﻿using Comps;
+﻿using GameComponents;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Comps/AI/Actions/Teleport to target")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Actions/Teleport to target")]
 public class TeleportToTarget : Action
 {
     public override void Act(AI controller)

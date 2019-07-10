@@ -1,7 +1,7 @@
-﻿using Comps;
+﻿using GameComponents;
 using UnityEngine;
 
-[CreateAssetMenu(menuName = "Comps/AI/Actions/Wander")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Actions/Wander")]
 public class Wander : Action
 {
     public override void Act(AI controller)

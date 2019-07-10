@@ -1,4 +1,4 @@
-﻿using Comps;
+﻿using GameComponents;
 using System.Collections;
 using System.Collections.Generic;
 using System;

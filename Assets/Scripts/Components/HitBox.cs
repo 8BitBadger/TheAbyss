@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using EventCallback;
 
-namespace Comps
+namespace GameComponents
 {
     public enum ColliderState
     {

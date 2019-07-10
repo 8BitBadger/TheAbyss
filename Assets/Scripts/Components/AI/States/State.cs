@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 
 [CreateAssetMenu(menuName = "Comps/AI/State")]
     public class State : ScriptableObject

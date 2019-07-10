@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 
-[CreateAssetMenu(menuName = "Comps/AI/Actions/Chase")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Actions/Chase")]
 public class ChaseAction : Action
 {
     [HideInInspector]

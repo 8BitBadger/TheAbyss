@@ -1,10 +1,10 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Comps;
+using GameComponents;
 using System;
 
-[CreateAssetMenu(menuName = "Comps/AI/Decisions/Is being attacked")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Decisions/Is being attacked")]
 public class IsBeingAttacked : Decision
 {
     public override bool Decide(AI controller)

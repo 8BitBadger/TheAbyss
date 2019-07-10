@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using EventCallback;
 
-namespace Comps
+namespace GameComponents
 {
     public class Health : MonoBehaviour
     {
@@ -33,3 +33,4 @@ namespace Comps
         }
     }
 }
+//1280 X 720

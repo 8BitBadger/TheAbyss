@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 
-[CreateAssetMenu(menuName = "Comps/AI/Decisions/Look for crystals")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Decisions/Look for crystals")]
     public class LookForCrystals : Decision
     {
         public override bool Decide(AI controller)

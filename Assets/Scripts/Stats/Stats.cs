@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using StatSystem;
 
-namespace Comps
+namespace GameComponents
 {
     public class Stats : MonoBehaviour
     {

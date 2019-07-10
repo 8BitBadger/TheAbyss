@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 
-[CreateAssetMenu(menuName = "Comps/AI/Decisions/In range of target")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Decisions/In range of target")]
     public class InRangeOfTarget : Decision
     {
         public float range;

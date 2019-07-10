@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 
 namespace AiLogic
     {
-        [CreateAssetMenu(menuName = "Comps/AI/Actions/Run")]
+        [CreateAssetMenu(menuName = "GameComponents/AI/Actions/Run")]
         public class RunAction : Action
         {
             Vector2 normalizedDir;

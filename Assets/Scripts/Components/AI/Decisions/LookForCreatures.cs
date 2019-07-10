@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 
-[CreateAssetMenu(menuName = "Comps/AI/Decisions/Look for creatures")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Decisions/Look for creatures")]
     public class LookForCreatures : Decision
     {
         public override bool Decide(AI controller)

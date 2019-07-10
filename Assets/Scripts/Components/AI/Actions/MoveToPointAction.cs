@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
-using Comps;
+using GameComponents;
 
-[CreateAssetMenu(menuName = "Comps/AI/Actions/Move To Last Seen Point")]
+[CreateAssetMenu(menuName = "GameComponents/AI/Actions/Move To Last Seen Point")]
     public class MoveToPointAction : Action
     {
         Vector2 normalizedDir;

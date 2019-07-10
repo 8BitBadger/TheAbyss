@@ -1,4 +1,4 @@
-﻿using Comps;
+﻿using GameComponents;
 using UnityEngine;
 
 public static class GetWanderPoint
