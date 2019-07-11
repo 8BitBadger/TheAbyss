@@ -4,110 +4,61 @@ using UnityEngine;
 
 public class InputManager : MonoBehaviour
 {
-
-    private Vector3 touchPosition;
-    Vector3 mousePosition;
-    float VerticalAxis;
-    float HorizontalAxis;
+    //The width of the screen used for touch calculations
     private float width;
+    //The height of the screen used for touch calculations
     private float height;
-    Camera cam;
-
+    //A refference or the camera
+    private Camera cam;
 
     private void Awake()
     {
+        //Setting the refference for the camera to the main camera feed
         cam = Camera.main;
 
         width = (float)Screen.width / 2.0f;
         height = (float)Screen.height / 2.0f;
-
-        // Position used for the cube.
-        touchPosition = new Vector3(0.0f, 0.0f, 0.0f);
     }
     private void Update()
     {
-
+        InputEvent inputEventInfo = new InputEvent();
         //Get the mouse position
-        mousePosition = cam.ScreenToWorldPoint(Input.mousePosition);
+        inputEventInfo.mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
         //Get the axis input from the keyboard
-        VerticalAxis = Input.GetAxis("Vertical");
-        HorizontalAxis = Input.GetAxis("Horizontal");
+        inputEventInfo.verticalAxis = Input.GetAxis("Vertical");
+        inputEventInfo.horizontalAxis = Input.GetAxis("Horizontal");
 
-        // Handle screen touches.
-        if (Input.touchCount > 0)
+        if (InputManager.touchSupported)
         {
-            Touch touch = Input.GetTouch(0);
+            //Size the list of vector3 for the touch inputs to the amount of touches on the screen 
+            inputEventInfo.touchPositions = new touchPositions[Input.touchCount];
 
-            // Move the cube if the screen has the finger moving.
-            if (touch.phase == TouchPhase.Moved)
+            // Check for the amount of touches
+            if (Input.touchCount > 0)
             {
-                Vector2 pos = touch.position;
-                pos.x = (pos.x - width) / width;
-                pos.y = (pos.y - height) / height;
-                touchPosition = new Vector3(-pos.x, pos.y, 0.0f);
-
-                // Position the cube.
-                transform.position = touchPosition;
-            }
-
-            if (Input.touchCount == 2)
-            {
-                touch = Input.GetTouch(1);
-
-                if (touch.phase == TouchPhase.Began)
+                //Go through the ist of touchs
+                for (int i = 0; i < Input.toucchCount; i++)
                 {
-                    // Halve the size of the cube.
-                    transform.localScale = new Vector3(0.75f, 0.75f, 0.75f);
-                }
-
-                if (touch.phase == TouchPhase.Ended)
-                {
-                    // Restore the regular size of the cube.
-                    transform.localScale = new Vector3(1.0f, 1.0f, 1.0f);
+                    //Set the current touch variable to the current touch in the que
+                    Touch touch = Input.GetTouch(i);
+                    //Get the position of the touh
+                    if (touch.phase == TouchPhase.Moved)
+                    {
+                        Vector2 pos = touch.position;
+                        pos.x = (pos.x - width) / width;
+                        pos.y = (pos.y - height) / height;
+                        inputEventInfo.touchPositions[i] = new Vector3(-pos.x, pos.y, 0.0f);
+                    }
                 }
             }
         }
 
-        if (Input.GetKey("escape"))
-        {
-                InputEvent inputEventInfo = new DeathEvent();
-                inputEventInfo.baseGO = gameObject;
-                inputEventInfo.FireEvent();
-        }
-        if (Input.GetKeyDown("space"))
-        {
-            print("space key was pressed");
-        }
-        if (Input.GetKeyUp("space"))
-        {
-            print("Space key was released");
-        }
-        if (Input.GetMouseButton(0))
-        {
-            Debug.Log("Pressed left click.");
-        }
-        if (Input.GetMouseButton(1))
-        {
-            Debug.Log("Pressed right click.");
-        }
-        if (Input.GetMouseButton(2))
-        {
-            Debug.Log("Pressed middle click.");
-        }
-        if (Input.GetMouseButtonDown(0))
-        {
-            Debug.Log("Pressed primary button.");
-        }
-        if (Input.GetMouseButtonDown(1))
-        {
-            Debug.Log("Pressed secondary button.");
-        }
-        if (Input.GetMouseButtonDown(2))
-        {
-            Debug.Log("Pressed middle click.");
-        }
-
+        inputEventInfo.escPressed = Input.GetKey("escape");
+        inputEventInfo.spacePressed = Input.GetKey("space");
+        inputEventInfo.leftMBPressed = Input.GetMouseButton(0);
+        inputEventInfo.rightMBPressed = Input.GetMouseButton(1);
+        inputEventInfo.midMBPressed = Input.GetMouseButton(2);
     }
 
 }

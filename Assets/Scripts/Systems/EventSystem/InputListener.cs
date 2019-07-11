@@ -6,7 +6,7 @@ namespace EventCallback
 {
     public class InputListener : MonoBehaviour
     {
-        public event Action OnMove = delegate{};
+        //public event Action OnMove = delegate{};
         void Start()
         {
             InputEvent.RegisterListener(On_Input);
@@ -20,14 +20,10 @@ namespace EventCallback
         void On_Input(InputEvent inputEvent)
         {
 
-            if (true)
+            if (inputEvent.escPressed)
             {
-                OnMove();
+                //OnMove();
             }
-            //Play particle animation
-            //If it's the player end the game
-            Debug.Log("Alerted about death: " + inputEvent.baseGO.name);
-            Destroy(inputEvent.baseGO);
         }
     }
 }
