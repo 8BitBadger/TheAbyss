@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 namespace EventCallback
 {
     public class InputListener : MonoBehaviour
     {
-        //public event Action OnMove = delegate{};
+        public event Action OnEscapePressed = delegate{ };
         void Start()
         {
             InputEvent.RegisterListener(On_Input);
@@ -22,7 +21,7 @@ namespace EventCallback
 
             if (inputEvent.escPressed)
             {
-                //OnMove();
+                OnEscapePressed();
             }
         }
     }

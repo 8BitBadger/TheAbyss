@@ -80,6 +80,6 @@ namespace EventCallback
         //The touch positions if a touh screen is used, error checking done by input manager
         public Vector3[] touchPositions;
         //The vertical and horizontal axis change from keyboard or controller
-        float verticalAxis, horizontalAxis;
+         public float verticalAxis, horizontalAxis;
     }
 }

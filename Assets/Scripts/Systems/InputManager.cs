@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EventCallback;
 
 public class InputManager : MonoBehaviour
 {
@@ -10,6 +11,8 @@ public class InputManager : MonoBehaviour
     private float height;
     //A refference or the camera
     private Camera cam;
+//The input event calback useg for input messages
+InputEvent inputEventInfo = new InputEvent();
 
     private void Awake()
     {
@@ -21,7 +24,7 @@ public class InputManager : MonoBehaviour
     }
     private void Update()
     {
-        InputEvent inputEventInfo = new InputEvent();
+        
         //Get the mouse position
         inputEventInfo.mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
 
@@ -29,16 +32,16 @@ public class InputManager : MonoBehaviour
         inputEventInfo.verticalAxis = Input.GetAxis("Vertical");
         inputEventInfo.horizontalAxis = Input.GetAxis("Horizontal");
 
-        if (InputManager.touchSupported)
+        if (Input.touchSupported)
         {
             //Size the list of vector3 for the touch inputs to the amount of touches on the screen 
-            inputEventInfo.touchPositions = new touchPositions[Input.touchCount];
+            inputEventInfo.touchPositions = new Vector3[Input.touchCount];
 
             // Check for the amount of touches
             if (Input.touchCount > 0)
             {
                 //Go through the ist of touchs
-                for (int i = 0; i < Input.toucchCount; i++)
+                for (int i = 0; i < Input.touchCount; i++)
                 {
                     //Set the current touch variable to the current touch in the que
                     Touch touch = Input.GetTouch(i);

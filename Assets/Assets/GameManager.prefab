@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3618482977423129905}
   - component: {fileID: 3618482977423129911}
   - component: {fileID: 3618482977423129904}
+  - component: {fileID: 3618482977614988621}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: GameManager
@@ -60,29 +61,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 100
   height: 100
-  floorSprites:
-  - {fileID: 21300000, guid: 2165ffe05b3460d40b89ca5c7f433363, type: 3}
-  - {fileID: 21300002, guid: 2165ffe05b3460d40b89ca5c7f433363, type: 3}
-  - {fileID: 21300004, guid: 2165ffe05b3460d40b89ca5c7f433363, type: 3}
-  - {fileID: 21300006, guid: 2165ffe05b3460d40b89ca5c7f433363, type: 3}
-  groundSprites:
-  - {fileID: 21300008, guid: 2165ffe05b3460d40b89ca5c7f433363, type: 3}
-  - {fileID: 21300010, guid: 2165ffe05b3460d40b89ca5c7f433363, type: 3}
-  - {fileID: 21300012, guid: 2165ffe05b3460d40b89ca5c7f433363, type: 3}
-  rockSprites:
-  - {fileID: 21300014, guid: 2165ffe05b3460d40b89ca5c7f433363, type: 3}
-  - {fileID: 21300016, guid: 2165ffe05b3460d40b89ca5c7f433363, type: 3}
-  - {fileID: 21300018, guid: 2165ffe05b3460d40b89ca5c7f433363, type: 3}
-  fillMap: 50
-  smoothAmount: 1
+  floorSprites: []
+  groundSprites: []
+  rockSprites: []
+  fillMap: 55
+  smoothAmount: 2
   useRandomSeed: 0
-  seed: 5
+  seed: 0
   noneLayerMask:
     serializedVersion: 2
     m_Bits: 0
   floorLayerMask:
     serializedVersion: 2
-    m_Bits: 16384
+    m_Bits: 2048
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 4096
@@ -115,5 +106,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b8762a8800a53f142be4ad96e8aa8f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3618482977614988621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3618482977423129916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d634ddcbc8da55a8883bf09d67aaa4fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
