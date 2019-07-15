@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EventCallback;
 
 namespace GameComponents
 {
@@ -23,11 +24,20 @@ namespace GameComponents
                 //Set the rigibody2d to kenematic so we have physics emulation
                 rb2d.isKinematic = true;
             }
+
+            GetComponent<InputListener>().GetAxis += Move;
+            
+        }
+        
+        void Move(float x, float y)
+        {
+            Debug.Log("Calling Move from event system");
         }
 
         // Update is called once per frame
         private void FixedUpdate()
         {
+            
             //Sets the velocity of the objects rigidbody
             rb2d.MovePosition(rb2d.position + new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
         }

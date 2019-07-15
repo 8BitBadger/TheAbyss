@@ -5,6 +5,8 @@ namespace EventCallback
 {
     public class InputListener : MonoBehaviour
     {
+        public event Action<float, float> GetAxis;
+
         [HideInInspector]
         //Bool to hold button press checks
         public bool escPressed, spacePressed, leftMBPressed, rightMBPressed, midMBPressed;
@@ -30,6 +32,8 @@ namespace EventCallback
 
         void OnInput(InputEvent inputEvent)
         {
+            GetAxis(inputEvent.horizontalAxis, inputEvent.verticalAxis);
+            
             escPressed = inputEvent.escPressed;
             spacePressed = inputEvent.spacePressed;
             leftMBPressed = inputEvent.leftMBPressed;
