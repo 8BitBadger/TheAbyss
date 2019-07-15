@@ -8,13 +8,13 @@ namespace GameComponents
     [RequireComponent(typeof(Stats))]
     public class MovePlayer : MonoBehaviour
     {
-        //THe rigidbody for the object the asset is attached to
+        //The rigidbody for the object the asset is attached to
         private Rigidbody2D rb2d;
+        //The movement on the x and y axis value is from 0 -1f
+        float x, y;
 
         private void Start()
         {
-            //Setting the game object the component is attached to as scriptable object do not contain that link as monobehaviour does
-
             //Checking if the game object has a Rigidbody2D component 
             if (GetComponent<Rigidbody2D>())
             {

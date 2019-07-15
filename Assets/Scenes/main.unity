@@ -1094,6 +1094,27 @@ MonoBehaviour:
   obstacleLayer:
     serializedVersion: 2
     m_Bits: 12288
+--- !u!114 &2571417315334182946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2571417315334182944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c88ee99161c327d4485020a9bfecf7e7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  escPressed: 0
+  spacePressed: 0
+  leftMBPressed: 0
+  rightMBPressed: 0
+  midMBPressed: 0
+  mousePos: {x: 0, y: 0, z: 0}
+  touchPositions: []
+  verticalAxis: 0
+  horizontalAxis: 0
 --- !u!1001 &3339415641756957219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1230,6 +1251,81 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: floorSprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: groundSprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: rockSprites.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: floorSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 2165ffe05b3460d40b89ca5c7f433363,
+        type: 3}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: floorSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300002, guid: 2165ffe05b3460d40b89ca5c7f433363,
+        type: 3}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: floorSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300004, guid: 2165ffe05b3460d40b89ca5c7f433363,
+        type: 3}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: floorSprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300006, guid: 2165ffe05b3460d40b89ca5c7f433363,
+        type: 3}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: groundSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300008, guid: 2165ffe05b3460d40b89ca5c7f433363,
+        type: 3}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: groundSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300010, guid: 2165ffe05b3460d40b89ca5c7f433363,
+        type: 3}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: groundSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300012, guid: 2165ffe05b3460d40b89ca5c7f433363,
+        type: 3}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: rockSprites.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300014, guid: 2165ffe05b3460d40b89ca5c7f433363,
+        type: 3}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: rockSprites.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300016, guid: 2165ffe05b3460d40b89ca5c7f433363,
+        type: 3}
+    - target: {fileID: 3618482977423129905, guid: 37c34bed08c871f409f0320c5b5a1d77,
+        type: 3}
+      propertyPath: rockSprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300018, guid: 2165ffe05b3460d40b89ca5c7f433363,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37c34bed08c871f409f0320c5b5a1d77, type: 3}
 --- !u!1001 &7447790909170234407

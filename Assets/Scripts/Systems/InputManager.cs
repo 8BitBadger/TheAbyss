@@ -62,6 +62,8 @@ InputEvent inputEventInfo = new InputEvent();
         inputEventInfo.leftMBPressed = Input.GetMouseButton(0);
         inputEventInfo.rightMBPressed = Input.GetMouseButton(1);
         inputEventInfo.midMBPressed = Input.GetMouseButton(2);
+
+        //inputEventInfo.FireEvent();
     }
 
 }
