@@ -71,6 +71,7 @@ namespace EventCallback
         //The game object doing the damage
         public Transform target;
     }
+    
     public class InputEvent : Event<InputEvent>
     {
         //Bool to hold button press checks
