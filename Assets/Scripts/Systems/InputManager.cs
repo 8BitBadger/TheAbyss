@@ -9,11 +9,8 @@ public class InputManager : MonoBehaviour
     private float width;
     //The height of the screen used for touch calculations
     private float height;
-    //A refference or the camera
+    //A refference of the camera used for mouse movement calculations
     private Camera cam;
-//The input event calback useg for input messages
-InputEvent inputEventInfo = new InputEvent();
-
     private void Awake()
     {
         //Setting the refference for the camera to the main camera feed
@@ -24,13 +21,7 @@ InputEvent inputEventInfo = new InputEvent();
     }
     private void Update()
     {
-        
-        //Get the mouse position
-        inputEventInfo.mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
-
-        //Get the axis input from the keyboard
-        inputEventInfo.verticalAxis = Input.GetAxis("Vertical");
-        inputEventInfo.horizontalAxis = Input.GetAxis("Horizontal");
+        InputEvent inputEventInfo = new InputEvent();
 
         if (Input.touchSupported)
         {
@@ -57,13 +48,18 @@ InputEvent inputEventInfo = new InputEvent();
             }
         }
 
+        //Get the mouse position
+        inputEventInfo.mousePos = cam.ScreenToWorldPoint(Input.mousePosition);
+        //Get the axis input from the keyboard
+        inputEventInfo.verticalAxis = Input.GetAxis("Vertical");
+        inputEventInfo.horizontalAxis = Input.GetAxis("Horizontal");
         inputEventInfo.escPressed = Input.GetKey("escape");
         inputEventInfo.spacePressed = Input.GetKey("space");
         inputEventInfo.leftMBPressed = Input.GetMouseButton(0);
         inputEventInfo.rightMBPressed = Input.GetMouseButton(1);
         inputEventInfo.midMBPressed = Input.GetMouseButton(2);
 
-        //inputEventInfo.FireEvent();
+        inputEventInfo.FireEvent();
     }
 
 }

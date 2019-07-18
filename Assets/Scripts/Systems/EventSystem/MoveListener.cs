@@ -44,26 +44,26 @@ namespace EventCallback
                 Debug.LogError("AttackListener - ParticleManager script not attached to GameManager game object");
             }
 
-            AttackEvent.RegisterListener(On_Attack);
+            MoveEvent.RegisterListener(OnMove);
         }
 
         private void OnDestroy()
         {
-            AttackEvent.UnregisterListener(On_Attack);
+            MoveEvent.UnregisterListener(OnMove);
         }
 
-        private void On_Attack(AttackEvent attackEvent)
+        private void OnMove(MoveEvent moveEvent)
         {
             //Play the attack sound
-            soundManager.playSound(attackEvent.baseGO);
+            //soundManager.playSound(attackEvent.baseGO);
 
-                    if (attackEvent.baseGO.tag == "Player")
+                    if (moveEvent.baseGO.tag == "Player")
                     {
                         //Play sound
                         //Run Animation?
                         //Particle Effect?
                     }
-                    else if (attackEvent.baseGO.tag == "Creature")
+                    else if (moveEvent.baseGO.tag == "Creature")
                     {
                         //Play sound
                         //Run Animation?

@@ -46,16 +46,16 @@ namespace EventCallback
                 Debug.LogError("AttackListener - ParticleManager script not attached to GameManager game object");
             }
 
-            DamageEvent.RegisterListener(On_Damaged);
+            DamageEvent.RegisterListener(OnDamaged);
         }
 
         // Update is called once per frame
         void OnDestroy()
         {
-            DamageEvent.UnregisterListener(On_Damaged);
+            DamageEvent.UnregisterListener(OnDamaged);
         }
 
-        private void On_Damaged(DamageEvent damageEvent)
+        private void OnDamaged(DamageEvent damageEvent)
         {
             Debug.Log("DamageListener - Damage Listener called by " + damageEvent.baseGO.name + " Tag(" + damageEvent.baseGO.tag + ")");
             //Check if the target object has the health script attached

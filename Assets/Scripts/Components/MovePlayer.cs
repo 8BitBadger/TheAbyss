@@ -24,14 +24,13 @@ namespace GameComponents
                 //Set the rigibody2d to kenematic so we have physics emulation
                 rb2d.isKinematic = true;
             }
-
-            GetComponent<InputListener>().GetAxis += Move;
-            
+            GetComponent<InputListener>().GetAxis += Move; 
         }
         
-        void Move(float x, float y)
+        void Move(float _x, float _y)
         {
-            Debug.Log("Calling Move from event system");
+            x = _x;
+            y = _y;
         }
 
         // Update is called once per frame
@@ -39,7 +38,7 @@ namespace GameComponents
         {
             
             //Sets the velocity of the objects rigidbody
-            rb2d.MovePosition(rb2d.position + new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")) * GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
+            rb2d.MovePosition(rb2d.position + new Vector2(x, y) * GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
         }
     }
 }

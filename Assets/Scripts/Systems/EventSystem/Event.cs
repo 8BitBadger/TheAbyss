@@ -6,6 +6,8 @@ namespace EventCallback
     public abstract class Event<T> where T : Event<T>
     {
         private bool hasFired;
+        //The event listener name
+        public string eventName;
         public delegate void EventListener(T info);
         private static event EventListener Listeners;
 
@@ -23,7 +25,7 @@ namespace EventCallback
         {
             if (hasFired)
             {
-                throw new Exception("This event has already fired, to prevent infinite loops you can't refire an event");
+                throw new Exception(eventName + " - This event has already fired, to prevent infinite loops you can't refire an event");
             }
             hasFired = true;
             if (Listeners != null)
@@ -81,6 +83,6 @@ namespace EventCallback
         //The touch positions if a touh screen is used, error checking done by input manager
         public Vector3[] touchPositions;
         //The vertical and horizontal axis change from keyboard or controller
-         public float verticalAxis, horizontalAxis;
+        public float verticalAxis, horizontalAxis;
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EventCallback;
 
 public class SoundManager : MonoBehaviour
 {
@@ -9,17 +10,21 @@ public class SoundManager : MonoBehaviour
     public float lowPitchRange = .95f;              //The lowest a sound effect will be randomly pitched.
     public float highPitchRange = 1.05f;            //The highest a sound effect will be randomly pitched.
 
-    public void playSound(GameObject obj)
+    private void Start()
+    {
+        GetComponent<AttackListener>().PlaySound += PlaySound;
+    }
+    public void PlaySound(GameObject obj)
     {
         if (obj.tag == "Player")
         {
             Debug.Log("Swoosh swoosh goes the players sword");
         }
-        else if(obj.tag == "Creature")
+        else if (obj.tag == "Creature")
         {
 
         }
-        else if(obj.tag == "Crystal")
+        else if (obj.tag == "Crystal")
         {
 
         }

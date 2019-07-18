@@ -54,7 +54,7 @@ namespace GameComponents
             if ((Time.time - timer) > gameObject.GetComponent<Stats>().attackSpeed.Value)
             {
                 //We disable the hitbox when the timer for the attack has run down
-                ;weaponHitBox.GetComponent<HitBox>().stopCheckingCollision();
+                weaponHitBox.GetComponent<HitBox>().stopCheckingCollision();
             }
         }
     }

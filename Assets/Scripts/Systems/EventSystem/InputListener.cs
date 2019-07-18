@@ -6,19 +6,13 @@ namespace EventCallback
     public class InputListener : MonoBehaviour
     {
         public event Action<float, float> GetAxis;
-
-        [HideInInspector]
-        //Bool to hold button press checks
-        public bool escPressed, spacePressed, leftMBPressed, rightMBPressed, midMBPressed;
-        [HideInInspector]
-        //The position of the mouse after screenToorldPosition already calculated
-        public Vector3 mousePos;
-        [HideInInspector]
-        //The touch positions if a touh screen is used, error checking done by input manager
-        public Vector3[] touchPositions;
-        [HideInInspector]
-        //The vertical and horizontal axis change from keyboard or controller
-        public float verticalAxis, horizontalAxis;
+        public event Action<Vector3[]> GetTouchPositions;
+        public event Action<Vector3> GetMousePos;
+        public event Action<bool> GetEscPressed;
+        public event Action<bool> GetSpacePressed;
+        public event Action<bool> GetLeftMBPressed;
+        public event Action<bool> GetRightMBPressed;
+        public event Action<bool> GetMidMBPressed;
 
         void Start()
         {
@@ -32,20 +26,16 @@ namespace EventCallback
 
         void OnInput(InputEvent inputEvent)
         {
-            GetAxis(inputEvent.horizontalAxis, inputEvent.verticalAxis);
-            
-            escPressed = inputEvent.escPressed;
-            spacePressed = inputEvent.spacePressed;
-            leftMBPressed = inputEvent.leftMBPressed;
-            rightMBPressed = inputEvent.rightMBPressed;
-            midMBPressed = inputEvent.midMBPressed;
-            //The position of the mouse after screenToorldPosition already calculated
-            mousePos = inputEvent.mousePos;
-            //The touch positions if a touh screen is used, error checking done by input manager
-            touchPositions = inputEvent.touchPositions;
-            //The vertical and horizontal axis change from keyboard or controller
-            verticalAxis = inputEvent.verticalAxis;
-            horizontalAxis = inputEvent.horizontalAxis;
+
+            if (GetEscPressed != null) GetEscPressed(inputEvent.escPressed);
+            if (GetSpacePressed != null) GetSpacePressed(inputEvent.spacePressed);
+            if (GetLeftMBPressed != null) GetLeftMBPressed(inputEvent.leftMBPressed);
+            if (GetRightMBPressed != null) GetRightMBPressed(inputEvent.rightMBPressed);
+            if (GetMidMBPressed != null) GetMidMBPressed(inputEvent.midMBPressed);
+
+            if (GetMousePos != null) GetMousePos(inputEvent.mousePos);
+            if (GetTouchPositions != null) GetTouchPositions(inputEvent.touchPositions);
+            if (GetAxis != null) GetAxis(inputEvent.horizontalAxis, inputEvent.verticalAxis);
         }
     }
 }
