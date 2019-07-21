@@ -11,6 +11,7 @@ public class InputManager : MonoBehaviour
     private float height;
     //A refference of the camera used for mouse movement calculations
     private Camera cam;
+
     private void Awake()
     {
         //Setting the refference for the camera to the main camera feed
@@ -19,6 +20,7 @@ public class InputManager : MonoBehaviour
         width = (float)Screen.width / 2.0f;
         height = (float)Screen.height / 2.0f;
     }
+    
     private void Update()
     {
         InputEvent inputEventInfo = new InputEvent();

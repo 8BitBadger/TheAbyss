@@ -7,7 +7,7 @@ namespace GameComponents
 {
     [RequireComponent(typeof(Rigidbody2D))]
     [RequireComponent(typeof(Stats))]
-    public class MovePlayer : MonoBehaviour
+    public class Move : MonoBehaviour
     {
         //The rigidbody for the object the asset is attached to
         private Rigidbody2D rb2d;
@@ -24,19 +24,24 @@ namespace GameComponents
                 //Set the rigibody2d to kenematic so we have physics emulation
                 rb2d.isKinematic = true;
             }
-            GetComponent<InputListener>().GetAxis += Move; 
+            GetComponent<InputListener>().GetAxis += MoveCall;
         }
-        
-        void Move(float _x, float _y)
+
+        void MoveCall(float _x, float _y)
         {
             x = _x;
             y = _y;
+
+            MoveEvent moveEventInfo = new MoveEvent();
+            moveEventInfo.eventName = "Move Event";
+            moveEventInfo.baseGO = transform.gameObject;
+            moveEventInfo.FireEvent();
         }
 
         // Update is called once per frame
         private void FixedUpdate()
         {
-            
+
             //Sets the velocity of the objects rigidbody
             rb2d.MovePosition(rb2d.position + new Vector2(x, y) * GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
         }

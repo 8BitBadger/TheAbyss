@@ -12,30 +12,15 @@ namespace EventCallback
         GameObject gameManager;
         //Handles the playing of sounds and music for the game
         ParticleManager particleManager;
-
+        //The action for playing a sound from the sound manager
         public event Action<GameObject> PlaySound;
+        //Play the particle for the death event
+        public event Action<GameObject> PlayParticle;
+        //Play the death animation for the object
+        public event Action<GameObject> PlayAnimation;
 
         private void Start()
         {
-            if (GameObject.FindGameObjectWithTag("GameManager") != null)
-            {
-                //Seth the refernce to the game manager gmae object
-                gameManager = GameObject.FindGameObjectWithTag("GameManager");
-            }
-            else
-            {
-                Debug.LogError("AttackListener - GameManager object does not exist");
-            }
-            //Find the game manager game object and then check if it has the sound manager component attached and if it does we set it to the local variable
-            if (gameManager.GetComponent<ParticleManager>() != null)
-            {
-                particleManager = gameManager.GetComponent<ParticleManager>();
-            }
-            else
-            {
-                Debug.LogError("AttackListener - ParticleManager script not attached to GameManager game object");
-            }
-
             AttackEvent.RegisterListener(OnAttack);
         }
 
@@ -46,7 +31,12 @@ namespace EventCallback
 
         private void OnAttack(AttackEvent attackEvent)
         {
+            //Play the soundfor the attack
             if (PlaySound != null) PlaySound(attackEvent.baseGO);
+            //Playt the particle for the attack
+            if(PlayParticle != null) PlayParticle(attackEvent.baseGO);
+            //Play the aanimation for the attack
+            if(PlayAnimation != null) PlayAnimation(attackEvent.baseGO);
 
             if (attackEvent.baseGO.tag == "Player")
             {

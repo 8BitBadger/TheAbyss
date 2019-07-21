@@ -12,13 +12,21 @@ public class SoundManager : MonoBehaviour
 
     private void Start()
     {
+
+        //Get the attack listener to inject the play sound function into
         GetComponent<AttackListener>().PlaySound += PlaySound;
+        //Get the death listener to inject the play sound funtion into
+        GetComponent<DeathListener>().PlaySound += PlaySound;
+
     }
+    
     public void PlaySound(GameObject obj)
     {
         if (obj.tag == "Player")
         {
             Debug.Log("Swoosh swoosh goes the players sword");
+            //NOTE: FIX
+            //RandomizeSfx(Get the musix file to play from the objeect??????)
         }
         else if (obj.tag == "Creature")
         {

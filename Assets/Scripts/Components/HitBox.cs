@@ -27,13 +27,13 @@ namespace GameComponents
         private ColliderState state;
 
         //Start the call for the damage Event system
-        DamageEvent damageEventInfo = new DamageEvent();
+
 
         private void Start()
         {
             //Init the collider to inactive when object is spawned
             state = ColliderState.Closed;
-            damageEventInfo.eventName = "damageEvent";
+
         }
 
         private void Update()
@@ -61,7 +61,8 @@ namespace GameComponents
                 for (int i = coll.Length - 1; i >= 0; i--)
                 {
 
-
+                    DamageEvent damageEventInfo = new DamageEvent();
+                    damageEventInfo.eventName = "damageEvent";
                     //Since the hitbox is a child of the attacker object we need to return the parent object to the event system
                     damageEventInfo.baseGO = transform.parent.gameObject;
                     damageEventInfo.targetGO = coll[i].gameObject;

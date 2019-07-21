@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -6,53 +7,32 @@ namespace EventCallback
 {
     public class DeathListener : MonoBehaviour
     {
-        //The reference to the game manager game object
-        GameObject gameManager;
-        //Handles the playing of sounds and music for the game
-        SoundManager soundManager;
-        //Handles the particles for the game
-        ParticleManager particleManager;
+        public event Action<GameObject> PlaySound;
+        //Play the particle for the death event
+        public event Action<GameObject> PlayParticle;
+        //Play the death animation for the object
+        public event Action<GameObject> PlayAnimation;
+
         // Start is called before the first frame update
         void Start()
         {
-            if (GameObject.FindGameObjectWithTag("GameManager") != null)
-            {
-                //Seth the refernce to the game manager gmae object
-                gameManager = GameObject.FindGameObjectWithTag("GameManager");
-            }
-            else
-            {
-                Debug.LogError("AttackListener - GameManager object does not exist");
-            }
-            //Find the game manager game object and then check if it has the sound manager component attached and if it does we set it to the local variable
-            if (gameManager.GetComponent<SoundManager>() != null)
-            {
-                soundManager = gameManager.GetComponent<SoundManager>();
-            }
-            else
-            {
-                Debug.LogError("AttackListener - SoundManager script not attached to GameManager game object");
-            }
-            //Find the game manager game object and then check if it has the sound manager component attached and if it does we set it to the local variable
-            if (gameManager.GetComponent<ParticleManager>() != null)
-            {
-                particleManager = gameManager.GetComponent<ParticleManager>();
-            }
-            else
-            {
-                Debug.LogError("AttackListener - ParticleManager script not attached to GameManager game object");
-            }
-
-            DeathEvent.RegisterListener(On_Died);
+            DeathEvent.RegisterListener(OnDeath);
         }
 
         void OnDestroy()
         {
-            DeathEvent.UnregisterListener(On_Died);
+            DeathEvent.UnregisterListener(OnDeath);
         }
 
-        void On_Died(DeathEvent deathEvent)
+        void OnDeath(DeathEvent deathEvent)
         {
+            //Play the soundfor the attack
+            if (PlaySound != null) PlaySound(deathEvent.baseGO);
+            //Playt the particle for the attack
+            if (PlayParticle != null) PlayParticle(deathEvent.baseGO);
+            //Play the aanimation for the attack
+            if (PlayAnimation != null) PlayAnimation(deathEvent.baseGO);
+
             //Play death sound
             //Play particle animation
             //If it's the player end the game
