@@ -83,4 +83,15 @@ namespace EventCallback
         //The vertical and horizontal axis change from keyboard or controller
         public float verticalAxis, horizontalAxis;
     }
+public class AIEvent : Event<AIEvent>
+    {
+        //Bool to hold button press checks
+        public bool escPressed, spacePressed, leftMBPressed, rightMBPressed, midMBPressed;
+        //The position of the mouse after screenToorldPosition already calculated
+        public Vector3 mousePos;
+        //The touch positions if a touh screen is used, error checking done by input manager
+        public Vector3[] touchPositions;
+        //The vertical and horizontal axis change from keyboard or controller
+        public float verticalAxis, horizontalAxis;
+    }
 }
