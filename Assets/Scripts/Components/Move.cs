@@ -41,7 +41,6 @@ namespace GameComponents
         // Update is called once per frame
         private void FixedUpdate()
         {
-
             //Sets the velocity of the objects rigidbody
             rb2d.MovePosition(rb2d.position + new Vector2(x, y) * GetComponent<Stats>().moveSpeed.Value * Time.deltaTime);
         }

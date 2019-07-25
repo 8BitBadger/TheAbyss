@@ -3,34 +3,41 @@ using EventCallback;
 
 namespace GameComponents
 {
+    [RequireComponent(typeof(Stats))]
     public class Health : MonoBehaviour
     {
-        //The base health unmodified
-        public float baseHealth;
-        //The helath after modifiers have been applied
-        public float health;
+        //We keep track of the damage that was dealt to the unit 
+        float damage;
 
+        //Allows us to quickly reset the health to the original value if the player levels up 
+        public void ResetHealth()
+        {
+            damage = 0;
+        }
         //Heals the object with this script added to it
         public void Heal(float heal)
         {
-            health += heal;
+            if (damage > 0)
+            {
+                damage -= heal;
+            }
         }
         //Deals damage to this object
-        public void TakeDamage(float damage)
+        public void TakeDamage(float _damage)
         {
-            health -= damage;
+            damage += _damage;
             CheckHealth();
         }
 
         public void CheckHealth()
         {
-            if (health <= 0)
+            if (GetComponent<Stats>().health.Value - damage <= 0)
             {
                 DeathEvent deathEventInfo = new DeathEvent();
                 deathEventInfo.baseGO = gameObject;
                 deathEventInfo.FireEvent();
             }
+            //Send the callback event for the amount of health 
         }
     }
 }
-//1280 X 720

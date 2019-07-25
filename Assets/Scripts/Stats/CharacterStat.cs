@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace StatSystem
-{
     [Serializable]
     public class CharacterStat
     {
@@ -119,4 +117,3 @@ namespace StatSystem
             return (float)Math.Round(finalValue, 4);
         }
     }
-}

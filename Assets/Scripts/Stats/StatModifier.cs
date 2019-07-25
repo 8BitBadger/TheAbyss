@@ -4,9 +4,6 @@
     PercentAdd = 200,
     PercentMult = 300,
 }
-
-namespace StatSystem
-{
     public class StatModifier
     {
         public readonly float value;
@@ -26,4 +23,3 @@ namespace StatSystem
         public StatModifier(float _value, StatModType _type, int _order) : this(_value, _type, _order, null) { }
         public StatModifier(float _value, StatModType _type, object _source) : this(_value, _type, (int)_type, _source) { }
     }
-}

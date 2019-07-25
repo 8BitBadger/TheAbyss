@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using StatSystem;
 
 namespace GameComponents
 {
@@ -7,8 +6,7 @@ namespace GameComponents
     {
         //The level of the charecter
         public float level;
-        //The health of the unit
-        public CharacterStat health;
+
         //The strength of the unit
         public CharacterStat strength;
         //The dexterity of the unit
@@ -25,6 +23,9 @@ namespace GameComponents
         //The damage the unit does
         [HideInInspector]
         public CharacterStat damage;
+        //The health of the unit
+        [HideInInspector]
+        public CharacterStat health;
 
         private void Start()
         {
@@ -34,7 +35,8 @@ namespace GameComponents
             attackSpeed.baseValue = dexterity.Value * level;
             //Set the base value for the damage
             damage.baseValue = strength.Value * level;
-
+            //Set the value of the health
+            health.baseValue = strength.baseValue * level + 20; 
         }
     }
 }
